@@ -1,0 +1,62 @@
+#
+# deployspec.yml
+#
+
+version: 0.2
+
+env:
+  variables:
+    terraform_version: 1.12.1
+    #ansible_debug: -vvvv
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.x
+      golang: 1.x
+    commands:
+      # install ccrypt, needed for secret decrypting
+      - dnf install -y http://ccrypt.sourceforge.net/download/1.11/ccrypt-1.11-1.x86_64.rpm
+      # install Ansible, needed for deploy of playbook
+      - pip3 install ansible
+      # install terraform
+      - wget https://releases.hashicorp.com/terraform/${terraform_version}/terraform_${terraform_version}_linux_amd64.zip
+      - unzip terraform_${terraform_version}_linux_amd64.zip
+      - mv terraform /usr/local/bin
+
+  pre_build:
+    commands:
+      # clone terraform repo
+      - git clone https://${GITLAB_USER}:${GITLAB_TOKEN}@gitlab.com/uvalib/terraform-infrastructure.git
+      # decrypt the bastion private key
+      - BASTION_KEY_NAME=staging/bastion/keys/bastion_staging.pem
+      - BASTION_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${BASTION_KEY_NAME}
+      - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${BASTION_KEY}.cpt ${BASTION_KEY_NAME}
+      # decrypt the instance private key
+      - PRIVATE_KEY_NAME=dspace.library.virginia.edu/staging/keys/dspace_staging_new.pem
+      - PRIVATE_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${PRIVATE_KEY_NAME}
+      - DECRYPT_SECRET_NAME=dspace.library.virginia.edu/staging/keys/dspace_staging.pem
+      - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${PRIVATE_KEY}.cpt ${DECRYPT_SECRET_NAME}
+      - chmod 600 ${PRIVATE_KEY}
+
+  build:
+    commands:
+      - cd ${CODEBUILD_SRC_DIR}/terraform-infrastructure/dspace.library.virginia.edu/staging
+      - terraform init -no-color
+      - ami=$(terraform output instance_ami | grep ami | head -1 | tr -d ", \"")
+      - echo "AMI [${ami}]"
+      - |
+        if [ -z "${ami}" ]; then
+          echo "ERROR: cannot determine instance AMI" ;
+          exit 1 ;
+        fi
+      - terraform apply -auto-approve -no-color -var instance_ami="${ami}" --target=local_file.inventory --target=local_file.tfvars
+      - cd ansible
+      #- ansible-playbook ${ansible_debug} deploy_theme.yml
+
+#  post_build:
+#    commands:
+
+#
+# end of file
+#

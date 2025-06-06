@@ -52,7 +52,7 @@ phases:
         fi
       - terraform apply -auto-approve -no-color -var instance_ami="${ami}" --target=local_file.inventory --target=local_file.tfvars
       - cd ansible
-      #- ansible-playbook ${ansible_debug} deploy_theme.yml
+      - ansible-playbook ${ansible_debug} deploy_theme.yml
 
 #  post_build:
 #    commands:

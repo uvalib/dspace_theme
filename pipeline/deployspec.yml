@@ -33,7 +33,7 @@ phases:
       - BASTION_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${BASTION_KEY_NAME}
       - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${BASTION_KEY}.cpt ${BASTION_KEY_NAME}
       # decrypt the instance private key
-      - PRIVATE_KEY_NAME=dspace.library.virginia.edu/dev/keys/dspace_staging_new.pem
+      - PRIVATE_KEY_NAME=dspace.library.virginia.edu/dev/keys/dspace_staging.pem
       - PRIVATE_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${PRIVATE_KEY_NAME}
       - DECRYPT_SECRET_NAME=dspace.library.virginia.edu/dev/keys/dspace_staging.pem
       - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${PRIVATE_KEY}.cpt ${DECRYPT_SECRET_NAME}

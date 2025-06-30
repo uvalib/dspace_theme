@@ -414,6 +414,8 @@ themes:
   # # This theme will use the default bootstrap styling for DSpace components
   # - name: BASE_THEME_NAME
   #
+  - name: libraOpen
+    extends: dspace
 
   - name: "custom"
 

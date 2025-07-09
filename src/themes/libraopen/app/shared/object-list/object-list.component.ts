@@ -18,10 +18,10 @@ import { BrowserOnlyPipe } from '../../../../../app/shared/utils/browser-only.pi
  */
 @Component({
   selector: 'ds-themed-object-list',
-  // styleUrls: ['./object-list.component.scss'],
-  styleUrls: ['../../../../../app/shared/object-list/object-list.component.scss'],
-  // templateUrl: './object-list.component.html'
-  templateUrl: '../../../../../app/shared/object-list/object-list.component.html',
+  styleUrls: ['./object-list.component.scss'],
+  // styleUrls: ['../../../../../app/shared/object-list/object-list.component.scss'],
+  templateUrl: './object-list.component.html',
+  // templateUrl: '../../../../../app/shared/object-list/object-list.component.html',
   imports: [PaginationComponent, NgIf, NgClass, NgFor, SelectableListItemControlComponent, ImportableListItemControlComponent, ListableObjectComponentLoaderComponent, BrowserOnlyPipe],
   standalone: true,
 })

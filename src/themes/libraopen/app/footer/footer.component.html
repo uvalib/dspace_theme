@@ -1,0 +1,78 @@
+<footer class="text-lg-start">
+
+    <!-- Copyright -->
+    <div *ngIf="showTopFooter" class="top-footer p-1 d-flex justify-content-center align-items-center">
+      <div class="content-container">
+        
+        <ul class="footer-info list-unstyled d-flex justify-content-center mb-0">
+          <li *ngIf="showEndUserAgreement">
+            <!-- these links do not work / are not formatted properly for Angular -->
+            <a class="btn text-dark" routerLink="http://www.library.virginia.edu/libra/terms-of-use/">Terms of use</a>
+          </li>
+          <li *ngIf="showSendFeedback$ | async">
+            <!-- these links do not work / are not formatted properly for Angular -->
+            <a class="btn text-dark" routerLink="mailto:libra@virginia.edu">{{ 'footer.link.feedback' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright -->
+
+    <div class="bottom-footer content-container">
+  
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row justify-content-center">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item">
+              <h5 class="text-white">Contact us</h5>
+            </li>
+            <li class="list-group-item">
+              <a href="tel:1-434-924-3021" class="text-white">(434) 924-3021</a>
+            </li>
+            <li class="list-group-item">
+              <a href="mailto:library@virginia.edu" class="text-white">library&#64;virginia.edu</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://library.virginia.edu/askalibrarian" class="text-white">Ask a Librarian</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item">
+              <h5><a href="https://library.virginia.edu/" class="text-white">UVA Library</a></h5>
+            </li>
+            <li class="list-group-item">
+              <a href="https://library.virginia.edu/about-uva-library" class="text-white">About UVA Library</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://library.virginia.edu/services" class="text-white">Using the Library</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://library.virginia.edu/teaching-and-writing" class="text-white">Teaching &amp; publication support</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://library.virginia.edu/help" class="text-white">Get help</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <p class="m-1 text-white text-center">
+      {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }} by the Rector and Visitors of the University of
+      Virginia
+    </p>
+  </div>
+  <!-- Grid container -->
+
+
+</footer>

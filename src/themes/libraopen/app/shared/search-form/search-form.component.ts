@@ -14,8 +14,8 @@ import { BrowserOnlyPipe } from '../../../../../app/shared/utils/browser-only.pi
   selector: 'ds-themed-search-form',
   // styleUrls: ['./search-form.component.scss'],
   styleUrls: ['../../../../../app/shared/search-form/search-form.component.scss'],
-  // templateUrl: './search-form.component.html',
-  templateUrl: '../../../../../app/shared/search-form/search-form.component.html',
+  templateUrl: './search-form.component.html',
+  // templateUrl: '../../../../../app/shared/search-form/search-form.component.html',
   standalone: true,
   imports: [FormsModule, NgIf, NgbTooltipModule, AsyncPipe, TranslateModule, BrowserOnlyPipe],
 })

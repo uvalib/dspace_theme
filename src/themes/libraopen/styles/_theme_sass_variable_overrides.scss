@@ -14,7 +14,7 @@
 // $yellow: #ec9433 !default;
 // $red:    #CF4444 !default;
 // $dark:   darken($blue, 17%) !default;
-//
+
 // $theme-colors: (
 //   primary: $blue,
 //   secondary: $gray-700,
@@ -27,3 +27,97 @@
 // ) !default;
 //
 // $link-color: map-get($theme-colors, info) !default;
+
+//UVA color overrides
+$uva-brand-blue-300: #87b9d9;
+$uva-brand-blue-200: #3395d4;
+$uva-brand-blue-100: #0370b7;
+$uva-brand-blue: #232d4b;
+
+$uva-brand-orange-300: #ffead6;
+$uva-brand-orange-200: #ffc999;
+$uva-brand-orange-100: #ffb370;
+$uva-brand-orange: #e57200;
+$uva-brand-orange-A: #b35900;
+$uva-brand-orange-B: #854200;
+
+$uva-blue-alt-400: #e6f2f7;
+$uva-blue-alt-300: #bfe7f7;
+$uva-blue-alt-200: #91d8f2;
+$uva-blue-alt-100: #55c4ec;
+$uva-blue-alt: #007bac;
+$uva-blue-alt-A: #005679;
+$uva-blue-alt-B: #141e3c;
+
+$uva-teal-200: #c8f2f4;
+$uva-teal-100: #5bd7de;
+$uva-teal: #25cad3;
+$uva-teal-A: #1da1a8;
+$uva-teal-B: #16777c;
+
+$uva-green-200: #ddefdc;
+$uva-green-100: #89cc74;
+$uva-green: #62bb46;
+$uva-green-A: #4e9737;
+//new green for a11y
+$uva-green-B: #448330;
+
+$uva-red-100: #fbcfda;
+$uva-red: #ef3f6b;
+$uva-red-A: #df1e43;
+$uva-red-B: #b30000;
+
+$uva-yellow-100: #fef6c8;
+$uva-yellow: #ecc602;
+$uva-yellow-A: #b99c02;
+
+$uva-grey-200: #f1f1f1;
+$uva-grey-100: #dadada;
+$uva-grey-50: #adadad;
+$uva-grey: #808080;
+$uva-grey-A: #4f4f4f;
+$uva-grey-B: #2b2b2b;
+
+$uva-text-color-base: $uva-grey-A;
+$uva-text-color-dark: $uva-grey-B;
+
+//dspace color overrides
+$blue: $uva-blue-alt !default;
+$cyan: $uva-teal-100 !default;
+$dark: $uva-brand-blue !default;
+
+/*** CUSTOM UVA - DSPACE VARIABLES ***/
+$link-color: $uva-blue-alt-A !default;
+// $link-hover-color: darken($link-color, 15%) !default;
+
+// $ds-home-news-link-color: $link-color !default;
+// $ds-home-news-link-hover-color: darken($ds-home-news-link-color, 15%) !default;
+$ds-breadcrumb-link-color: $uva-brand-blue !default;
+$ds-breadcrumb-link-active-color: $uva-brand-orange-A !default;
+
+// $ds-header-navbar-border-top-color: #fff !default;
+$ds-header-navbar-border-bottom-color: $uva-grey-100 !default;
+
+// $ds-header-bg: #fff !default;
+// $ds-header-icon-color: $link-color !default;
+// $ds-header-icon-color-hover: $link-hover-color !default;
+
+// $ds-navbar-bg: #fff !default;
+// $ds-navbar-dropdown-bg: #fff !default;
+// $ds-expandable-navbar-bg: #fff !default;
+// $ds-navbar-link-color: $link-color !default;
+// $ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
+
+$ds-slider-color: darken($uva-green-100, 17%) !default;
+$ds-slider-handle-color: darken($uva-blue-alt-A, 17%) !default;
+
+$ds-admin-sidebar-bg: darken($uva-blue-alt-A, 17%) !default;
+// $ds-admin-sidebar-active-bg: darken($ds-admin-sidebar-bg, 3%) !default;
+// $ds-admin-sidebar-fg: #47495d !default;
+
+// $ds-primary-bg: #{lighten($primary, 30%)} !default;
+// $ds-secondary-bg: #{lighten($secondary, 30%)} !default;
+// $ds-success-bg: #{lighten($success, 30%)} !default;
+// $ds-info-bg: #{lighten($info, 30%)} !default;
+// $ds-warning-bg: #{lighten($warning, 30%)} !default;
+// $ds-danger-bg: #{lighten($danger, 30%)} !default;

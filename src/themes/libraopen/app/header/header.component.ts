@@ -19,10 +19,10 @@ import { ImpersonateNavbarComponent } from '../../../../app/shared/impersonate-n
  */
 @Component({
   selector: 'ds-themed-header',
-  // styleUrls: ['header.component.scss'],
-  styleUrls: ['../../../../app/header/header.component.scss'],
-  // templateUrl: 'header.component.html',
-  templateUrl: '../../../../app/header/header.component.html',
+  styleUrls: ['header.component.scss'],
+  // styleUrls: ['../../../../app/header/header.component.scss'],
+  templateUrl: 'header.component.html',
+  // templateUrl: '../../../../app/header/header.component.html',
   standalone: true,
   imports: [RouterLink, ThemedLangSwitchComponent, NgbDropdownModule, ThemedSearchNavbarComponent, ContextHelpToggleComponent, ThemedAuthNavMenuComponent, ImpersonateNavbarComponent, TranslateModule, AsyncPipe, NgIf],
 })

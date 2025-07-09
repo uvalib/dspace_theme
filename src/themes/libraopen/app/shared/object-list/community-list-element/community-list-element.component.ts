@@ -14,8 +14,8 @@ import { CommunityListElementComponent as BaseComponent } from '../../../../../.
   selector: 'ds-community-list-element',
   // styleUrls: ['./community-list-element.component.scss'],
   styleUrls: ['../../../../../../app/shared/object-list/community-list-element/community-list-element.component.scss'],
-  // templateUrl: './community-list-element.component.html'
-  templateUrl: '../../../../../../app/shared/object-list/community-list-element/community-list-element.component.html',
+  templateUrl: './community-list-element.component.html',
+  // templateUrl: '../../../../../../app/shared/object-list/community-list-element/community-list-element.component.html',
   standalone: true,
   imports: [NgIf, RouterLink],
 })

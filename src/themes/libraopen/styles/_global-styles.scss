@@ -1,4 +1,223 @@
 // Add any global css for the theme here
 
 // imports the base global style
-@import '../../../styles/_global-styles.scss';
+// @import "../../../styles/_global-styles.scss";
+@import "../../../styles/global-styles.scss";
+@import "_theme_sass_variable_overrides.scss";
+
+$font-sizes: (
+  // h1: 2.488rem,
+  // h2: 2.074rem,
+  // h3: 1.728rem,
+  // h4: 1.44rem,
+  // h5: 1.2rem,
+  // h6: 1rem,
+  h1: 2.027rem,
+  h2: 1.802rem,
+  h3: 1.602rem,
+  h4: 1.424rem,
+  h5: 1.266rem,
+  h6: 1.125rem
+);
+
+$font-weights: (
+  "book": 400,
+  "medium": 500,
+  "demi": 700,
+  "heavy": 900,
+);
+
+html,
+body {
+  font-size: 17px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: map-get($font-weights, book);
+  line-height: 1.5;
+}
+
+@each $size, $value in $font-sizes {
+  #{$size},
+  .#{$size} {
+    font-size: $value;
+    font-weight: map-get($font-weights, medium);
+    color: #2b2b2b;
+    line-height: 1.15;
+  }
+}
+
+h1,
+h2,
+.h1,
+.h2,
+.display-3 {
+  font-weight: map-get($font-weights, medium);
+}
+
+//accessibility and link color overrides
+a,
+span a {
+  color: $uva-blue-alt-A;
+  text-decoration: underline;
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    text-decoration: none;
+  }
+  &:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+  &:-webkit-any-link:focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h1 span a,
+h2 span a,
+h3 span a,
+h4 span a {
+  color: $uva-brand-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+  &:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+
+  &:-webkit-any-link:focus-visible {
+    outline-offset: 2px;
+  }
+}
+mark {
+  background-color: $uva-brand-orange-200;
+}
+
+mark::before,
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+mark::before {
+  content: " [highlight start] ";
+}
+
+mark::after {
+  content: " [highlight end] ";
+}
+
+.text-success {
+  color: $uva-green-B !important;
+}
+
+//badge styles
+
+.badge-info {
+  background-color: $uva-teal-100 !important;
+  color: $uva-grey-B;
+}
+
+//button styles
+
+.btn-primary {
+  font-weight: normal;
+  background-color: $uva-blue-alt;
+  color: #fff;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $uva-blue-alt-A;
+  }
+
+  &:active {
+    background-color: $uva-brand-blue;
+  }
+}
+
+.btn-secondary {
+  background-color: $uva-grey-100;
+  color: $uva-grey-A;
+  box-shadow: inset 0 0 0 2px $uva-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $uva-grey-200;
+    box-shadow: inset 0 0 0 2px $uva-grey;
+  }
+
+  &:active {
+    background-color: $uva-grey-A;
+    color: #fff;
+    box-shadow: inset 0 0 0 2px $uva-grey-B;
+  }
+}
+
+//nav dropdown styles
+.dropdown-menu {
+  .ds-menu-item {
+    text-decoration: none !important;
+    &:hover,
+    &:focus {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+//tabs and page numbers
+
+.list-group-item.active,
+.page-item.active .page-link {
+  background-color: $uva-blue-alt-A;
+  border-color: $uva-blue-alt-A;
+}
+
+//page specific styles
+h1.item-page-title-field {
+  margin-bottom: 2rem;
+}
+
+.thumbnail {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 2px $uva-blue-alt-A;
+  }
+}
+
+/* The font sizes used in "no thumbnail" placeholder */
+
+.thumbnail-placeholder {
+  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+    font-size: 0.7rem;
+    padding: 0.2rem;
+  }
+  @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+    font-size: 0.6rem;
+    padding: 0.1rem;
+  }
+  font-size: 0.4rem;
+  padding: 0.1rem;
+}
+
+// .sidebar-content h4 {
+
+// }

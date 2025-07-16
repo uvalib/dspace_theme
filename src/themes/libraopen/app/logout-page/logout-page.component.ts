@@ -8,8 +8,8 @@ import { LogOutComponent } from '../../../../app/shared/log-out/log-out.componen
   selector: 'ds-themed-logout-page',
   // styleUrls: ['./logout-page.component.scss'],
   styleUrls: ['../../../../app/logout-page/logout-page.component.scss'],
-  // templateUrl: './logout-page.component.html'
-  templateUrl: '../../../../app/logout-page/logout-page.component.html',
+  templateUrl: './logout-page.component.html',
+  // templateUrl: '../../../../app/logout-page/logout-page.component.html',
   standalone: true,
   imports: [LogOutComponent, TranslateModule],
 })

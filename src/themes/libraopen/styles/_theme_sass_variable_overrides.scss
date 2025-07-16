@@ -121,3 +121,10 @@ $ds-admin-sidebar-bg: darken($uva-blue-alt-A, 17%) !default;
 // $ds-info-bg: #{lighten($info, 30%)} !default;
 // $ds-warning-bg: #{lighten($warning, 30%)} !default;
 // $ds-danger-bg: #{lighten($danger, 30%)} !default;
+
+// CUSTOM VARIABLES FOR LIBRAOPEN THEME
+$libraopen-nav-link-color: $uva-brand-blue;
+$libraopen-nav-link-hover-color: $uva-brand-blue;
+$libraopen-nav-link-hover-bgcolor: $uva-grey-100;
+
+$libraopen-border-color: $uva-grey-100;

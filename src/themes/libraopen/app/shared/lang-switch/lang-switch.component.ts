@@ -10,8 +10,8 @@ import { LangSwitchComponent as BaseComponent } from '../../../../../app/shared/
 
 @Component({
   selector: 'ds-themed-lang-switch',
-  // styleUrls: ['./lang-switch.component.scss'],
-  styleUrls: ['../../../../../app/shared/lang-switch/lang-switch.component.scss'],
+  styleUrls: ['./lang-switch.component.scss'],
+  // styleUrls: ['../../../../../app/shared/lang-switch/lang-switch.component.scss'],
   // templateUrl: './lang-switch.component.html',
   templateUrl: '../../../../../app/shared/lang-switch/lang-switch.component.html',
   standalone: true,

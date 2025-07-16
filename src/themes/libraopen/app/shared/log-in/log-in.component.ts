@@ -13,8 +13,8 @@ import { LogInComponent as BaseComponent } from '../../../../../app/shared/log-i
   selector: 'ds-themed-log-in',
   // templateUrl: './log-in.component.html',
   templateUrl: '../../../../../app/shared/log-in/log-in.component.html',
-  // styleUrls: ['./log-in.component.scss'],
-  styleUrls: ['../../../../../app/shared/log-in/log-in.component.scss'],
+  styleUrls: ['./log-in.component.scss'],
+  // styleUrls: ['../../../../../app/shared/log-in/log-in.component.scss'],
   standalone: true,
   imports: [NgIf, ThemedLoadingComponent, NgFor, LogInContainerComponent, AsyncPipe],
 })

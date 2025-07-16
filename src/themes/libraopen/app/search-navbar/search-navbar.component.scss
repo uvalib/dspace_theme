@@ -1,0 +1,17 @@
+@import "../../styles/global-styles";
+
+.submit-icon {
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  border: 0 !important;
+  padding: 0.25rem !important;
+
+  color: $libraopen-nav-link-color;
+  &:hover,
+  &:focus {
+    color: $libraopen-nav-link-hover-color;
+    background-color: $libraopen-nav-link-hover-bgcolor;
+    border-radius: 5px;
+  }
+}

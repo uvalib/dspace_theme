@@ -35,7 +35,7 @@ phases:
       # decrypt the instance private key
       - PRIVATE_KEY_NAME=dspace.library.virginia.edu/staging/keys/dspace_staging_new.pem
       - PRIVATE_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${PRIVATE_KEY_NAME}
-      - DECRYPT_SECRET_NAME=dspace.library.virginia.edu/staging/keys/dspace_staging_new.pem
+      - DECRYPT_SECRET_NAME=dspace.library.virginia.edu/staging/keys/dspace_staging.pem
       - ${CODEBUILD_SRC_DIR}/terraform-infrastructure/scripts/decrypt-key.ksh ${PRIVATE_KEY}.cpt ${DECRYPT_SECRET_NAME}
       - chmod 600 ${PRIVATE_KEY}
 

@@ -31,6 +31,7 @@
       flex: 1 1 auto; // Fill available vertical space
       overflow-x: hidden;
       overflow-y: auto;
+      line-height: 1;
       @include dark-scrollbar;
     }
 

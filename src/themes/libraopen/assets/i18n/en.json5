@@ -3219,7 +3219,7 @@
 
   "login.form.password": "Password",
 
-  "login.form.shibboleth": "Log in with Shibboleth",
+  "login.form.shibboleth": "Log in with NetBadge",
 
   "login.form.submit": "Log in",
 
@@ -3415,7 +3415,7 @@
 
   "metadata-export-search.submit.error": "Starting the export has failed",
 
-  "mydspace.breadcrumbs": "MyLibraOpen",
+  "mydspace.breadcrumbs": "My LibraOpen",
 
   "mydspace.description": "",
 
@@ -3469,7 +3469,7 @@
 
   "mydspace.results.no-uri": "No URI",
 
-  "mydspace.search-form.placeholder": "Search in MyLibraOpen...",
+  "mydspace.search-form.placeholder": "Search in my LibraOpen...",
 
   "mydspace.show.workflow": "Workflow tasks",
 
@@ -3487,7 +3487,7 @@
 
   "mydspace.status.mydspaceWorkspace": "Workspace",
 
-  "mydspace.title": "MyLibraOpen",
+  "mydspace.title": "My LibraOpen",
 
   "mydspace.upload.upload-failed": "Error creating new workspace. Please verify the content uploaded before retry.",
 
@@ -3523,7 +3523,7 @@
 
   "nav.main.description": "Main navigation bar",
 
-  "nav.mydspace": "MyLibraOpen",
+  "nav.mydspace": "My LibraOpen",
 
   "nav.profile": "Profile",
 
@@ -4795,7 +4795,7 @@
 
   "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to LibraOpen.",
 
-  "submission.import-external.back-to-my-dspace": "Back to MyLibraOpen",
+  "submission.import-external.back-to-my-dspace": "Back to my LibraOpen",
 
   "submission.import-external.search.placeholder": "Search the external source",
 

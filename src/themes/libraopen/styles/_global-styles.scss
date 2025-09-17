@@ -195,29 +195,6 @@ mark::after {
 h1.item-page-title-field {
   margin-bottom: 2rem;
 }
-
-.thumbnail {
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 0 2px $uva-blue-alt-A;
-  }
-}
-
-/* The font sizes used in "no thumbnail" placeholder */
-
-.thumbnail-placeholder {
-  @media screen and (max-width: map-get($grid-breakpoints, lg)) {
-    font-size: 0.7rem;
-    padding: 0.2rem;
-  }
-  @media screen and (max-width: map-get($grid-breakpoints, sm)) {
-    font-size: 0.6rem;
-    padding: 0.1rem;
-  }
-  font-size: 0.4rem;
-  padding: 0.1rem;
-}
-
 // .sidebar-content h4 {
 
 // }

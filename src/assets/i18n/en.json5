@@ -1866,7 +1866,7 @@
 
   "error.top-level-communities": "Error fetching top-level communities",
 
-  "error.validation.license.notgranted": "You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission.",
+  "error.validation.license.notgranted": "Note that the Libra Deposit Agreement will allow Libra to save and publish your work, and is separate from the Deposit License (which grants public access to your work through a Creative Commons license). You must agree to the Libra Deposit Agreement to save or complete your submission.",
 
   "error.validation.pattern": "This input is restricted by the current pattern: {{ pattern }}.",
 
@@ -3210,7 +3210,7 @@
 
   "login.form.password": "Password",
 
-  "login.form.shibboleth": "Log in with Netbadge",
+  "login.form.shibboleth": "Log in with Shibboleth",
 
   "login.form.submit": "Log in",
 
@@ -5394,9 +5394,9 @@
 
   "submission.sections.license.granted-label": "I confirm the license above",
 
-  "submission.sections.license.required": "You must accept the license",
+  "submission.sections.license.required": "You must accept the agreement to proceed",
 
-  "submission.sections.license.notgranted": "You must accept the license",
+  "submission.sections.license.notgranted": "You must accept the agreement to proceed",
 
   "submission.sections.sherpa.publication.information": "Publication information",
 

@@ -31,7 +31,7 @@
 
   "error-page.description.404": "Page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with LibraOpen. If the error persists, contact the administrator",
 
   "listelement.badge.access-status": "Access status:",
 
@@ -151,7 +151,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, LibraOpen requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1793,7 +1793,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of DSpace",
+  "dso-selector.set-scope.community.button": "Search all of LibraOpen",
 
   "dso-selector.set-scope.community.or-divider": "or",
 
@@ -1923,7 +1923,7 @@
 
   "error.top-level-communities": "Error fetching top-level communities",
 
-  "error.validation.license.notgranted": "You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission.",
+  "error.validation.license.notgranted": "Note that the Libra Deposit Agreement will allow Libra to save and publish your work, and is separate from the Deposit License (which grants public access to your work through a Creative Commons license). You must agree to the Libra Deposit Agreement to save or complete your submission.",
 
   "error.validation.cclicense.required": "You must grant this cclicense to complete your submission. If you are unable to grant the cclicense at this time, you may save your work and return later or remove the submission.",
 
@@ -2209,7 +2209,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in LibraOpen",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -2281,7 +2281,7 @@
 
   "info.feedback.title": "Feedback",
 
-  "info.feedback.info": "Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!",
+  "info.feedback.info": "Thanks for sharing your feedback about the LibraOpen system. Your comments are appreciated!",
 
   "info.feedback.email_help": "This address will be used to follow up on your feedback.",
 
@@ -3395,7 +3395,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to DSpace",
+  "login.form.header": "Please log in to LibraOpen",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -3415,7 +3415,7 @@
 
   "login.breadcrumbs": "Login",
 
-  "logout.form.header": "Log out from DSpace",
+  "logout.form.header": "Log out from LibraOpen",
 
   "logout.form.submit": "Log out",
 
@@ -3455,7 +3455,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "All of LibraOpen",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -3597,7 +3597,7 @@
 
   "metadata-export-search.submit.error": "Starting the export has failed",
 
-  "mydspace.breadcrumbs": "MyDSpace",
+  "mydspace.breadcrumbs": "MyLibraOpen",
 
   "mydspace.description": "",
 
@@ -3651,7 +3651,7 @@
 
   "mydspace.results.no-uri": "No URI",
 
-  "mydspace.search-form.placeholder": "Search in MyDSpace...",
+  "mydspace.search-form.placeholder": "Search in MyLibraOpen...",
 
   "mydspace.show.workflow": "Workflow tasks",
 
@@ -3659,7 +3659,7 @@
 
   "mydspace.show.supervisedWorkspace": "Supervised items",
 
-  "mydspace.status": "My DSpace status:",
+  "mydspace.status": "My LibraOpen status:",
 
   "mydspace.status.mydspaceArchived": "Archived",
 
@@ -3671,7 +3671,7 @@
 
   "mydspace.status.mydspaceWorkspace": "Workspace",
 
-  "mydspace.title": "MyDSpace",
+  "mydspace.title": "MyLibraOpen",
 
   "mydspace.upload.upload-failed": "Error creating new workspace. Please verify the content uploaded before retry.",
 
@@ -3691,7 +3691,7 @@
 
   "notification.suggestion.please": "Please",
 
-  "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of LibraOpen",
 
   "nav.community-browse.header": "By Community",
 
@@ -3707,7 +3707,7 @@
 
   "nav.main.description": "Main navigation bar",
 
-  "nav.mydspace": "MyDSpace",
+  "nav.mydspace": "MyLibraOpen",
 
   "nav.profile": "Profile",
 
@@ -3835,7 +3835,7 @@
 
   "quality-assurance.event.reject.description": "This operation can't be undone. Reject this suggestion?",
 
-  "quality-assurance.event.accept.description": "No DSpace project selected. A new project will be created based on the suggestion data.",
+  "quality-assurance.event.accept.description": "No LibraOpen project selected. A new project will be created based on the suggestion data.",
 
   "quality-assurance.event.action.cancel": "Cancel",
 
@@ -4331,7 +4331,7 @@
 
   "register-page.registration.header": "New user registration",
 
-  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
+  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to LibraOpen.",
 
   "register-page.registration.email": "Email Address *",
 
@@ -4429,9 +4429,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title": "DSpace Repository",
+  "repository.title": "LibraOpen Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "LibraOpen Repository :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -4872,7 +4872,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of LibraOpen",
 
   "search.results.head": "Search Results",
 
@@ -5038,9 +5038,9 @@
 
   "submission.import-external.title.none": "Import metadata from an external source",
 
-  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
+  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to LibraOpen.",
 
-  "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
+  "submission.import-external.back-to-my-dspace": "Back to MyLibraOpen",
 
   "submission.import-external.search.placeholder": "Search the external source",
 
@@ -5694,9 +5694,9 @@
 
   "submission.sections.license.granted-label": "I confirm the license above",
 
-  "submission.sections.license.required": "You must accept the license",
+  "submission.sections.license.required": "You must accept the agreement to proceed",
 
-  "submission.sections.license.notgranted": "You must accept the license",
+  "submission.sections.license.notgranted": "You must accept the agreement to proceed",
 
   "submission.sections.sherpa.publication.information": "Publication information",
 
@@ -5914,7 +5914,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  "title": "LibraOpen",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 

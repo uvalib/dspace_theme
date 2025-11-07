@@ -1,0 +1,13 @@
+@import "../../../styles/global-styles";
+
+.loginLink,
+.dropdownLogin,
+.logoutLink,
+.dropdownLogout {
+  color: $libraopen-nav-link-color;
+
+  &:hover,
+  &:focus {
+    color: $libraopen-nav-link-hover-color;
+  }
+}

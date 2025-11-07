@@ -1,0 +1,34 @@
+@import "../../styles/global-styles";
+
+:host {
+  --ds-expandable-navbar-height: auto;
+
+  #main-navbar ::ng-deep {
+    .ds-menu-item,
+    .ds-menu-toggler-wrapper {
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    // .dropdown-menu {
+    //   padding: 0.5rem !important;
+    // }
+
+    .ds-menu-item {
+      display: block;
+      // color: var(--ds-navbar-link-color);
+      color: $libraopen-nav-link-color;
+      padding: 10px;
+
+      &:hover,
+      &:focus {
+        // color: var(--ds-navbar-link-color-hover);
+        color: $libraopen-nav-link-hover-color;
+        background-color: $libraopen-nav-link-hover-bgcolor;
+      }
+    }
+  }
+  nav.navbar {
+    padding-bottom: 0;
+  }
+}

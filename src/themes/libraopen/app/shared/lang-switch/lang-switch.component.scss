@@ -1,0 +1,13 @@
+@import "../../../styles/global-styles";
+
+.dropdown-toggle {
+  color: $libraopen-nav-link-color;
+  padding: 0.25rem !important;
+
+  &:hover,
+  &:focus {
+    color: $libraopen-nav-link-hover-color;
+    background-color: $libraopen-nav-link-hover-bgcolor;
+    border-radius: 5px;
+  }
+}

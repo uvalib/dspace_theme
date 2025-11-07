@@ -1,0 +1,10 @@
+@import "../../../styles/global-styles";
+
+ds-selectable-list-item-control {
+  z-index: 1;
+}
+
+.foo {
+  min-height: 10rem;
+  outline: 1px solid $libraopen-border-color;
+}

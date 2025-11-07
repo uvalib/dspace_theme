@@ -1,0 +1,16 @@
+@import "../../styles/global-styles";
+
+footer {
+  background-color: $uva-brand-blue;
+
+  .top-footer {
+    background-color: $uva-teal-200;
+    // color: $uva-blue-alt-A !important;
+  }
+
+  .list-group-item {
+    background-color: $uva-brand-blue;
+    // color: white !important;
+    border: 0;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../styles/global-styles";
+
+:host {
+  #main-site-header {
+    min-height: var(--ds-header-height);
+
+    @include media-breakpoint-up(md) {
+      height: var(--ds-header-height);
+    }
+
+    background-color: var(--ds-header-bg);
+
+    &-container {
+      min-height: var(--ds-header-height);
+    }
+  }
+
+  img#header-logo {
+    height: var(--ds-header-logo-height);
+  }
+
+  button#navbar-toggler {
+    color: $uva-grey-A;
+
+    &:hover,
+    &:focus {
+      color: $uva-grey;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    color: $uva-text-color-dark;
+
+    &:hover,
+    &:focus {
+      color: $uva-blue-alt-A;
+    }
+
+    // .toggler-icon {
+    //   width: 1.5em;
+    //   height: 1.5em;
+    //   line-height: 1.5;
+    // }
+  }
+}

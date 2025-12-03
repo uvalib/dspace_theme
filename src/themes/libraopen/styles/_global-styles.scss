@@ -1,4 +1,7 @@
 // Add any global css for the theme here
 
+// import theme variable overrides first
+@import 'theme_sass_variable_overrides';
+
 // imports the base global style
 @import '../../../styles/_global-styles.scss';

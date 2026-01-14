@@ -22,16 +22,16 @@ export class LibraOrcidAuthService extends OrcidAuthService {
     @Inject(NativeWindowService) protected override _window: NativeWindowRef,
     configurationService: ConfigurationDataService,
     researcherProfileService: ResearcherProfileDataService,
-    router: Router,
+    private routerPassedIn: Router,
   ) {
-    super(_window, configurationService, researcherProfileService, router);
+    super(_window, configurationService, researcherProfileService, routerOverride);
   }
 
   override getOrcidAuthorizeUrl(profile: Item): Observable<string> {
     return super.getOrcidAuthorizeUrl(profile).pipe(
       map((url) => {
         const origin = this._window.nativeWindow.origin;
-        const targetPage = origin + this.router.url.split('?')[0];
+        const targetPage = origin + this.routerPassedIn.url.split('?')[0];
         // Once returning to the backend, we need to redirect to the target page
         const redirectUri = new URLCombiner(origin, '/server/api/authn/orcid').toString()
           + `?redirectUrl=${encodeURIComponent(targetPage)}`;

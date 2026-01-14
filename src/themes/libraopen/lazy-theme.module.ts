@@ -16,6 +16,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { RootModule } from '../../app/root.module';
 import { SearchResultsSkeletonComponent } from '../../app/shared/search/search-results/search-results-skeleton/search-results-skeleton.component';
+import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
+import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { MetadataImportPageComponent } from './app/admin/admin-import-metadata-page/metadata-import-page.component';
 import { AdminSearchPageComponent } from './app/admin/admin-search-page/admin-search-page.component';
 import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';

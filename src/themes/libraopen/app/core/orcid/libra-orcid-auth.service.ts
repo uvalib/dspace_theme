@@ -30,7 +30,12 @@ export class LibraOrcidAuthService extends OrcidAuthService {
   override getOrcidAuthorizeUrl(profile: Item): Observable<string> {
     return super.getOrcidAuthorizeUrl(profile).pipe(
       map((url) => {
-        const redirectUri = new URLCombiner(this._window.nativeWindow.origin, '/server/api/authn/orcid').toString();
+        const origin = this._window.nativeWindow.origin;
+        const targetPage = origin + this.router.url.split('?')[0];
+        // Once returning to the backend, we need to redirect to the target page
+        const redirectUri = new URLCombiner(origin, '/server/api/authn/orcid').toString()
+          + `?redirectUrl=${encodeURIComponent(targetPage)}`;
+
         const parsed = new URL(url);
         parsed.searchParams.set('redirect_uri', redirectUri);
         return parsed.toString();

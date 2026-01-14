@@ -228,6 +228,7 @@ const DECLARATIONS = [
     NgxGalleryModule,
     ...DECLARATIONS],
   providers: [
+    { provide: OrcidAuthService, useClass: LibraOrcidAuthService },
     provideHttpClient(withInterceptorsFromDi()),
   ],
 })

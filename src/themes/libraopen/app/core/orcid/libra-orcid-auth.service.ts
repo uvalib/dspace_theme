@@ -1,4 +1,7 @@
-import { Inject, Injectable } from '@angular/core';
+import {
+  Inject,
+  Injectable,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -24,7 +27,7 @@ export class LibraOrcidAuthService extends OrcidAuthService {
     researcherProfileService: ResearcherProfileDataService,
     private routerPassedIn: Router,
   ) {
-    super(_window, configurationService, researcherProfileService, routerOverride);
+    super(_window, configurationService, researcherProfileService, routerPassedIn);
   }
 
   override getOrcidAuthorizeUrl(profile: Item): Observable<string> {

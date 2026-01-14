@@ -16,8 +16,7 @@ import { SearchResultsSkeletonComponent } from '../../../../../../app/shared/sea
 
 @Component({
   selector: 'ds-themed-search-results',
-  // templateUrl: './search-results.component.html',
-  templateUrl: '../../../../../../app/shared/search/search-results/search-results.component.html',
+  templateUrl: './search-results.component.html',
   styleUrls: ['../../../../../../app/shared/search/search-results/search-results.component.scss'],
   animations: [
     fadeIn,

@@ -40,6 +40,7 @@ import { ForbiddenComponent } from './app/forbidden/forbidden.component';
 import { ForgotEmailComponent } from './app/forgot-password/forgot-password-email/forgot-email.component';
 import { ForgotPasswordFormComponent } from './app/forgot-password/forgot-password-form/forgot-password-form.component';
 import { HomePageComponent } from './app/home-page/home-page.component';
+import { TopLevelCommunityListComponent } from './app/home-page/top-level-community-list/top-level-community-list.component';
 import { EndUserAgreementComponent } from './app/info/end-user-agreement/end-user-agreement.component';
 import { FeedbackComponent } from './app/info/feedback/feedback.component';
 import { FeedbackFormComponent } from './app/info/feedback/feedback-form/feedback-form.component';
@@ -89,6 +90,7 @@ import { StatusBadgeComponent } from './app/shared/object-collection/shared/badg
 import { TypeBadgeComponent } from './app/shared/object-collection/shared/badges/type-badge/type-badge.component';
 import { ItemDetailPreviewFieldComponent } from './app/shared/object-detail/my-dspace-result-detail-element/item-detail-preview/item-detail-preview-field/item-detail-preview-field.component';
 import { ItemListPreviewComponent } from './app/shared/object-list/my-dspace-result-list-element/item-list-preview/item-list-preview.component';
+import { ObjectCollectionComponent } from './app/shared/object-collection/object-collection.component';
 import { ObjectListComponent } from './app/shared/object-list/object-list.component';
 import { PaginationComponent } from './app/shared/pagination/pagination.component';
 import { ResultsBackButtonComponent } from './app/shared/results-back-button/results-back-button.component';
@@ -118,6 +120,7 @@ import { WorkspaceItemsDeletePageComponent } from './app/workspaceitems-edit-pag
 const DECLARATIONS = [
   FileSectionComponent,
   HomePageComponent,
+  TopLevelCommunityListComponent,
   RootComponent,
   CommunityListPageComponent,
   SearchPageComponent,
@@ -164,6 +167,7 @@ const DECLARATIONS = [
   AdminSidebarComponent,
   SearchSettingsComponent,
   ComcolPageBrowseByComponent,
+  ObjectCollectionComponent,
   ObjectListComponent,
   PaginationComponent,
   BrowseByMetadataComponent,

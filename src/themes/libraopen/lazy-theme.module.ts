@@ -14,10 +14,9 @@ import { StoreModule } from '@ngrx/store';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
+import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
 import { RootModule } from '../../app/root.module';
 import { SearchResultsSkeletonComponent } from '../../app/shared/search/search-results/search-results-skeleton/search-results-skeleton.component';
-import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
-import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { MetadataImportPageComponent } from './app/admin/admin-import-metadata-page/metadata-import-page.component';
 import { AdminSearchPageComponent } from './app/admin/admin-search-page/admin-search-page.component';
 import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
@@ -35,6 +34,7 @@ import { CommunityListPageComponent } from './app/community-list-page/community-
 import { CommunityPageComponent } from './app/community-page/community-page.component';
 import { CommunityPageSubCollectionListComponent } from './app/community-page/sections/sub-com-col-section/sub-collection-list/community-page-sub-collection-list.component';
 import { CommunityPageSubCommunityListComponent } from './app/community-page/sections/sub-com-col-section/sub-community-list/community-page-sub-community-list.component';
+import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { DsoEditMetadataComponent } from './app/dso-shared/dso-edit-metadata/dso-edit-metadata.component';
 import { ForbiddenComponent } from './app/forbidden/forbidden.component';
 import { ForgotEmailComponent } from './app/forgot-password/forgot-password-email/forgot-email.component';
@@ -83,6 +83,7 @@ import { DsDynamicLookupRelationExternalSourceTabComponent } from './app/shared/
 import { ExternalSourceEntryImportModalComponent } from './app/shared/form/builder/ds-dynamic-form-ui/relation-lookup-modal/external-source-tab/external-source-entry-import-modal/external-source-entry-import-modal.component';
 import { DsDynamicLookupRelationSearchTabComponent } from './app/shared/form/builder/ds-dynamic-form-ui/relation-lookup-modal/search-tab/dynamic-lookup-relation-search-tab.component';
 import { LoadingComponent } from './app/shared/loading/loading.component';
+import { ObjectCollectionComponent } from './app/shared/object-collection/object-collection.component';
 import { AccessStatusBadgeComponent } from './app/shared/object-collection/shared/badges/access-status-badge/access-status-badge.component';
 import { BadgesComponent } from './app/shared/object-collection/shared/badges/badges.component';
 import { MyDSpaceStatusBadgeComponent } from './app/shared/object-collection/shared/badges/my-dspace-status-badge/my-dspace-status-badge.component';
@@ -90,7 +91,6 @@ import { StatusBadgeComponent } from './app/shared/object-collection/shared/badg
 import { TypeBadgeComponent } from './app/shared/object-collection/shared/badges/type-badge/type-badge.component';
 import { ItemDetailPreviewFieldComponent } from './app/shared/object-detail/my-dspace-result-detail-element/item-detail-preview/item-detail-preview-field/item-detail-preview-field.component';
 import { ItemListPreviewComponent } from './app/shared/object-list/my-dspace-result-list-element/item-list-preview/item-list-preview.component';
-import { ObjectCollectionComponent } from './app/shared/object-collection/object-collection.component';
 import { ObjectListComponent } from './app/shared/object-list/object-list.component';
 import { PaginationComponent } from './app/shared/pagination/pagination.component';
 import { ResultsBackButtonComponent } from './app/shared/results-back-button/results-back-button.component';

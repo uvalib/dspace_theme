@@ -18,7 +18,7 @@ import { URLCombiner } from '../../../../../app/core/url-combiner/url-combiner';
 
 @Injectable()
 /**
- * Theme-only override to adjust the ORCID redirect target without altering core service logic.
+ * Theme-only override to adjust the ORCID redirect target
  */
 export class LibraOrcidAuthService extends OrcidAuthService {
   constructor(
@@ -34,14 +34,14 @@ export class LibraOrcidAuthService extends OrcidAuthService {
     return super.getOrcidAuthorizeUrl(profile).pipe(
       map((url) => {
         const origin = this._window.nativeWindow.origin;
-        // ORCID does not allow wildcard redirect URIs, so we always redirect to a fixed UI route
-        // and carry the intended destination (e.g. person ORCID page) in the OAuth `state`.
         const targetPath = this.routerPassedIn.url.split('?')[0];
-        const redirectUri = new URLCombiner(origin, '/orcid-link').toString();
+        const targetUrl = new URLCombiner(origin, targetPath).toString();
+        // Use the DSpace backend ORCID callback and pass UI destination via `redirectUrl`
+        const redirectUri = new URLCombiner(origin, '/server/api/authn/orcid').toString()
+          + `?redirectUrl=${encodeURIComponent(targetUrl)}`;
 
         const parsed = new URL(url);
         parsed.searchParams.set('redirect_uri', redirectUri);
-        parsed.searchParams.set('state', targetPath);
         return parsed.toString();
       }),
     );

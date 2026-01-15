@@ -4,8 +4,6 @@ import {
   RouterConfigOptions,
 } from '@angular/router';
 
-// UVA Change: Import the ORCID link callback component from the theme
-import { OrcidLinkCallbackComponent } from '../themes/libraopen/app/orcid-link/orcid-link-callback.component';
 import { NOTIFICATIONS_MODULE_PATH } from './admin/admin-routing-paths';
 import {
   ACCESS_CONTROL_MODULE_PATH,
@@ -55,12 +53,6 @@ export const APP_ROUTES: Route[] = [
     canActivateChild: [ServerCheckGuard],
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
-      {
-        // Fixed redirect URI endpoint for ORCID profile linking
-        path: 'orcid-link',
-        component: OrcidLinkCallbackComponent,
-        pathMatch: 'full',
-      },
       {
         path: 'reload/:rnd',
         component: ThemedPageNotFoundComponent,

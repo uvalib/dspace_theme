@@ -2943,7 +2943,7 @@
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
-  "item.page.subject": "Keywords",
+  "item.page.subject": "Subjects",
 
   "item.page.uri": "URI",
 
@@ -5606,7 +5606,7 @@
 
   "submission.sections.upload.download.title": "Download file",
 
-  "submission.sections.upload.drop-message": "Drop files to attach them to the item",
+  "submission.sections.upload.drop-message": "Drop files to attach them to the item (max 1GB)",
 
   "submission.sections.upload.edit.title": "Edit file",
 
@@ -5640,7 +5640,7 @@
 
   "submission.sections.upload.header.policy.default.withlist": "Please note that uploaded files in the {{collectionName}} collection will be accessible, in addition to what is explicitly decided for the single file, with the following group(s):",
 
-  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere on the page.</strong>",
+  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere on the page.</strong>  Use the edit button on each file to place a date-based embargo or restrict access to UVA users only.",
 
   "submission.sections.upload.no-entry": "No",
 

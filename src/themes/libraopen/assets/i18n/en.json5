@@ -4584,6 +4584,10 @@
 
   "search.filters.applied.f.author": "Author",
 
+  "search.filters.applied.f.isAuthorOfPublication": "Author",
+
+  "search.filters.applied.f.isOrgUnitOfPublication": "Organization",
+
   "search.filters.applied.f.dateIssued.max": "End date",
 
   "search.filters.applied.f.dateIssued.min": "Start date",

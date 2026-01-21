@@ -1,0 +1,16 @@
+<div class="labels">
+  @for (appliedFilter of appliedFilters$ | async; track appliedFilter) {
+    @if (appliedFilter.operator === 'range') {
+      <ds-search-label-range
+        [appliedFilter]="appliedFilter"
+        [inPlaceSearch]="inPlaceSearch">
+      </ds-search-label-range>
+    } @else {
+      <ds-search-label
+        [appliedFilter]="appliedFilter"
+        [inPlaceSearch]="inPlaceSearch">
+      </ds-search-label>
+    }
+  }
+</div>
+

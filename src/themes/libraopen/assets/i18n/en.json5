@@ -63,17 +63,17 @@
 
   "admin.registries.bitstream-formats.breadcrumbs": "Format registry",
 
-  "admin.registries.bitstream-formats.create.breadcrumbs": "Bitstream format",
+  "admin.registries.bitstream-formats.create.breadcrumbs": "File format",
 
   "admin.registries.bitstream-formats.create.failure.content": "An error occurred while creating the new bitstream format.",
 
   "admin.registries.bitstream-formats.create.failure.head": "Failure",
 
-  "admin.registries.bitstream-formats.create.head": "Create bitstream format",
+  "admin.registries.bitstream-formats.create.head": "Create file format",
 
-  "admin.registries.bitstream-formats.create.new": "Add a new bitstream format",
+  "admin.registries.bitstream-formats.create.new": "Add a new file format",
 
-  "admin.registries.bitstream-formats.create.success.content": "The new bitstream format was successfully created.",
+  "admin.registries.bitstream-formats.create.success.content": "The new file format was successfully created.",
 
   "admin.registries.bitstream-formats.create.success.head": "Success",
 
@@ -85,9 +85,9 @@
 
   "admin.registries.bitstream-formats.delete.success.head": "Success",
 
-  "admin.registries.bitstream-formats.description": "This list of bitstream formats provides information about known formats and their support level.",
+  "admin.registries.bitstream-formats.description": "This list of file formats provides information about known formats and their support level.",
 
-  "admin.registries.bitstream-formats.edit.breadcrumbs": "Bitstream format",
+  "admin.registries.bitstream-formats.edit.breadcrumbs": "File format",
 
   "admin.registries.bitstream-formats.edit.description.hint": "",
 
@@ -99,11 +99,11 @@
 
   "admin.registries.bitstream-formats.edit.extensions.placeholder": "Enter a file extension without the dot",
 
-  "admin.registries.bitstream-formats.edit.failure.content": "An error occurred while editing the bitstream format.",
+  "admin.registries.bitstream-formats.edit.failure.content": "An error occurred while editing the file format.",
 
   "admin.registries.bitstream-formats.edit.failure.head": "Failure",
 
-  "admin.registries.bitstream-formats.edit.head": "Bitstream format: {{ format }}",
+  "admin.registries.bitstream-formats.edit.head": "File format: {{ format }}",
 
   "admin.registries.bitstream-formats.edit.internal.hint": "Formats marked as internal are hidden from the user, and used for administrative purposes.",
 
@@ -117,7 +117,7 @@
 
   "admin.registries.bitstream-formats.edit.shortDescription.label": "Name",
 
-  "admin.registries.bitstream-formats.edit.success.content": "The bitstream format was successfully edited.",
+  "admin.registries.bitstream-formats.edit.success.content": "The file format was successfully edited.",
 
   "admin.registries.bitstream-formats.edit.success.head": "Success",
 
@@ -125,9 +125,9 @@
 
   "admin.registries.bitstream-formats.edit.supportLevel.label": "Support level",
 
-  "admin.registries.bitstream-formats.head": "Bitstream Format Registry",
+  "admin.registries.bitstream-formats.head": "File Format Registry",
 
-  "admin.registries.bitstream-formats.no-items": "No bitstream formats to show.",
+  "admin.registries.bitstream-formats.no-items": "No file formats to show.",
 
   "admin.registries.bitstream-formats.table.delete": "Delete selected",
 
@@ -139,7 +139,7 @@
 
   "admin.registries.bitstream-formats.table.name": "Name",
 
-  "admin.registries.bitstream-formats.table.selected": "Selected bitstream formats",
+  "admin.registries.bitstream-formats.table.selected": "Selected file formats",
 
   "admin.registries.bitstream-formats.table.id": "ID",
 
@@ -153,7 +153,7 @@
 
   "admin.registries.bitstream-formats.table.supportLevel.head": "Support Level",
 
-  "admin.registries.bitstream-formats.title": "Bitstream Format Registry",
+  "admin.registries.bitstream-formats.title": "File Format Registry",
 
   "admin.registries.bitstream-formats.select": "Select",
 
@@ -691,51 +691,51 @@
 
   "admin.reports.commons.filters.property.is_not_discoverable": "Not Discoverable - Private Item",
 
-  "admin.reports.commons.filters.bitstream": "Basic Bitstream Filters",
+  "admin.reports.commons.filters.bitstream": "Basic File Filters",
 
-  "admin.reports.commons.filters.bitstream.has_multiple_originals": "Item has Multiple Original Bitstreams",
+  "admin.reports.commons.filters.bitstream.has_multiple_originals": "Item has Multiple Original Files",
 
-  "admin.reports.commons.filters.bitstream.has_no_originals": "Item has No Original Bitstreams",
+  "admin.reports.commons.filters.bitstream.has_no_originals": "Item has No Original Files",
 
-  "admin.reports.commons.filters.bitstream.has_one_original": "Item has One Original Bitstream",
+  "admin.reports.commons.filters.bitstream.has_one_original": "Item has One Original File",
 
-  "admin.reports.commons.filters.bitstream_mime": "Bitstream Filters by MIME Type",
+  "admin.reports.commons.filters.bitstream_mime": "File Filters by MIME Type",
 
-  "admin.reports.commons.filters.bitstream_mime.has_doc_original": "Item has a Doc Original Bitstream (PDF, Office, Text, HTML, XML, etc)",
+  "admin.reports.commons.filters.bitstream_mime.has_doc_original": "Item has a Doc Original File (PDF, Office, Text, HTML, XML, etc)",
 
-  "admin.reports.commons.filters.bitstream_mime.has_image_original": "Item has an Image Original Bitstream",
+  "admin.reports.commons.filters.bitstream_mime.has_image_original": "Item has an Image Original File",
 
-  "admin.reports.commons.filters.bitstream_mime.has_unsupp_type": "Has Other Bitstream Types (not Doc or Image)",
+  "admin.reports.commons.filters.bitstream_mime.has_unsupp_type": "Has Other File Types (not Doc or Image)",
 
-  "admin.reports.commons.filters.bitstream_mime.has_mixed_original": "Item has multiple types of Original Bitstreams (Doc, Image, Other)",
+  "admin.reports.commons.filters.bitstream_mime.has_mixed_original": "Item has multiple types of Original Files (Doc, Image, Other)",
 
-  "admin.reports.commons.filters.bitstream_mime.has_pdf_original": "Item has a PDF Original Bitstream",
+  "admin.reports.commons.filters.bitstream_mime.has_pdf_original": "Item has a PDF Original File",
 
-  "admin.reports.commons.filters.bitstream_mime.has_jpg_original": "Item has JPG Original Bitstream",
+  "admin.reports.commons.filters.bitstream_mime.has_jpg_original": "Item has JPG Original File",
 
   "admin.reports.commons.filters.bitstream_mime.has_small_pdf": "Has unusually small PDF",
 
   "admin.reports.commons.filters.bitstream_mime.has_large_pdf": "Has unusually large PDF",
 
-  "admin.reports.commons.filters.bitstream_mime.has_doc_without_text": "Has document bitstream without TEXT item",
+  "admin.reports.commons.filters.bitstream_mime.has_doc_without_text": "Has document file without TEXT item",
 
   "admin.reports.commons.filters.mime": "Supported MIME Type Filters",
 
-  "admin.reports.commons.filters.mime.has_only_supp_image_type": "Item Image Bitstreams are Supported",
+  "admin.reports.commons.filters.mime.has_only_supp_image_type": "Item Image Files are Supported",
 
-  "admin.reports.commons.filters.mime.has_unsupp_image_type": "Item has Image Bitstream that is Unsupported",
+  "admin.reports.commons.filters.mime.has_unsupp_image_type": "Item has Image File that is Unsupported",
 
-  "admin.reports.commons.filters.mime.has_only_supp_doc_type": "Item Document Bitstreams are Supported",
+  "admin.reports.commons.filters.mime.has_only_supp_doc_type": "Item Document Files are Supported",
 
-  "admin.reports.commons.filters.mime.has_unsupp_doc_type": "Item has Document Bitstream that is Unsupported",
+  "admin.reports.commons.filters.mime.has_unsupp_doc_type": "Item has Document File that is Unsupported",
 
-  "admin.reports.commons.filters.bundle": "Bitstream Bundle Filters",
+  "admin.reports.commons.filters.bundle": "File Bundle Filters",
 
-  "admin.reports.commons.filters.bundle.has_unsupported_bundle": "Has bitstream in an unsupported bundle",
+  "admin.reports.commons.filters.bundle.has_unsupported_bundle": "Has file in an unsupported bundle",
 
   "admin.reports.commons.filters.bundle.has_small_thumbnail": "Has unusually small thumbnail",
 
-  "admin.reports.commons.filters.bundle.has_original_without_thumbnail": "Has original bitstream without thumbnail",
+  "admin.reports.commons.filters.bundle.has_original_without_thumbnail": "Has original file without thumbnail",
 
   "admin.reports.commons.filters.bundle.has_invalid_thumbnail_name": "Has invalid thumbnail name (assumes one thumbnail for each original)",
 
@@ -747,9 +747,9 @@
 
   "admin.reports.commons.filters.permission": "Permission Filters",
 
-  "admin.reports.commons.filters.permission.has_restricted_original": "Item has Restricted Original Bitstream",
+  "admin.reports.commons.filters.permission.has_restricted_original": "Item has Restricted Original File",
 
-  "admin.reports.commons.filters.permission.has_restricted_original.tooltip": "Item has at least one original bitstream that is not accessible to Anonymous user",
+  "admin.reports.commons.filters.permission.has_restricted_original.tooltip": "Item has at least one original file that is not accessible to Anonymous user",
 
   "admin.reports.commons.filters.permission.has_restricted_thumbnail": "Item has Restricted Thumbnail",
 
@@ -919,13 +919,13 @@
 
   "bitstream.download.page.back": "Back",
 
-  "bitstream.edit.authorizations.link": "Edit bitstream's Policies",
+  "bitstream.edit.authorizations.link": "Edit files's Policies",
 
-  "bitstream.edit.authorizations.title": "Edit bitstream's Policies",
+  "bitstream.edit.authorizations.title": "Edit files's Policies",
 
   "bitstream.edit.return": "Back",
 
-  "bitstream.edit.bitstream": "Bitstream: ",
+  "bitstream.edit.bitstream": "File: ",
 
   "bitstream.edit.form.description.hint": "Optionally, provide a brief description of the file, for example \"<i>Main article</i>\" or \"<i>Experiment data readings</i>\".",
 
@@ -935,7 +935,7 @@
 
   "bitstream.edit.form.embargo.label": "Embargo until specific date",
 
-  "bitstream.edit.form.fileName.hint": "Change the filename for the bitstream. Note that this will change the display bitstream URL, but old links will still resolve as long as the sequence ID does not change.",
+  "bitstream.edit.form.fileName.hint": "Change the filename for the file. Note that this will change the display file URL, but old links will still resolve as long as the sequence ID does not change.",
 
   "bitstream.edit.form.fileName.label": "Filename",
 
@@ -951,9 +951,9 @@
 
   "bitstream.edit.form.selectedFormat.unknown": "Format not in list",
 
-  "bitstream.edit.notifications.error.format.title": "An error occurred saving the bitstream's format",
+  "bitstream.edit.notifications.error.format.title": "An error occurred saving the file's format",
 
-  "bitstream.edit.notifications.error.primaryBitstream.title": "An error occurred saving the primary bitstream",
+  "bitstream.edit.notifications.error.primaryBitstream.title": "An error occurred saving the primary file",
 
   "bitstream.edit.form.iiifLabel.label": "IIIF Label",
 
@@ -971,11 +971,11 @@
 
   "bitstream.edit.form.iiifHeight.hint": "The canvas height should usually match the image height.",
 
-  "bitstream.edit.notifications.saved.content": "Your changes to this bitstream were saved.",
+  "bitstream.edit.notifications.saved.content": "Your changes to this file were saved.",
 
-  "bitstream.edit.notifications.saved.title": "Bitstream saved",
+  "bitstream.edit.notifications.saved.title": "File saved",
 
-  "bitstream.edit.title": "Edit bitstream",
+  "bitstream.edit.title": "Edit file",
 
   "bitstream-request-a-copy.alert.canDownload1": "You already have access to this file. If you want to download the file, click ",
 
@@ -1031,7 +1031,7 @@
 
   "browse.comcol.by.author": "By Author",
 
-  "browse.comcol.by.dateissued": "By Issue Date",
+  "browse.comcol.by.dateissued": "By Publication Date",
 
   "browse.comcol.by.subject": "By Subject",
 
@@ -1047,7 +1047,7 @@
 
   "browse.metadata.author": "Author",
 
-  "browse.metadata.dateissued": "Issue Date",
+  "browse.metadata.dateissued": "Publication Date",
 
   "browse.metadata.subject": "Subject",
 
@@ -1091,7 +1091,7 @@
 
   "browse.startsWith.choose_year": "(Choose year)",
 
-  "browse.startsWith.choose_year.label": "Choose the issue year",
+  "browse.startsWith.choose_year.label": "Choose the publication year",
 
   "browse.startsWith.jump": "Filter results by year or month",
 
@@ -1115,7 +1115,7 @@
 
   "browse.startsWith.months.none": "(Choose month)",
 
-  "browse.startsWith.months.none.label": "Choose the issue month",
+  "browse.startsWith.months.none.label": "Choose the publication month",
 
   "browse.startsWith.months.november": "November",
 
@@ -1259,7 +1259,7 @@
 
   "collection.edit.item.authorizations.load-more-button": "Load more",
 
-  "collection.edit.item.authorizations.show-bitstreams-button": "Show bitstream policies for bundle",
+  "collection.edit.item.authorizations.show-bitstreams-button": "Show file policies for bundle",
 
   "collection.edit.tabs.metadata.head": "Edit Metadata",
 
@@ -1283,9 +1283,9 @@
 
   "collection.edit.tabs.source.form.oaiSource": "OAI Provider",
 
-  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_BITSTREAMS": "Harvest metadata and bitstreams (requires ORE support)",
+  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_BITSTREAMS": "Harvest metadata and files (requires ORE support)",
 
-  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_REF": "Harvest metadata and references to bitstreams (requires ORE support)",
+  "collection.edit.tabs.source.form.options.harvestType.METADATA_AND_REF": "Harvest metadata and references to files (requires ORE support)",
 
   "collection.edit.tabs.source.form.options.harvestType.METADATA_ONLY": "Harvest metadata only",
 
@@ -1567,11 +1567,11 @@
 
   "comcol-role.edit.item_read.anonymous-group": "Default read for incoming items is currently set to Anonymous.",
 
-  "comcol-role.edit.bitstream_read.name": "Default bitstream read access",
+  "comcol-role.edit.bitstream_read.name": "Default file read access",
 
-  "comcol-role.edit.bitstream_read.description": "E-People and Groups that can read new bitstreams submitted to this collection. Changes to this role are not retroactive. Existing bitstreams in the system will still be viewable by those who had read access at the time of their addition.",
+  "comcol-role.edit.bitstream_read.description": "E-People and Groups that can read new files submitted to this collection. Changes to this role are not retroactive. Existing bitstreams in the system will still be viewable by those who had read access at the time of their addition.",
 
-  "comcol-role.edit.bitstream_read.anonymous-group": "Default read for incoming bitstreams is currently set to Anonymous.",
+  "comcol-role.edit.bitstream_read.anonymous-group": "Default read for incoming files is currently set to Anonymous.",
 
   "comcol-role.edit.editor.name": "Editors",
 
@@ -1687,7 +1687,7 @@
 
   "cookies.consent.app.title.google-recaptcha": "Google reCaptcha",
 
-  "cookies.consent.app.description.google-recaptcha": "We use google reCAPTCHA service during registration and password recovery",
+  "cookies.consent.app.description.google-recaptcha": "We use Google reCAPTCHA service during registration and password recovery",
 
   "cookies.consent.app.title.matomo": "Matomo",
 
@@ -1707,7 +1707,7 @@
 
   "curation-task.task.noop.label": "NOOP",
 
-  "curation-task.task.profileformats.label": "Profile Bitstream Formats",
+  "curation-task.task.profileformats.label": "Profile File Formats",
 
   "curation-task.task.requiredmetadata.label": "Check for Required Metadata",
 
@@ -1897,7 +1897,7 @@
 
   "confirmation-modal.review-account-info.save": "Save",
 
-  "error.bitstream": "Error fetching bitstream",
+  "error.bitstream": "Error fetching file",
 
   "error.browse-by": "Error fetching items",
 
@@ -1964,9 +1964,9 @@
 
   "feed.description": "Syndication feed",
 
-  "file-download-link.restricted": "Restricted bitstream",
+  "file-download-link.restricted": "Restricted file",
 
-  "file-download-link.secure-access": "Restricted bitstream available via secure access token",
+  "file-download-link.secure-access": "Restricted file available via secure access token",
 
   "file-section.error.header": "Error obtaining files for this item",
 
@@ -2214,7 +2214,7 @@
 
   "home.breadcrumbs": "Home",
 
-  "home.search-form.placeholder": "Search the repository ...",
+  "home.search-form.placeholder": "Search LibraOpen ...",
 
   "home.title": "Home",
 
@@ -2318,11 +2318,11 @@
 
   "item.alerts.withdrawn": "This item has been withdrawn",
 
-  "item.alerts.reinstate-request": "Request reinstate",
+  "item.alerts.reinstate-request": "Request to reinstate",
 
   "quality-assurance.event.table.person-who-requested": "Requested by",
 
-  "item.edit.authorizations.heading": "With this editor you can view and alter the policies of an item, plus alter policies of individual item components: bundles and bitstreams. Briefly, an item is a container of bundles, and bundles are containers of bitstreams. Containers usually have ADD/REMOVE/READ/WRITE policies, while bitstreams only have READ/WRITE policies.",
+  "item.edit.authorizations.heading": "With this editor you can view and alter the policies of an item, plus alter policies of individual item components: bundles and files. Briefly, an item is a container of bundles, and bundles are containers of files. Containers usually have ADD/REMOVE/READ/WRITE policies, while files only have READ/WRITE policies.",
 
   "item.edit.authorizations.title": "Edit item's Policies",
 
@@ -2338,7 +2338,7 @@
 
   "item.bitstreams.upload.bundle.new": "Create bundle",
 
-  "item.bitstreams.upload.bundles.empty": "This item doesn't contain any bundles to upload a bitstream to.",
+  "item.bitstreams.upload.bundles.empty": "This item doesn't contain any bundles to upload a file to.",
 
   "item.bitstreams.upload.cancel": "Cancel",
 
@@ -2352,11 +2352,11 @@
 
   "item.bitstreams.upload.notifications.upload.failed": "Upload failed. Please verify the content before retrying.",
 
-  "item.bitstreams.upload.title": "Upload bitstream",
+  "item.bitstreams.upload.title": "Upload file",
 
   "item.edit.bitstreams.bundle.edit.buttons.upload": "Upload",
 
-  "item.edit.bitstreams.bundle.displaying": "Currently displaying {{ amount }} bitstreams of {{ total }}.",
+  "item.edit.bitstreams.bundle.displaying": "Currently displaying {{ amount }} files of {{ total }}.",
 
   "item.edit.bitstreams.bundle.load.all": "Load all ({{ total }})",
 
@@ -2364,9 +2364,9 @@
 
   "item.edit.bitstreams.bundle.name": "BUNDLE: {{ name }}",
 
-  "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the  {{ bundle }} Bundle",
+  "item.edit.bitstreams.bundle.table.aria-label": "Files in the  {{ bundle }} Bundle",
 
-  "item.edit.bitstreams.bundle.tooltip": "You can move a bitstream to a different page by dropping it on the page number.",
+  "item.edit.bitstreams.bundle.tooltip": "You can move a file to a different page by dropping it on the page number.",
 
   "item.edit.bitstreams.discard-button": "Discard",
 
@@ -2390,9 +2390,9 @@
 
   "item.edit.bitstreams.edit.live.move": "{{ bitstream }} is now in position {{ toIndex }}.",
 
-  "item.edit.bitstreams.empty": "This item doesn't contain any bitstreams. Click the upload button to create one.",
+  "item.edit.bitstreams.empty": "This item doesn't contain any files. Click the upload button to create one.",
 
-  "item.edit.bitstreams.info-alert": "Bitstreams can be reordered within their bundles by holding the drag handle and moving the mouse. Alternatively, bitstreams can be moved using the keyboard in the following way: Select the bitstream by pressing enter when the bitstream's drag handle is in focus. Move the bitstream up or down using the arrow keys. Press enter again to confirm the current position of the bitstream.",
+  "item.edit.bitstreams.info-alert": "Files can be reordered within their bundles by holding the drag handle and moving the mouse. Alternatively, files can be moved using the keyboard in the following way: Select the file by pressing enter when the files's drag handle is in focus. Move the file up or down using the arrow keys. Press enter again to confirm the current position of the file.",
 
   "item.edit.bitstreams.headers.actions": "Actions",
 
@@ -2408,9 +2408,9 @@
 
   "item.edit.bitstreams.notifications.discarded.title": "Changes discarded",
 
-  "item.edit.bitstreams.notifications.move.failed.title": "Error moving bitstreams",
+  "item.edit.bitstreams.notifications.move.failed.title": "Error moving files",
 
-  "item.edit.bitstreams.notifications.move.saved.content": "Your move changes to this item's bitstreams and bundles have been saved.",
+  "item.edit.bitstreams.notifications.move.saved.content": "Your move changes to this item's files and bundles have been saved.",
 
   "item.edit.bitstreams.notifications.move.saved.title": "Move changes saved",
 
@@ -2418,9 +2418,9 @@
 
   "item.edit.bitstreams.notifications.outdated.title": "Changes outdated",
 
-  "item.edit.bitstreams.notifications.remove.failed.title": "Error deleting bitstream",
+  "item.edit.bitstreams.notifications.remove.failed.title": "Error deleting file",
 
-  "item.edit.bitstreams.notifications.remove.saved.content": "Your removal changes to this item's bitstreams have been saved.",
+  "item.edit.bitstreams.notifications.remove.saved.content": "Your removal changes to this item's files have been saved.",
 
   "item.edit.bitstreams.notifications.remove.saved.title": "Removal changes saved",
 
@@ -2708,9 +2708,9 @@
 
   "item.edit.return": "Back",
 
-  "item.edit.tabs.bitstreams.head": "Bitstreams",
+  "item.edit.tabs.bitstreams.head": "Files",
 
-  "item.edit.tabs.bitstreams.title": "Item Edit - Bitstreams",
+  "item.edit.tabs.bitstreams.title": "Item Edit - Files",
 
   "item.edit.tabs.curate.head": "Curate",
 
@@ -2764,7 +2764,7 @@
 
   "item.edit.tabs.status.buttons.withdraw.label": "Withdraw item from the repository",
 
-  "item.edit.tabs.status.description": "Welcome to the item management page. From here you can withdraw, reinstate, move or delete the item. You may also update or add new metadata / bitstreams on the other tabs.",
+  "item.edit.tabs.status.description": "Welcome to the item management page. From here you can withdraw, reinstate, move or delete the item. You may also update or add new metadata / files on the other tabs.",
 
   "item.edit.tabs.status.head": "Status",
 
@@ -2814,7 +2814,7 @@
 
   "item.page.projects": "Research Projects",
 
-  "item.page.publication": "Publications",
+  "item.page.publication": "Publication",
 
   "item.page.publications": "Publications",
 
@@ -2952,7 +2952,7 @@
 
   "item.page.relationships.isOrgUnitOfProject": "Research Projects",
 
-  "item.page.subject": "Keywords",
+  "item.page.subject": "Subjects",
 
   "item.page.uri": "URI",
 
@@ -3332,7 +3332,7 @@
 
   "journalvolume.page.edit": "Edit this item",
 
-  "journalvolume.page.issuedate": "Issue Date",
+  "journalvolume.page.issuedate": "Publication Date",
 
   "journalvolume.page.options": "Options",
 
@@ -3364,9 +3364,9 @@
 
   "iiif.page.description": "Description: ",
 
-  "loading.bitstream": "Loading bitstream...",
+  "loading.bitstream": "Loading file...",
 
-  "loading.bitstreams": "Loading bitstreams...",
+  "loading.bitstreams": "Loading files...",
 
   "loading.browse-by": "Loading items...",
 
@@ -3460,7 +3460,7 @@
 
   "menu.section.browse_community_by_author": "By Author",
 
-  "menu.section.browse_community_by_issue_date": "By Issue Date",
+  "menu.section.browse_community_by_issue_date": "By Publication Date",
 
   "menu.section.browse_community_by_title": "By Title",
 
@@ -3468,7 +3468,7 @@
 
   "menu.section.browse_global_by_author": "By Author",
 
-  "menu.section.browse_global_by_dateissued": "By Issue Date",
+  "menu.section.browse_global_by_dateissued": "By Publication Date",
 
   "menu.section.browse_global_by_subject": "By Subject",
 
@@ -4394,7 +4394,7 @@
 
   "relationships.Publication.isJournalIssueOfPublication.JournalIssue": "Journal Issue",
 
-  "relationships.Publication.isContributorOfPublication.Person": "Contributor",
+  "relationships.Publication.isContributorOfPublication.Person": "Contributor (person)",
 
   "relationships.Publication.isContributorOfPublication.OrgUnit": "Contributor (organizational units)",
 
@@ -4414,7 +4414,7 @@
 
   "relationships.Project.isFundingAgencyOfProject.OrgUnit": "Funder",
 
-  "relationships.OrgUnit.isPublicationOfOrgUnit.Publication": "Organisation Publications",
+  "relationships.OrgUnit.isPublicationOfOrgUnit.Publication": "Organization Publications",
 
   "relationships.OrgUnit.isPersonOfOrgUnit.Person": "Authors",
 
@@ -4446,7 +4446,7 @@
 
   "resource-policies.add.for.": "Add a new policy",
 
-  "resource-policies.add.for.bitstream": "Add a new Bitstream policy",
+  "resource-policies.add.for.bitstream": "Add a new File policy",
 
   "resource-policies.add.for.bundle": "Add a new Bundle policy",
 
@@ -4556,7 +4556,7 @@
 
   "resource-policies.table.headers.policyType": "type",
 
-  "resource-policies.table.headers.title.for.bitstream": "Policies for Bitstream",
+  "resource-policies.table.headers.title.for.bitstream": "Policies for File",
 
   "resource-policies.table.headers.title.for.bundle": "Policies for Bundle",
 
@@ -4576,7 +4576,7 @@
 
   "search.breadcrumbs": "Search",
 
-  "search.search-form.placeholder": "Search the repository ...",
+  "search.search-form.placeholder": "Search LibraOpen ...",
 
   "search.filters.remove": "Remove filter of type {{ type }} with value {{ value }}",
 
@@ -4953,13 +4953,13 @@
 
   "sorting.score.DESC": "Most Relevant",
 
-  "sorting.dc.date.issued.ASC": "Date Issued Ascending",
+  "sorting.dc.date.issued.ASC": "Date Published Ascending",
 
-  "sorting.dc.date.issued.DESC": "Date Issued Descending",
+  "sorting.dc.date.issued.DESC": "Date Published Descending",
 
-  "sorting.dc.date.accessioned.ASC": "Accessioned Date Ascending",
+  "sorting.dc.date.accessioned.ASC": "Date Added Ascending",
 
-  "sorting.dc.date.accessioned.DESC": "Accessioned Date Descending",
+  "sorting.dc.date.accessioned.DESC": "Date Added Descending",
 
   "sorting.lastModified.ASC": "Last modified Ascending",
 
@@ -5603,9 +5603,9 @@
 
   "submission.sections.toggle.aria.close": "Collapse {{sectionHeader}} section",
 
-  "submission.sections.upload.primary.make": "Make {{fileName}} the primary bitstream",
+  "submission.sections.upload.primary.make": "Make {{fileName}} the primary file",
 
-  "submission.sections.upload.primary.remove": "Remove {{fileName}} as the primary bitstream",
+  "submission.sections.upload.primary.remove": "Remove {{fileName}} as the primary file",
 
   "submission.sections.upload.delete.confirm.cancel": "Cancel",
 
@@ -5613,19 +5613,19 @@
 
   "submission.sections.upload.delete.confirm.submit": "Yes, I'm sure",
 
-  "submission.sections.upload.delete.confirm.title": "Delete bitstream",
+  "submission.sections.upload.delete.confirm.title": "Delete file",
 
   "submission.sections.upload.delete.submit": "Delete",
 
-  "submission.sections.upload.download.title": "Download bitstream",
+  "submission.sections.upload.download.title": "Download file",
 
-  "submission.sections.upload.drop-message": "Drop files to attach them to the item",
+  "submission.sections.upload.drop-message": "Drop files to attach them to the item (max 1GB)",
 
-  "submission.sections.upload.edit.title": "Edit bitstream",
+  "submission.sections.upload.edit.title": "Edit file",
 
   "submission.sections.upload.form.access-condition-label": "Access condition type",
 
-  "submission.sections.upload.form.access-condition-hint": "Select an access condition to apply on the bitstream once the item is deposited",
+  "submission.sections.upload.form.access-condition-hint": "Select an access condition to apply on the file once the item is deposited",
 
   "submission.sections.upload.form.date-required": "Date is required.",
 
@@ -5653,7 +5653,7 @@
 
   "submission.sections.upload.header.policy.default.withlist": "Please note that uploaded files in the {{collectionName}} collection will be accessible, in addition to what is explicitly decided for the single file, with the following group(s):",
 
-  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere on the page.</strong>",
+  "submission.sections.upload.info": "Here you will find all the files currently in the item. You can update the file metadata and access conditions or <strong>upload additional files by dragging & dropping them anywhere on the page.</strong> Use the edit button on each file to place a date-based embargo or restrict access to UVA users only.",
 
   "submission.sections.upload.no-entry": "No",
 
@@ -5727,7 +5727,7 @@
 
   "submission.sections.sherpa.publisher.policy": "Publisher Policy",
 
-  "submission.sections.sherpa.publisher.policy.description": "The below information was found via Sherpa Romeo. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact your site administrator via the feedback form in the footer.",
+  "submission.sections.sherpa.publisher.policy.description": "The below information was found via the JISC Open Policy Finder. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact us at libra@virginia.edu.",
 
   "submission.sections.sherpa.publisher.policy.openaccess": "Open Access pathways permitted by this journal's policy are listed below by article version. Click on a pathway for a more detailed view",
 
@@ -5761,7 +5761,7 @@
 
   "submission.sections.sherpa.record.information.uri": "URI",
 
-  "submission.sections.sherpa.error.message": "There was an error retrieving sherpa informations",
+  "submission.sections.sherpa.error.message": "There was an error retrieving open policy information",
 
   "submission.submit.breadcrumbs": "New submission",
 
@@ -5887,11 +5887,11 @@
 
   "subscriptions.modal.update.success": "Subscription to {{ type }} updated successfully",
 
-  "subscriptions.modal.create.error": "An error occurs during the subscription creation",
+  "subscriptions.modal.create.error": "An error occurred during the subscription creation",
 
-  "subscriptions.modal.delete.error": "An error occurs during the subscription delete",
+  "subscriptions.modal.delete.error": "An error occurred during the subscription delete",
 
-  "subscriptions.modal.update.error": "An error occurs during the subscription update",
+  "subscriptions.modal.update.error": "An error occurred during the subscription update",
 
   "subscriptions.table.dso": "Subject",
 
@@ -6079,13 +6079,13 @@
 
   "researcher.profile.associated": "Researcher profile associated",
 
-  "researcher.profile.change-visibility.fail": "An unexpected error occurs while changing the profile visibility",
+  "researcher.profile.change-visibility.fail": "An unexpected error occurred while changing the profile visibility",
 
   "researcher.profile.create.new": "Create new",
 
   "researcher.profile.create.success": "Researcher profile created successfully",
 
-  "researcher.profile.create.fail": "An error occurs during the researcher profile creation",
+  "researcher.profile.create.fail": "An error occurred during the researcher profile creation",
 
   "researcher.profile.delete": "Delete",
 
@@ -6137,7 +6137,7 @@
 
   "person.page.orcid.no-missing-authorizations-message": "Great! This box is empty, so you have granted all access rights to use all functions offers by your institution.",
 
-  "person.page.orcid.no-orcid-message": "No ORCID iD associated yet. By clicking on the button below it is possible to link this profile with an ORCID account.",
+  "person.page.orcid.no-orcid-message": "No ORCID ID associated yet. By clicking on the button below it is possible to link this profile with an ORCID account.",
 
   "person.page.orcid.profile-preferences": "Profile preferences",
 
@@ -6145,7 +6145,7 @@
 
   "person.page.orcid.publications-preferences": "Publication preferences",
 
-  "person.page.orcid.remove-orcid-message": "If you need to remove your ORCID, please contact the repository administrator",
+  "person.page.orcid.remove-orcid-message": "If you need to remove your ORCID ID, please contact the repository administrator at libra@virginia.edu",
 
   "person.page.orcid.save.preference.changes": "Update settings",
 
@@ -6193,13 +6193,13 @@
 
   "person.page.orcid.sync-queue.description.education": "Educations",
 
-  "person.page.orcid.sync-queue.description.external_ids": "External ids",
+  "person.page.orcid.sync-queue.description.external_ids": "External IDs",
 
   "person.page.orcid.sync-queue.description.other_names": "Other names",
 
   "person.page.orcid.sync-queue.description.qualification": "Qualifications",
 
-  "person.page.orcid.sync-queue.description.researcher_urls": "Researcher urls",
+  "person.page.orcid.sync-queue.description.researcher_urls": "Researcher URLs",
 
   "person.page.orcid.sync-queue.description.keywords": "Keywords",
 
@@ -6233,7 +6233,7 @@
 
   "person.page.orcid.sync-queue.send.unauthorized-error.title": "The submission to ORCID failed for missing authorizations.",
 
-  "person.page.orcid.sync-queue.send.unauthorized-error.content": "Click <a href='{{orcid}}'>here</a> to grant again the required permissions. If the problem persists, contact the administrator",
+  "person.page.orcid.sync-queue.send.unauthorized-error.content": "Click <a href='{{orcid}}'>here</a> to grant again the required permissions. If the problem persists, contact the repository administrator at libra@virginia.edu",
 
   "person.page.orcid.sync-queue.send.bad-request-error": "The submission to ORCID failed because the resource sent to ORCID registry is not valid",
 
@@ -6253,7 +6253,7 @@
 
   "person.page.orcid.sync-queue.send.validation-error.title.required": "The title is required",
 
-  "person.page.orcid.sync-queue.send.validation-error.type.required": "The dc.type is required",
+  "person.page.orcid.sync-queue.send.validation-error.type.required": "The type is required",
 
   "person.page.orcid.sync-queue.send.validation-error.start-date.required": "The start date is required",
 
@@ -6301,7 +6301,7 @@
 
   "person.page.orcid.synchronization-mode.manual": "Manual",
 
-  "person.page.orcid.scope.authenticate": "Get your ORCID iD",
+  "person.page.orcid.scope.authenticate": "Get your ORCID ID",
 
   "person.page.orcid.scope.read-limited": "Read your information with visibility set to Trusted Parties",
 
@@ -6377,11 +6377,11 @@
 
   "discover.filters.head": "Discover",
 
-  "item-access-control-title": "This form allows you to perform changes to the access conditions of the item's metadata or its bitstreams.",
+  "item-access-control-title": "This form allows you to perform changes to the access conditions of the item's metadata or its files.",
 
-  "collection-access-control-title": "This form allows you to perform changes to the access conditions of all the items owned by this collection. Changes may be performed to either all Item metadata or all content (bitstreams).",
+  "collection-access-control-title": "This form allows you to perform changes to the access conditions of all the items owned by this collection. Changes may be performed to either all Item metadata or all content (files).",
 
-  "community-access-control-title": "This form allows you to perform changes to the access conditions of all the items owned by any collection under this community. Changes may be performed to either all Item metadata or all content (bitstreams).",
+  "community-access-control-title": "This form allows you to perform changes to the access conditions of all the items owned by any collection under this community. Changes may be performed to either all Item metadata or all content (files).",
 
   "access-control-item-header-toggle": "Item's Metadata",
 
@@ -6389,11 +6389,11 @@
 
   "access-control-item-toggle.disable": "Disable option to perform changes on the item's metadata",
 
-  "access-control-bitstream-header-toggle": "Bitstreams",
+  "access-control-bitstream-header-toggle": "files",
 
-  "access-control-bitstream-toggle.enable": "Enable option to perform changes on the bitstreams",
+  "access-control-bitstream-toggle.enable": "Enable option to perform changes on the files",
 
-  "access-control-bitstream-toggle.disable": "Disable option to perform changes on the bitstreams",
+  "access-control-bitstream-toggle.disable": "Disable option to perform changes on the files",
 
   "access-control-mode": "Mode",
 
@@ -6405,13 +6405,13 @@
 
   "access-control-add-to-existing": "Add to existing ones",
 
-  "access-control-limit-to-specific": "Limit the changes to specific bitstreams",
+  "access-control-limit-to-specific": "Limit the changes to specific files",
 
-  "access-control-process-all-bitstreams": "Update all the bitstreams in the item",
+  "access-control-process-all-bitstreams": "Update all the files in the item",
 
-  "access-control-bitstreams-selected": "bitstreams selected",
+  "access-control-bitstreams-selected": "files selected",
 
-  "access-control-bitstreams-select": "Select bitstreams",
+  "access-control-bitstreams-select": "Select files",
 
   "access-control-cancel": "Cancel",
 
@@ -6421,7 +6421,7 @@
 
   "access-control-remove": "Remove access condition",
 
-  "access-control-select-bitstreams-modal.title": "Select bitstreams",
+  "access-control-select-bitstreams-modal.title": "Select files",
 
   "access-control-select-bitstreams-modal.no-items": "No items to show.",
 
@@ -6731,11 +6731,11 @@
 
   "driver-document-type_condition.label": "Document type equals driver",
 
-  "has-at-least-one-bitstream_condition.label": "Has at least one Bitstream",
+  "has-at-least-one-bitstream_condition.label": "Has at least one File",
 
-  "has-bitstream_filter.label": "Has Bitstream",
+  "has-bitstream_filter.label": "Has File",
 
-  "has-one-bitstream_condition.label": "Has one Bitstream",
+  "has-one-bitstream_condition.label": "Has one File",
 
   "is-archived_condition.label": "Is archived",
 
@@ -7097,7 +7097,7 @@
 
   "item.page.cc.license.disclaimer": "Except where otherwised noted, this item's license is described as",
 
-  "browse.search-form.placeholder": "Search the repository",
+  "browse.search-form.placeholder": "Search LibraOpen",
 
   "file-download-link.download": "Download ",
 

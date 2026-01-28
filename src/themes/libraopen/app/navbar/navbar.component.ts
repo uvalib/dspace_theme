@@ -4,7 +4,6 @@ import {
   NgComponentOutlet,
 } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -26,7 +25,6 @@ import { ThemedUserMenuComponent } from '../../../../app/shared/auth-nav-menu/us
     NgbDropdownModule,
     NgClass,
     NgComponentOutlet,
-    RouterModule,
     ThemedUserMenuComponent,
     TranslateModule,
   ],

@@ -34,6 +34,9 @@ import { StartsWithDateComponent } from './app/shared/starts-with/date/starts-wi
 import { StartsWithTextComponent } from './app/shared/starts-with/text/starts-with-text.component';
 import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
 import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
+import { MenuID } from '../../app/shared/menu/menu-id.model';
+import { MENU_PROVIDER } from '../../app/shared/menu/menu.structure';
+import { HelpMenuProvider } from './app/shared/menu/providers/help.menu';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -84,7 +87,18 @@ const DECLARATIONS = [
   ],
   providers: [
     ...ENTRY_COMPONENTS.map((component) => ({ provide: component })),
+    // LibraOpen theme-only ORCID authentication fix
     { provide: OrcidAuthService, useClass: LibraOrcidAuthService },
+    // LibraOpen theme-only navbar customization: add Help as an expandable public navbar section
+    {
+      provide: MENU_PROVIDER,
+      multi: true,
+      useFactory: () => {
+        const provider = new HelpMenuProvider();
+        provider.menuID = MenuID.PUBLIC;
+        return provider;
+      },
+    },
   ],
 })
 /**

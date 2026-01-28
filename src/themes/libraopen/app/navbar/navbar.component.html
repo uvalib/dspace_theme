@@ -6,32 +6,4 @@
     <ng-container
     *ngComponentOutlet="(sectionMap$ | async).get(section.id)?.component; injector: (sectionMap$ | async).get(section.id)?.injector;"></ng-container>
   }
-  <div ngbDropdown class="nav-item dropdown" role="none">
-    <a
-      class="nav-link dropdown-toggle"
-      id="helpDropdown"
-      ngbDropdownToggle
-      role="menuitem"
-      aria-haspopup="true">
-      Help
-    </a>
-    <div ngbDropdownMenu class="dropdown-menu" role="menu" aria-labelledby="helpDropdown">
-      <a
-        class="dropdown-item"
-        href="https://library.virginia.edu/libra/open/oc-checklist"
-        target="_blank"
-        rel="noopener noreferrer">
-        LibraOpen deposit checklist
-      </a>
-      <a
-        class="dropdown-item"
-        href="https://library.virginia.edu/askalibrarian"
-        target="_blank"
-        rel="noopener noreferrer">
-        Ask a Librarian
-      </a>
-      <a class="dropdown-item" routerLink="/info/feedback">Feedback</a>
-
-    </div>
-  </div>
 </div>

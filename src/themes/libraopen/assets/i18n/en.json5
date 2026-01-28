@@ -3600,6 +3600,14 @@
 
   "menu.section.workflow": "Administer Workflow",
 
+  "menu.section.help": "Help",
+
+  "menu.section.help_deposit_checklist": "LibraOpen Deposit Checklist",
+
+  "menu.section.help_about_libraopen": "About LibraOpen",
+
+  "menu.section.help_support": "Libra Support"
+
   "metadata-export-search.tooltip": "Export search results as CSV",
 
   "metadata-export-search.submit.success": "The export was started successfully",

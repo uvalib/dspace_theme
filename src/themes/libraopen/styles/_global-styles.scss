@@ -8,5 +8,5 @@
 
 // LibraOpen override: widen the drag handle in form lists
 ds-dynamic-form-array .cdk-drag .cdk-drag-handle {
-  width: calc(2.3 * var(--bs-spacer));
+  width: calc(2.3 * var(--bs-spacer)) !important;
 }

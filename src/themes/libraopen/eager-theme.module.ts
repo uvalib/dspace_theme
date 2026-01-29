@@ -96,6 +96,7 @@ const DECLARATIONS = [
       useFactory: () => {
         const provider = new HelpMenuProvider();
         provider.menuID = MenuID.PUBLIC;
+        provider.index = 3;
         return provider;
       },
     },

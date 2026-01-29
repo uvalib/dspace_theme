@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
 import { RootModule } from '../../app/root.module';
+import { MENU_PROVIDER } from '../../app/shared/menu/menu.structure';
+import { MenuID } from '../../app/shared/menu/menu-id.model';
+import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { JournalComponent } from './app/entity-groups/journal-entities/item-pages/journal/journal.component';
 import { JournalIssueComponent } from './app/entity-groups/journal-entities/item-pages/journal-issue/journal-issue.component';
 import { JournalVolumeComponent } from './app/entity-groups/journal-entities/item-pages/journal-volume/journal-volume.component';
@@ -25,6 +29,7 @@ import { EditItemSelectorComponent } from './app/shared/dso-selector/modal-wrapp
 import { FileDownloadLinkComponent } from './app/shared/file-download-link/file-download-link.component';
 import { LangSwitchComponent } from './app/shared/lang-switch/lang-switch.component';
 import { LogInComponent } from './app/shared/log-in/log-in.component';
+import { HelpMenuProvider } from './app/shared/menu/providers/help.menu';
 import { BrowseEntryListElementComponent } from './app/shared/object-list/browse-entry-list-element/browse-entry-list-element.component';
 import { CollectionListElementComponent } from './app/shared/object-list/collection-list-element/collection-list-element.component';
 import { CommunityListElementComponent } from './app/shared/object-list/community-list-element/community-list-element.component';
@@ -32,11 +37,6 @@ import { ItemSearchResultListElementComponent } from './app/shared/object-list/s
 import { PublicationSidebarSearchListElementComponent } from './app/shared/object-list/sidebar-search-list-element/item-types/publication/publication-sidebar-search-list-element.component';
 import { StartsWithDateComponent } from './app/shared/starts-with/date/starts-with-date.component';
 import { StartsWithTextComponent } from './app/shared/starts-with/text/starts-with-text.component';
-import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
-import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
-import { MenuID } from '../../app/shared/menu/menu-id.model';
-import { MENU_PROVIDER } from '../../app/shared/menu/menu.structure';
-import { HelpMenuProvider } from './app/shared/menu/providers/help.menu';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.

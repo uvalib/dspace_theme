@@ -18,19 +18,20 @@ import { of } from 'rxjs';
 import { DSONameService } from 'src/app/core/breadcrumbs/dso-name.service';
 import { DSpaceObjectDataService } from 'src/app/core/data/dspace-object-data.service';
 import { PaginationService } from 'src/app/core/pagination/pagination.service';
+import { SearchService } from 'src/app/core/shared/search/search.service';
 import { SearchConfigurationService } from 'src/app/core/shared/search/search-configuration.service';
 import { SearchFilterService } from 'src/app/core/shared/search/search-filter.service';
-import { SearchService } from 'src/app/core/shared/search/search.service';
-import { createSuccessfulRemoteDataObject$ } from 'src/app/shared/remote-data.utils';
 import { PaginationComponentOptions } from 'src/app/shared/pagination/pagination-component-options.model';
+import { createSuccessfulRemoteDataObject$ } from 'src/app/shared/remote-data.utils';
+import { AppliedFilter } from 'src/app/shared/search/models/applied-filter.model';
+import { addOperatorToFilterValue } from 'src/app/shared/search/search.utils';
 import { ActivatedRouteStub } from 'src/app/shared/testing/active-router.stub';
 import { PaginationServiceStub } from 'src/app/shared/testing/pagination-service.stub';
 import { SearchConfigurationServiceStub } from 'src/app/shared/testing/search-configuration-service.stub';
 import { SearchFilterServiceStub } from 'src/app/shared/testing/search-filter-service.stub';
 import { SearchServiceStub } from 'src/app/shared/testing/search-service.stub';
 import { ObjectKeysPipe } from 'src/app/shared/utils/object-keys-pipe';
-import { AppliedFilter } from 'src/app/shared/search/models/applied-filter.model';
-import { addOperatorToFilterValue } from 'src/app/shared/search/search.utils';
+
 import { LibraopenSearchLabelComponent } from './search-label.component';
 
 describe('LibraopenSearchLabelComponent', () => {

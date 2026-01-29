@@ -15,8 +15,8 @@ import {
 import { TranslateModule } from '@ngx-translate/core';
 
 import { BtnDisabledDirective } from '../../../../../app/shared/btn-disabled.directive';
-import { EnumKeysPipe } from '../../../../../app/shared/utils/enum-keys-pipe';
 import { PaginationComponent as BaseComponent } from '../../../../../app/shared/pagination/pagination.component';
+import { EnumKeysPipe } from '../../../../../app/shared/utils/enum-keys-pipe';
 
 /**
  * Theme-specific pagination component that removes RSS feed buttons.

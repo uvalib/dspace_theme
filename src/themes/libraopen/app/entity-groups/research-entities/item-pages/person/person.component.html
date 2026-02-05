@@ -19,22 +19,6 @@
       [fields]="['person.email']"
       [label]="'person.page.email'">
     </ds-generic-item-page-field>
-    @if (object?.firstMetadata('person.identifier.orcid'); as orcid) {
-      <ds-metadata-field-wrapper [label]="'person.page.orcid' | translate">
-        <a class="d-inline-flex align-items-center gap-1 ds-simple-metadata-link ds-orcid-external-link"
-           [href]="orcidBaseUrl + '/' + orcid.value"
-           target="_blank"
-           rel="noopener noreferrer"
-           role="link"
-           tabindex="0">
-          <ds-orcid-badge-and-tooltip
-            [orcid]="orcid"
-            [authenticatedTimestamp]="object?.firstMetadata('dspace.orcid.authenticated')">
-          </ds-orcid-badge-and-tooltip>
-          <span class="dont-break-out">{{ orcid.value }}</span>
-        </a>
-      </ds-metadata-field-wrapper>
-    }
     <ds-generic-item-page-field [item]="object"
       [fields]="['person.birthDate']"
       [label]="'person.page.birthdate'">
@@ -66,6 +50,10 @@
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.title']"
       [label]="'person.page.name'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['person.identifier.orcid']"
+      [label]="'person.page.orcid'">
     </ds-generic-item-page-field>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button" tabindex="0">

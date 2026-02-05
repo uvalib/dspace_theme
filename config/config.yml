@@ -3,3 +3,7 @@ rest:
   host: sandbox.dspace.org
   port: 443
   nameSpace: /server
+
+# ORCID settings used by the UI
+orcid:
+  baseUrl: https://sandbox.orcid.org

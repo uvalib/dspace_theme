@@ -8,8 +8,10 @@ import { TabbedRelatedEntitiesSearchComponent } from 'src/app/item-page/simple/r
 import { RelatedItemsComponent } from 'src/app/item-page/simple/related-items/related-items-component';
 import { DsoEditMenuComponent } from 'src/app/shared/dso-page/dso-edit-menu/dso-edit-menu.component';
 import { MetadataFieldWrapperComponent } from 'src/app/shared/metadata-field-wrapper/metadata-field-wrapper.component';
+import { OrcidBadgeAndTooltipComponent } from 'src/app/shared/orcid-badge-and-tooltip/orcid-badge-and-tooltip.component';
 import { ThemedResultsBackButtonComponent } from 'src/app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from 'src/app/thumbnail/themed-thumbnail.component';
+import { environment } from 'src/environments/environment';
 
 import { Context } from '../../../../../../../app/core/shared/context.model';
 import { ViewMode } from '../../../../../../../app/core/shared/view-mode.model';
@@ -29,6 +31,7 @@ import { listableObjectComponent } from '../../../../../../../app/shared/object-
     DsoEditMenuComponent,
     GenericItemPageFieldComponent,
     MetadataFieldWrapperComponent,
+    OrcidBadgeAndTooltipComponent,
     RelatedItemsComponent,
     RouterLink,
     TabbedRelatedEntitiesSearchComponent,
@@ -39,4 +42,10 @@ import { listableObjectComponent } from '../../../../../../../app/shared/object-
   ],
 })
 export class PersonComponent extends BaseComponent {
+  /**
+   * Base URL for ORCID public profiles.
+   * Configured in the UI via `config/config.yml`
+   */
+  // Cast to any because `orcid` is a local UI config extension (not part of upstream AppConfig type).
+  orcidBaseUrl: string = (environment as any)?.orcid?.baseUrl ?? 'https://orcid.org';
 }

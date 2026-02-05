@@ -76,6 +76,12 @@ rest:
   # server namespace (uncomment to use it).
   #ssrBaseUrl: http://localhost:8080/server
 
+# ORCID settings used by the UI.
+# This controls the link rendered on the public Person page.
+# Use https://orcid.org, or https://sandbox.orcid.org
+orcid:
+  baseUrl: https://sandbox.orcid.org
+
 # Caching settings
 cache:
   # NOTE: how long should objects be cached for by default

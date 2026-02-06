@@ -17,7 +17,7 @@ import { ViewMode } from '../../../../../../../app/core/shared/view-mode.model';
 import { PersonComponent as BaseComponent } from '../../../../../../../app/entity-groups/research-entities/item-pages/person/person.component';
 import { listableObjectComponent } from '../../../../../../../app/shared/object-collection/shared/listable-object/listable-object.decorator';
 
-@listableObjectComponent('Person', ViewMode.StandalonePage, Context.Any, 'custom')
+@listableObjectComponent('Person', ViewMode.StandalonePage, Context.Any, 'libraopen')
 @Component({
   selector: 'ds-person',
   // styleUrls: ['./person.component.scss'],

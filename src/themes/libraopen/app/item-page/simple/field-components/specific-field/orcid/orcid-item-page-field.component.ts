@@ -29,7 +29,7 @@ export class OrcidItemPageFieldComponent {
   @Input() label: string;
 
   /** Separator HTML between multiple values */
-  @Input() separator: string;
+  @Input() separator = '<br/>';
 
   // Cast to any because `orcid` is a local UI config extension (not part of upstream AppConfig type).
   get orcidBaseUrl(): string {

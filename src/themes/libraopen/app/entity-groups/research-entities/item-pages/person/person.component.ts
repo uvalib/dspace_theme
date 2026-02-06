@@ -10,6 +10,7 @@ import { DsoEditMenuComponent } from 'src/app/shared/dso-page/dso-edit-menu/dso-
 import { MetadataFieldWrapperComponent } from 'src/app/shared/metadata-field-wrapper/metadata-field-wrapper.component';
 import { ThemedResultsBackButtonComponent } from 'src/app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from 'src/app/thumbnail/themed-thumbnail.component';
+import { OrcidItemPageFieldComponent } from 'src/themes/libraopen/app/item-page/simple/field-components/specific-field/orcid/orcid-item-page-field.component';
 
 import { Context } from '../../../../../../../app/core/shared/context.model';
 import { ViewMode } from '../../../../../../../app/core/shared/view-mode.model';
@@ -29,6 +30,7 @@ import { listableObjectComponent } from '../../../../../../../app/shared/object-
     DsoEditMenuComponent,
     GenericItemPageFieldComponent,
     MetadataFieldWrapperComponent,
+    OrcidItemPageFieldComponent,
     RelatedItemsComponent,
     RouterLink,
     TabbedRelatedEntitiesSearchComponent,

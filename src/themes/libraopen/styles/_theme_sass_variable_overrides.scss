@@ -3,36 +3,8 @@
 // still uses Sass variables internally. So if you want to override bootstrap (or other sass
 // variables) you can do so here. Their CSS counterparts will include the changes you make here
 
-// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-//
-// $gray-700: #495057 !default;  // Bootstrap $gray-700
-// $gray-100: #f8f9fa !default;  //           $gray-100
-//
-// $blue:   #2B4E72 !default;
-// $green:  #94BA65 !default;
-// $cyan:   #006666 !default;
-// $yellow: #ec9433 !default;
-// $red:    #CF4444 !default;
-// $dark:   darken($blue, 17%) !default;
 
-// $theme-colors: (
-//   primary: $blue,
-//   secondary: $gray-700,
-//   success: $green,
-//   info: $cyan,
-//   warning: $yellow,
-//   danger: $red,
-//   light: $gray-100,
-//   dark: $dark
-// ) !default;
-//
-// $link-color: map-get($theme-colors, info) !default;
 
-// Add new semantic colors here (you don't need to add existing semantic colors)
-@import '../../../styles/_variables.scss';
-$theme-custom-semantic-colors: (
-);
-$theme-colors: map-merge($theme-colors, $theme-custom-semantic-colors);
 
 
 //UVA color overrides
@@ -89,13 +61,14 @@ $uva-text-color-base: $uva-grey-A;
 $uva-text-color-dark: $uva-grey-B;
 
 //dspace color overrides
-$blue: $uva-blue-alt !default;
-$cyan: $uva-teal-100 !default;
-$dark: $uva-brand-blue !default;
+$blue: $uva-blue-alt;
+$cyan: $uva-teal-100;
+$dark: $uva-brand-blue;
 
 /*** CUSTOM UVA - DSPACE VARIABLES ***/
-$link-color: $uva-blue-alt-A !default;
+$link-color: $uva-blue-alt-A;
 // $link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: $link-color;
 
 // $ds-home-news-link-color: $link-color !default;
 // $ds-home-news-link-hover-color: darken($ds-home-news-link-color, 15%) !default;
@@ -106,8 +79,8 @@ $ds-breadcrumb-link-active-color: $uva-brand-orange-A !default;
 $ds-header-navbar-border-bottom-color: $uva-grey-100 !default;
 
 // $ds-header-bg: #fff !default;
-// $ds-header-icon-color: $link-color !default;
-// $ds-header-icon-color-hover: $link-hover-color !default;
+$ds-header-icon-color: $link-color !default;
+$ds-header-icon-color-hover: $link-hover-color !default;
 
 // $ds-navbar-bg: #fff !default;
 // $ds-navbar-dropdown-bg: #fff !default;
@@ -135,3 +108,34 @@ $libraopen-nav-link-hover-color: $uva-brand-blue;
 $libraopen-nav-link-hover-bgcolor: $uva-grey-100;
 
 $libraopen-border-color: $uva-grey-100;
+
+// Apply theme colors
+// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//
+// $gray-700: #495057 !default;  // Bootstrap $gray-700
+// $gray-100: #f8f9fa !default;  //           $gray-100
+//
+// $blue:   #2B4E72 !default;
+// $green:  #94BA65 !default;
+// $cyan:   #006666 !default;
+// $yellow: #ec9433 !default;
+// $red:    #CF4444 !default;
+// $dark:   darken($blue, 17%) !default;
+
+@import '../../../styles/_variables.scss';
+$theme-colors: (
+   primary: $blue,
+   secondary: $gray-700,
+   success: $green,
+   info: $cyan,
+   warning: $yellow,
+   danger: $red,
+   light: $gray-100,
+   dark: $dark ) !default;
+
+ $link-color: map-get($theme-colors, info) !default;
+
+// Add new semantic colors here (you don't need to add existing semantic colors)
+$theme-custom-semantic-colors: (
+);
+$theme-colors: map-merge($theme-colors, $theme-custom-semantic-colors);

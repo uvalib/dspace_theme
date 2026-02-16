@@ -6,6 +6,37 @@
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
 
+// --- LibraOpen: link color contrast, underline, focus ---
+// Links always underlined by default so they are distinguishable from body text.
+// Underline removed on hover and on keyboard focus; focus gets a visible outline.
+a {
+  text-decoration: underline !important;
+  text-decoration-skip-ink: auto;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:focus-visible {
+  text-decoration: none !important;
+}
+
+a:focus,
+a:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 2px;
+}
+
+// Navbar/list links that are already styled (e.g. nav-link) keep their decoration
+// but still get focus visibility
+nav a:focus,
+nav a:focus-visible,
+.nav-link:focus,
+.nav-link:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 2px;
+}
+
 // LibraOpen override: widen the drag handle in form lists
 ds-dynamic-form-array .cdk-drag .cdk-drag-handle {
   width: calc(2.3 * var(--bs-spacer)) !important;

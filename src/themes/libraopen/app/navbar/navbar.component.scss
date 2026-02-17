@@ -8,6 +8,7 @@
     .ds-menu-toggler-wrapper {
       white-space: nowrap;
       text-decoration: none;
+      padding-right: 3px;
     }
 
     // .dropdown-menu {
@@ -18,7 +19,6 @@
       display: block;
       // color: var(--ds-navbar-link-color);
       color: $libraopen-nav-link-color;
-      padding: 10px;
 
       &:hover,
       &:focus {

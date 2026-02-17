@@ -3,6 +3,8 @@
 :root {
   //--ds-header-logo-height: 80px;
   //--ds-header-logo-height-xs: 50px;
+  --ds-header-navbar-border-bottom-height: 5px;
+  --ds-navbar-link-background-hover: #{$uva-grey-100};
   --ds-header-icon-color: #{$link-color};
   --ds-header-icon-color-hover: #{darken($link-color, 15%)};
 

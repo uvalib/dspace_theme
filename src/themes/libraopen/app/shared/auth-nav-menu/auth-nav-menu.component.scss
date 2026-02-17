@@ -5,9 +5,11 @@
 .logoutLink,
 .dropdownLogout {
   color: $libraopen-nav-link-color;
+  text-decoration: underline;
 
   &:hover,
   &:focus {
     color: $libraopen-nav-link-hover-color;
+    text-decoration: none;
   }
 }

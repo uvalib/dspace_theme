@@ -75,18 +75,19 @@ $link-hover-color: $link-color;
 $ds-breadcrumb-link-color: $uva-brand-blue !default;
 $ds-breadcrumb-link-active-color: $uva-brand-orange-A !default;
 
-// $ds-header-navbar-border-top-color: #fff !default;
-$ds-header-navbar-border-bottom-color: $uva-grey-100 !default;
+$ds-header-navbar-border-top-color: $uva-brand-blue !default;
+$ds-header-navbar-border-bottom-color: $uva-brand-blue !default;
 
 // $ds-header-bg: #fff !default;
-$ds-header-icon-color: $link-color !default;
-$ds-header-icon-color-hover: $link-hover-color !default;
+$ds-header-icon-color: $uva-brand-blue;
+$ds-header-icon-color-hover: $uva-brand-blue;
+$ds-header-icon-color-bg-hover: $uva-grey-100;
 
 // $ds-navbar-bg: #fff !default;
-// $ds-navbar-dropdown-bg: #fff !default;
-// $ds-expandable-navbar-bg: #fff !default;
-// $ds-navbar-link-color: $link-color !default;
-// $ds-navbar-link-color-hover: #{darken($ds-navbar-link-color, 15%)} !default;
+ $ds-navbar-dropdown-bg: #fff !default;
+ $ds-expandable-navbar-bg: $uva-grey-100 !default;
+ $ds-navbar-link-color: $uva-brand-blue !default;
+ $ds-navbar-link-color-hover: $uva-brand-blue !default;
 
 $ds-slider-color: darken($uva-green-100, 17%) !default;
 $ds-slider-handle-color: darken($uva-blue-alt-A, 17%) !default;

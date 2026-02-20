@@ -40,22 +40,27 @@
           display: flex;
           align-items: center;
           height: 100%;
-          padding-right: 3px;
+        }
+        .toggle-menu-icon{
+          padding-right: 0.1rem;
         }
         .ds-menu-item {
           // define here the style for top-level navbar menu items
           padding: var(--ds-navbar-item-vertical-padding) var(--ds-navbar-item-horizontal-padding);
         }
-        .ds-menu-item, .ds-menu-toggler-wrapper, .ds-menu-item-wrapper {
+        .dropdown-menu .ds-menu-item, .ds-menu-toggler-wrapper, .ds-menu-item-wrapper, a.ds-menu-item {
           color: var(--ds-navbar-link-color) !important;
-          &:hover, &:focus, &:focus-visible {
+          text-decoration: underline !important;
+          &:hover, &:focus, &:focus-visible, &:focus-within {
             background-color: var(--ds-navbar-link-background-hover) !important;
             color: var(--ds-navbar-link-color-hover) !important;
+            text-decoration: none !important;
           }
         }
         .ds-menu-toggler-wrapper[aria-expanded='true'] {
           background-color: var(--ds-navbar-link-background-hover) !important;
           color: var(--ds-navbar-link-color-hover) !important;
+          text-decoration: none !important;
         }
 
         /* desktop submenu */

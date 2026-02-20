@@ -5,6 +5,7 @@ import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
 import { RootModule } from '../../app/root.module';
 import { MENU_PROVIDER } from '../../app/shared/menu/menu.structure';
 import { MenuID } from '../../app/shared/menu/menu-id.model';
+import { TextMenuItemComponent } from './app/shared/menu/menu-item/text-menu-item.component';
 import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { JournalComponent } from './app/entity-groups/journal-entities/item-pages/journal/journal.component';
 import { JournalIssueComponent } from './app/entity-groups/journal-entities/item-pages/journal-issue/journal-issue.component';

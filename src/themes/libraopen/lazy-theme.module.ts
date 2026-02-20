@@ -61,6 +61,7 @@ import { LogoutPageComponent } from './app/logout-page/logout-page.component';
 import { ObjectNotFoundComponent } from './app/lookup-by-id/objectnotfound/objectnotfound.component';
 import { MyDSpacePageComponent } from './app/my-dspace-page/my-dspace-page.component';
 import { ExpandableNavbarSectionComponent } from './app/navbar/expandable-navbar-section/expandable-navbar-section.component';
+import { NavbarSectionComponent } from './app/navbar/navbar-section/navbar-section.component';
 import { PageNotFoundComponent } from './app/pagenotfound/pagenotfound.component';
 import { ProfilePageComponent } from './app/profile-page/profile-page.component';
 import { ProfilePageMetadataFormComponent } from './app/profile-page/profile-page-metadata-form/profile-page-metadata-form.component';
@@ -75,6 +76,7 @@ import { ConfigurationSearchPageComponent } from './app/search-page/configuratio
 import { SearchPageComponent } from './app/search-page/search-page.component';
 import { AuthNavMenuComponent } from './app/shared/auth-nav-menu/auth-nav-menu.component';
 import { UserMenuComponent } from './app/shared/auth-nav-menu/user-menu/user-menu.component';
+import { TextMenuItemComponent } from './app/shared/menu/menu-item/text-menu-item.component';
 import { BrowseByComponent } from './app/shared/browse-by/browse-by.component';
 import { ComcolPageBrowseByComponent } from './app/shared/comcol/comcol-page-browse-by/comcol-page-browse-by.component';
 import { ComcolPageContentComponent } from './app/shared/comcol/comcol-page-content/comcol-page-content.component';
@@ -161,6 +163,7 @@ const DECLARATIONS = [
   ComcolPageHandleComponent,
   AuthNavMenuComponent,
   ExpandableNavbarSectionComponent,
+  NavbarSectionComponent,
   EditItemTemplatePageComponent,
   LoadingComponent,
   SearchResultsComponent,
@@ -202,6 +205,7 @@ const DECLARATIONS = [
   ItemStatusComponent,
   EditBitstreamPageComponent,
   UserMenuComponent,
+  TextMenuItemComponent,
   BrowseByComponent,
   RegisterEmailFormComponent,
   SearchComponent,

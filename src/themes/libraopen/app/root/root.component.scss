@@ -7,6 +7,7 @@
   &:focus,
   &:focus-within,
   &:active {
+    margin-left: 55px; // 55px is the width of the left navbar
     color: $uva-blue-alt-A !important;
     text-decoration: underline;
     font-size: 17px !important;

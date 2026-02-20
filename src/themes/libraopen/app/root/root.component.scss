@@ -1,0 +1,20 @@
+@import "../../styles/global-styles";
+
+// Accessible skip link: visually hidden by default, visible on focus
+// Uses .visually-hidden.focusable 
+.skip-link {
+
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: $uva-blue-alt-A !important;
+    text-decoration: underline;
+    font-size: 17px !important;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: franklin-gothic-urw, Arial, Helvetica, sans-serif !important;
+    padding: 0.5rem 1rem;
+    background-color: $uva-grey-100;
+    border-bottom-right-radius: 4px;
+  }
+}

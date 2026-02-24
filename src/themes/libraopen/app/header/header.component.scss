@@ -17,6 +17,8 @@
 
   img#header-logo {
     height: var(--ds-header-logo-height);
+    width: 100%;
+    min-width: 150px;
   }
 
   button#navbar-toggler {

@@ -4,7 +4,8 @@ footer {
   background-color: $uva-brand-blue;
 
   .top-footer {
-    background-color: $uva-teal-200;
+    border-top: 1px solid $uva-teal-200;
+    border-bottom: 1px solid $uva-teal-200;
     // color: $uva-blue-alt-A !important;
   }
 

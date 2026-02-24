@@ -55,23 +55,17 @@ export const expandSearchInput = trigger('toggleAnimation', [
     opacity: '0',
   })),
   state('expanded', style({
-    width: '100%',
     opacity: '1',
   })),
   transition('* => collapsed', group([
-    animate('300ms ease-in-out', style({
-      width: '30px',
-    })),
-    animate('300ms ease-in', style({
+    animate('100ms ease-in', style({
       opacity: '0',
+      width: '0',
     })),
   ])),
   transition('* => expanded', group([
-    animate('300ms ease-out', style({
+    animate('100ms ease-out', style({
       opacity: '1',
-    })),
-    animate('300ms ease-in-out', style({
-      width: '100%',
     })),
   ])),
 ]);

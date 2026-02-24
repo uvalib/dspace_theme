@@ -26,6 +26,22 @@ a:focus-visible {
   outline: 2px solid var(--bs-link-color);
   outline-offset: 2px;
 }
+.btn-link {
+  text-decoration: underline !important;
+  text-decoration-skip-ink: auto;
+}
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:focus-visible {
+  text-decoration: none !important;
+}
+.btn-link:focus,
+.btn-link:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 2px;
+}
+
 
 // Navbar/list links that are already styled (e.g. nav-link) keep their decoration
 // but still get focus visibility
@@ -40,4 +56,16 @@ nav a:focus-visible,
 // LibraOpen override: widen the drag handle in form lists
 ds-dynamic-form-array .cdk-drag .cdk-drag-handle {
   width: calc(2.3 * var(--bs-spacer)) !important;
+}
+
+// --- Reflow at 200% zoom / small viewport (2.1.1, avoid loss of content or functionality) ---
+// Allow header and footer flex children to shrink and wrap so content adapts without horizontal overflow.
+#main-site-header .container,
+#main-site-header [id$="-header-container"] {
+  min-width: 0;
+}
+
+ds-header-navbar-wrapper nav .navbar-nav {
+  min-width: 0;
+  //flex-wrap: wrap;
 }

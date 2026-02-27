@@ -50,8 +50,8 @@
         }
         .dropdown-menu .ds-menu-item, .ds-menu-toggler-wrapper, .ds-menu-item-wrapper, a.ds-menu-item {
           color: var(--ds-navbar-link-color) !important;
-          text-decoration: underline !important;
-          &:hover, &:focus, &:focus-visible, &:focus-within {
+          text-decoration: underline;
+          &:hover, &:focus, &:focus-visible, &:focus-within, a:hover, a:focus, a:focus-visible, a:focus-within {
             background-color: var(--ds-navbar-link-background-hover) !important;
             color: var(--ds-navbar-link-color-hover) !important;
             text-decoration: none !important;

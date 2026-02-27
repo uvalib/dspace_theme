@@ -26,31 +26,67 @@ a:focus-visible {
   outline: 2px solid var(--bs-link-color);
   outline-offset: 2px;
 }
-.btn-link {
+
+// .btn.btn-link is styled like a regular link (underlined normally, disappears on hover).
+a.btn.btn-link,
+.btn.btn-link {
   text-decoration: underline !important;
   text-decoration-skip-ink: auto;
 }
-.btn-link:hover,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:focus-visible {
+
+a.btn.btn-link:hover,
+a.btn.btn-link:active,
+a.btn.btn-link:focus,
+.btn.btn-link:hover,
+.btn.btn-link:active,
+.btn.btn-link:focus {
   text-decoration: none !important;
 }
-.btn-link:focus,
-.btn-link:focus-visible {
+
+a.btn.btn-link:focus,
+a.btn.btn-link:focus-visible,
+.btn.btn-link:focus,
+.btn.btn-link:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 2px;
+}
+
+// --- Exceptions: links that are already clearly interactive ---
+// Buttons, filter-panel links with checkboxes, etc. No underline by default to reduce
+// visual clutter and aid readability (e.g. for users with dyslexia). Underline on hover.
+// .btn-link is styled like a regular link (underlined normally, disappears on hover).
+a.btn,
+a:has(.filter-checkbox) {
+  text-decoration: none !important;
+}
+
+a.btn:hover,
+a.btn:active,
+a:has(.filter-checkbox):hover,
+a:has(.filter-checkbox):active {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+
+// Keep focus visibility
+a.btn:focus,
+a.btn:focus-visible,
+a:has(.filter-checkbox):focus,
+a:has(.filter-checkbox):focus-visible {
+  text-decoration: underline !important;
   outline: 2px solid var(--bs-link-color);
   outline-offset: 2px;
 }
 
 
 // Navbar/list links that are already styled (e.g. nav-link) keep their decoration
-// but still get focus visibility
-nav a:focus,
-nav a:focus-visible,
-.nav-link:focus,
-.nav-link:focus-visible {
-  outline: 2px solid var(--bs-link-color);
-  outline-offset: 2px;
+// but still get focus outline
+.ds-menu-item-wrapper, .ds-menu-toggler-wrapper {
+  &:focus-within, &:focus-visible {
+    outline: 2px solid var(--bs-link-color);
+    outline-offset: 2px;
+  }
 }
 
 // LibraOpen override: widen the drag handle in form lists

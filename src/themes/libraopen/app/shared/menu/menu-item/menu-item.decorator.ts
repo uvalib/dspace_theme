@@ -1,9 +1,8 @@
-import { ExternalLinkMenuItemComponent } from '../../../../../../../src/app/shared/menu/menu-item/external-link-menu-item.component';
-import { LinkMenuItemComponent } from '../../../../../../../src/app/shared/menu/menu-item/link-menu-item.component';
-import { OnClickMenuItemComponent } from '../../../../../../../src/app/shared/menu/menu-item/onclick-menu-item.component';
-// LibraOpen: override text-menu-item.component 
+import { ExternalLinkMenuItemComponent } from './external-link-menu-item.component';
+import { LinkMenuItemComponent } from './link-menu-item.component';
+import { OnClickMenuItemComponent } from './onclick-menu-item.component';
 import { TextMenuItemComponent } from './text-menu-item.component';
-import { MenuItemType } from '../../../../../../../src/app/shared/menu/menu-item-type.model';
+import { MenuItemType } from '../../../../../../app/shared/menu/menu-item-type.model';
 
 const menuMenuItemComponentMap = new Map();
 

@@ -4,14 +4,14 @@ import {
 } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { TextMenuItemModel } from '../../../../../../../src/app/shared/menu/menu-item/models/text.model';
+import { TextMenuItemModel } from '../../../../../../app/shared/menu/menu-item/models/text.model';
 
 /**
- * Component that renders a menu section of type TEXT
+ * Component that renders a menu section of type TEXT (LibraOpen theme).
  */
 @Component({
   selector: 'ds-text-menu-item',
-  styleUrls: ['../../../../../../../src/app/shared/menu/menu-item/menu-item.component.scss'],
+  styleUrls: ['../../../../../../app/shared/menu/menu-item/menu-item.component.scss'],
   templateUrl: './text-menu-item.component.html',
   standalone: true,
   imports: [

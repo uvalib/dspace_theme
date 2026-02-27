@@ -5,6 +5,9 @@ import { OrcidAuthService } from '../../app/core/orcid/orcid-auth.service';
 import { RootModule } from '../../app/root.module';
 import { MENU_PROVIDER } from '../../app/shared/menu/menu.structure';
 import { MenuID } from '../../app/shared/menu/menu-id.model';
+import { ExternalLinkMenuItemComponent } from './app/shared/menu/menu-item/external-link-menu-item.component';
+import { LinkMenuItemComponent } from './app/shared/menu/menu-item/link-menu-item.component';
+import { OnClickMenuItemComponent } from './app/shared/menu/menu-item/onclick-menu-item.component';
 import { TextMenuItemComponent } from './app/shared/menu/menu-item/text-menu-item.component';
 import { LibraOrcidAuthService } from './app/core/orcid/libra-orcid-auth.service';
 import { JournalComponent } from './app/entity-groups/journal-entities/item-pages/journal/journal.component';
@@ -24,6 +27,9 @@ import { CollectionDropdownComponent } from './app/shared/collection-dropdown/co
 import { CreateCollectionParentSelectorComponent } from './app/shared/dso-selector/modal-wrappers/create-collection-parent-selector/create-collection-parent-selector.component';
 import { CreateCommunityParentSelectorComponent } from './app/shared/dso-selector/modal-wrappers/create-community-parent-selector/create-community-parent-selector.component';
 import { CreateItemParentSelectorComponent } from './app/shared/dso-selector/modal-wrappers/create-item-parent-selector/create-item-parent-selector.component';
+import './app/shared/dso-page/dso-edit-menu/dso-edit-menu-section-registration';
+import { DsoEditMenuComponent } from './app/shared/dso-page/dso-edit-menu/dso-edit-menu.component';
+import { DsoEditMenuExpandableSectionComponent } from './app/shared/dso-page/dso-edit-menu/dso-edit-expandable-menu-section/dso-edit-menu-expandable-section.component';
 import { EditCollectionSelectorComponent } from './app/shared/dso-selector/modal-wrappers/edit-collection-selector/edit-collection-selector.component';
 import { EditCommunitySelectorComponent } from './app/shared/dso-selector/modal-wrappers/edit-community-selector/edit-community-selector.component';
 import { EditItemSelectorComponent } from './app/shared/dso-selector/modal-wrappers/edit-item-selector/edit-item-selector.component';
@@ -64,6 +70,8 @@ const ENTRY_COMPONENTS = [
 
 const DECLARATIONS = [
   ...ENTRY_COMPONENTS,
+  DsoEditMenuComponent,
+  DsoEditMenuExpandableSectionComponent,
   HomeNewsComponent,
   HeaderComponent,
   HeaderNavbarWrapperComponent,
@@ -78,6 +86,10 @@ const DECLARATIONS = [
   EditItemSelectorComponent,
   LogInComponent,
   LangSwitchComponent,
+  LinkMenuItemComponent,
+  ExternalLinkMenuItemComponent,
+  OnClickMenuItemComponent,
+  TextMenuItemComponent,
 ];
 
 @NgModule({

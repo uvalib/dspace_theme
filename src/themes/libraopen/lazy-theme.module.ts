@@ -76,6 +76,11 @@ import { ConfigurationSearchPageComponent } from './app/search-page/configuratio
 import { SearchPageComponent } from './app/search-page/search-page.component';
 import { AuthNavMenuComponent } from './app/shared/auth-nav-menu/auth-nav-menu.component';
 import { UserMenuComponent } from './app/shared/auth-nav-menu/user-menu/user-menu.component';
+import { DsoEditMenuComponent } from './app/shared/dso-page/dso-edit-menu/dso-edit-menu.component';
+import { DsoEditMenuExpandableSectionComponent } from './app/shared/dso-page/dso-edit-menu/dso-edit-expandable-menu-section/dso-edit-menu-expandable-section.component';
+import { ExternalLinkMenuItemComponent } from './app/shared/menu/menu-item/external-link-menu-item.component';
+import { LinkMenuItemComponent } from './app/shared/menu/menu-item/link-menu-item.component';
+import { OnClickMenuItemComponent } from './app/shared/menu/menu-item/onclick-menu-item.component';
 import { TextMenuItemComponent } from './app/shared/menu/menu-item/text-menu-item.component';
 import { BrowseByComponent } from './app/shared/browse-by/browse-by.component';
 import { ComcolPageBrowseByComponent } from './app/shared/comcol/comcol-page-browse-by/comcol-page-browse-by.component';
@@ -120,6 +125,11 @@ import { WorkflowItemSendBackComponent } from './app/workflowitems-edit-page/wor
 import { WorkspaceItemsDeletePageComponent } from './app/workspaceitems-edit-page/workspaceitems-delete-page/workspaceitems-delete-page.component';
 
 const DECLARATIONS = [
+  DsoEditMenuComponent,
+  DsoEditMenuExpandableSectionComponent,
+  ExternalLinkMenuItemComponent,
+  LinkMenuItemComponent,
+  OnClickMenuItemComponent,
   FileSectionComponent,
   HomePageComponent,
   TopLevelCommunityListComponent,

@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { OnClickMenuItemModel } from '../../../../../../app/shared/menu/menu-item/models/onclick.model';
 import { OnClickMenuItemComponent as BaseComponent } from '../../../../../../app/shared/menu/menu-item/onclick-menu-item.component';
@@ -15,10 +14,7 @@ import { OnClickMenuItemComponent as BaseComponent } from '../../../../../../app
   ],
   templateUrl: './onclick-menu-item.component.html',
   standalone: true,
-  imports: [
-    RouterLinkActive,
-    TranslateModule,
-  ],
+  imports: [TranslateModule],
 })
 export class OnClickMenuItemComponent extends BaseComponent {
   constructor(@Inject('itemModelProvider') item: OnClickMenuItemModel) {

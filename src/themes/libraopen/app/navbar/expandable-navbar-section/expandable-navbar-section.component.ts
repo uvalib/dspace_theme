@@ -42,19 +42,54 @@ import { NavbarSectionComponent } from '../navbar-section/navbar-section.compone
 })
 export class ExpandableNavbarSectionComponent extends NavbarSectionComponent implements AfterViewChecked, OnInit, OnDestroy {
 
+  /**
+   * This section resides in the Public Navbar
+   */
   menuID = MenuID.PUBLIC;
+
+  /**
+   * True if mouse has entered the menu section toggler
+   */
   mouseEntered = false;
+
+  /**
+   * Whether the section was expanded
+   */
   focusOnFirstChildSection = false;
+
+  /**
+   * True if screen size was small before a resize event
+   */
   wasMobile: boolean = undefined;
+
+  /**
+   * Observable that emits true if the screen is small, false otherwise
+   */
   isMobile$: Observable<boolean>;
+
+  /**
+   * Boolean used to add the event listeners to the items in the expandable menu when expanded. This is done for
+   * performance reasons, there is currently an *ngIf on the menu to prevent the {@link HoverOutsideDirective} to tank
+   * performance when not expanded.
+   */
   addArrowEventListeners = false;
+
+  /**
+   * List of current dropdown items who have event listeners
+   */
+  private dropdownItems: NodeListOf<HTMLElement>;
+
+  /**
+   * Emits true when the top section has subsections, else emits false
+   */
   hasSubSections$: Observable<boolean>;
 
-  private themeDropdownItems: NodeListOf<HTMLElement>;
-
   @HostListener('window:resize', ['$event'])
-  onResize(): void {
-    this.isMobile$.pipe(first()).subscribe((isMobile) => {
+  onResize() {
+    this.isMobile$.pipe(
+      first(),
+    ).subscribe((isMobile) => {
+      // When switching between desktop and mobile active sections should be deactivated
       if (isMobile !== this.wasMobile) {
         this.wasMobile = isMobile;
         this.menuService.deactivateSection(this.menuID, this.section.id);
@@ -90,12 +125,13 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
 
   ngAfterViewChecked(): void {
     if (this.addArrowEventListeners) {
-      this.themeDropdownItems = document.querySelectorAll(`#${this.expandableNavbarSectionId()} .ds-menu-item`);
-      this.themeDropdownItems.forEach((item: HTMLElement) => {
+      // LibraOpen theme: use .ds-menu-item selector instead of *[role="menuitem"] for dropdown items
+      this.dropdownItems = document.querySelectorAll(`#${this.expandableNavbarSectionId()} .ds-menu-item`);
+      this.dropdownItems.forEach((item: HTMLElement) => {
         item.addEventListener('keydown', this.navigateDropdown.bind(this));
       });
-      if (this.focusOnFirstChildSection && this.themeDropdownItems.length > 0) {
-        this.themeDropdownItems.item(0).focus();
+      if (this.focusOnFirstChildSection && this.dropdownItems.length > 0) {
+        this.dropdownItems.item(0).focus();
       }
       this.addArrowEventListeners = false;
     }
@@ -106,6 +142,13 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
     super.ngOnDestroy();
   }
 
+  /**
+   * Activate this section if it's currently inactive, deactivate it when it's currently active.
+   * Also saves whether this toggle was performed by a keyboard event (non-click event) in order to know if thi first
+   * item should be focussed when activating a section.
+   *
+   *  @param {Event} event The user event that triggered this method
+   */
   override toggleSection(event: Event): void {
     // Ignore clicks synthesized from keyboard events (Enter/Space) - we handle those in keyDown()
     if (event.type === 'click' && event instanceof MouseEvent && event.detail === 0) {
@@ -126,16 +169,22 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
   }
 
   unsubscribeFromEventListeners(): void {
-    if (this.themeDropdownItems) {
-      this.themeDropdownItems.forEach((item: HTMLElement) => {
+    if (this.dropdownItems) {
+      this.dropdownItems.forEach((item: HTMLElement) => {
         item.removeEventListener('keydown', this.navigateDropdown.bind(this));
       });
-      this.themeDropdownItems = undefined;
+      this.dropdownItems = undefined;
     }
   }
 
+  /**
+   * When the mouse enters the section toggler activate the menu section
+   * @param $event
+   */
   onMouseEnter($event: Event): void {
-    this.isMobile$.pipe(first()).subscribe((isMobile) => {
+    this.isMobile$.pipe(
+      first(),
+    ).subscribe((isMobile) => {
       if (!isMobile && !this.active$.value && !this.mouseEntered) {
         this.activateSection($event);
       }
@@ -143,8 +192,14 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
     });
   }
 
+  /**
+   * When the mouse leaves the section toggler deactivate the menu section
+   * @param $event
+   */
   onMouseLeave($event: Event): void {
-    this.isMobile$.pipe(first()).subscribe((isMobile) => {
+    this.isMobile$.pipe(
+      first(),
+    ).subscribe((isMobile) => {
       if (!isMobile && this.active$.value && this.mouseEntered) {
         this.deactivateSection($event);
       }
@@ -166,8 +221,11 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
       (document.querySelector(`[aria-controls="${this.expandableNavbarSectionId()}"]`) as HTMLElement)?.focus();
       return;
     }
-    event.preventDefault();
-    event.stopPropagation();
+    // LibraOpen theme: Allows inner links to be clicked
+    if (event.code !== 'Enter') {
+      event.preventDefault();
+      event.stopPropagation();
+    }
     const items: NodeListOf<Element> = document.querySelectorAll(`#${this.expandableNavbarSectionId()} .ds-menu-item`);
     if (items.length === 0) return;
     const currentIndex = Array.from(items).findIndex((item: Element) => item === event.target);
@@ -178,8 +236,14 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
     }
   }
 
+  /**
+   * Handles all the keydown events on the dropdown toggle
+   *
+   * @param event
+   */
   keyDown(event: KeyboardEvent): void {
     switch (event.code) {
+      // Works for both Tab & Shift Tab
       case 'Tab':
         this.deactivateSection(event, false);
         break;
@@ -190,7 +254,7 @@ export class ExpandableNavbarSectionComponent extends NavbarSectionComponent imp
       case 'Space':
       case 'Enter':
         event.preventDefault();
-        event.stopPropagation();
+        //event.stopPropagation();
         this.toggleSection(event);
         break;
     }

@@ -4,21 +4,20 @@
     (mouseenter)="onMouseEnter($event)"
     (mouseleave)="onMouseLeave($event)"
     data-test="navbar-section-wrapper">
-    <div role="button"
-      tabindex="0"
+    <button type="button"
       (click)="toggleSection($event)"
       (keydown)="keyDown($event)"
       data-test="navbar-section-toggler"
       [attr.aria-expanded]="(active$ | async).valueOf()"
       [attr.aria-controls]="expandableNavbarSectionId()"
-      class="d-flex flex-row flex-nowrap align-items-center gapx-1 ds-menu-toggler-wrapper"
+      class="d-flex flex-row flex-nowrap align-items-center gapx-1 ds-menu-toggler-wrapper border-0 bg-transparent p-0 text-start w-100"
       [class.disabled]="section.model?.disabled">
       <span class="flex-fill">
         <ng-container
         *ngComponentOutlet="(sectionMap$ | async).get(section.id).component; injector: (sectionMap$ | async).get(section.id).injector;"></ng-container>
       </span>
       <i class="fas fa-caret-down fa-xs toggle-menu-icon" aria-hidden="true"></i>
-    </div>
+    </button>
     @if ((active$ | async).valueOf() === true) {
       <div (click)="deactivateSection($event)"
         [id]="expandableNavbarSectionId()"

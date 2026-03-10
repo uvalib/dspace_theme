@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ExternalLinkMenuItemComponent as BaseComponent } from '../../../../../../app/shared/menu/menu-item/external-link-menu-item.component';

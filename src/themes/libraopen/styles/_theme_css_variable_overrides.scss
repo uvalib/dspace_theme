@@ -12,4 +12,7 @@
   --bs-link-hover-color: #{$link-hover-color};
   --bs-link-color-rgb: #{to-rgb($link-color)};
   --bs-link-hover-color-rgb: #{to-rgb($link-hover-color)};
+
+  --ds-navbar-item-vertical-padding: 0.3em;
+  --ds-navbar-item-horizontal-padding: 0.25rem;
 }

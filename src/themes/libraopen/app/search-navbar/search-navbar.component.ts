@@ -29,4 +29,10 @@ import { ClickOutsideDirective } from '../../../../app/shared/utils/click-outsid
   ],
 })
 export class SearchNavbarComponent extends BaseComponent {
+  override searchExpanded = true;
+  override isExpanded = 'expanded';
+
+  override collapse(): void {
+    // LibraOpen theme: keep search bar always expanded (no-op)
+  }
 }

@@ -5,14 +5,17 @@
     (mouseleave)="onMouseLeave($event)"
     data-test="navbar-section-wrapper">
     <button type="button"
+      [attr.tabindex]="section.model?.disabled ? -1 : 0"
       (click)="toggleSection($event)"
       (keydown)="keyDown($event)"
       data-test="navbar-section-toggler"
+      aria-haspopup="true"
       [attr.aria-expanded]="(active$ | async).valueOf()"
       [attr.aria-controls]="expandableNavbarSectionId()"
+      [attr.aria-disabled]="section.model?.disabled"
       class="d-flex flex-row flex-nowrap align-items-center gapx-1 ds-menu-toggler-wrapper border-0 bg-transparent p-0 text-start w-100"
       [class.disabled]="section.model?.disabled">
-      <span class="flex-fill">
+      <span class="flex-fill" tabindex="-1">
         <ng-container
         *ngComponentOutlet="(sectionMap$ | async).get(section.id).component; injector: (sectionMap$ | async).get(section.id).injector;"></ng-container>
       </span>

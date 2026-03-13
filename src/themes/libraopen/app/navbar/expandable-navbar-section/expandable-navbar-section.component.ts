@@ -31,7 +31,10 @@ import { NavbarSectionComponent } from '../navbar-section/navbar-section.compone
 @Component({
   selector: 'ds-themed-expandable-navbar-section',
   templateUrl: './expandable-navbar-section.component.html',
-  styleUrls: ['../../../../../app/navbar/expandable-navbar-section/expandable-navbar-section.component.scss'],
+  styleUrls: [
+    '../../../../../app/navbar/expandable-navbar-section/expandable-navbar-section.component.scss',
+    './expandable-navbar-section.component.scss',
+  ],
   animations: [slide],
   standalone: true,
   imports: [

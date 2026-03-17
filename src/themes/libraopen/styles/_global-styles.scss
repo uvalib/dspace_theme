@@ -105,3 +105,8 @@ ds-header-navbar-wrapper nav .navbar-nav {
   min-width: 0;
   //flex-wrap: wrap;
 }
+
+// --- LibraOpen: hide "Import metadata from external source"
+ds-my-dspace-new-external-dropdown {
+  display: none !important;
+}

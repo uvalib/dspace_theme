@@ -4594,7 +4594,9 @@
 
   "search.filters.applied.f.isAuthorOfPublication": "Author",
 
-  "search.filters.applied.f.isOrgUnitOfPublication": "Organization",
+  "search.filters.applied.f.isOrgUnitOfPublication": "Organizational Unit",
+  
+  "search.filters.applied.f.isOrgUnitOfPerson": "Organizational Unit",
 
   "search.filters.applied.f.dateIssued.max": "End date",
 

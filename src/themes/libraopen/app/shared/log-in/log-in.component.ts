@@ -1,5 +1,6 @@
 import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { map } from 'rxjs/operators';
 
 import { AuthMethodType } from '../../../../../app/core/auth/models/auth.method-type';
 import { ThemedLoadingComponent } from '../../../../../app/shared/loading/themed-loading.component';
@@ -22,11 +23,13 @@ import { LogInComponent as BaseComponent } from '../../../../../app/shared/log-i
 export class LogInComponent extends BaseComponent {
 
   override ngOnInit(): void {
-    // Libra Open: Exclude ORCID login from nav menu and login page
+    // Libra Open: Exclude ORCID and password login from nav menu and login page
     // Users log in with ORCID on person pages, not from the nav menu or login page.
-    if (this.excludedAuthMethod == null) {
-      this.excludedAuthMethod = AuthMethodType.Orcid;
-    }
     super.ngOnInit();
+    this.authMethods = this.authMethods.pipe(
+      map((methods) => methods.filter((method) =>
+        method.authMethodType !== AuthMethodType.Orcid && method.authMethodType !== AuthMethodType.Password,
+      )),
+    );
   }
 }

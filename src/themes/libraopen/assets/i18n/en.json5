@@ -2218,7 +2218,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in LibraOpen",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -3676,9 +3676,9 @@
 
   "mydspace.show.supervisedWorkspace": "Supervised items",
 
-  "mydspace.status": "My DSpace status:",
+  "mydspace.status": "My LibraOpen status:",
 
-  "mydspace.status.mydspaceArchived": "Archived",
+  "mydspace.status.mydspaceArchived": "Published",
 
   "mydspace.status.mydspaceValidation": "Validation",
 
@@ -4857,7 +4857,7 @@
 
   "search.filters.discoverable.false": "Yes",
 
-  "search.filters.namedresourcetype.Archived": "Archived",
+  "search.filters.namedresourcetype.Archived": "Published",
 
   "search.filters.namedresourcetype.Validation": "Validation",
 
@@ -6747,7 +6747,7 @@
 
   "has-one-bitstream_condition.label": "Has one File",
 
-  "is-archived_condition.label": "Is archived",
+  "is-archived_condition.label": "Is published",
 
   "is-withdrawn_condition.label": "Is withdrawn",
 

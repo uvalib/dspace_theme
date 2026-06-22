@@ -17,10 +17,10 @@
   --ds-navbar-item-horizontal-padding: 0.25rem;
 }
 // reset nav to proper behavior
-.navbar-nav a, .navbar-nav button {
-	text-decoration: none;
+nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper {
+  text-decoration: none;
 }
 
-.navbar-nav a:hover, .navbar-nav button:hover {
-	text-decoration: underline;
+nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper:hover {
+  text-decoration: underline !important;
 }

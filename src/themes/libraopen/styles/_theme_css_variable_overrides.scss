@@ -16,3 +16,11 @@
   --ds-navbar-item-vertical-padding: 0.3em;
   --ds-navbar-item-horizontal-padding: 0.25rem;
 }
+// reset nav to proper behavior
+.navbar-nav a, .navbar-nav button {
+	text-decoration: none;
+}
+
+.navbar-nav a:hover, .navbar-nav button:hover {
+	text-decoration: underline;
+}

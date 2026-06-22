@@ -17,10 +17,14 @@
   --ds-navbar-item-horizontal-padding: 0.25rem;
 }
 // reset nav to proper behavior
-nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper {
+nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper, .ds-menu-toggler-wrapper[aria-expanded="true"] {
   text-decoration: none;
+// this is just temporary to test if it is working
+  outline: 1px dotted cyan !important; 
 }
 
-nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper:hover {
+nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper:hover, .ds-menu-toggler-wrapper:hover[aria-expanded="true"] {
   text-decoration: underline !important;
+  // this is just temporary to test if it is working
+  outline: 1px dotted red !important; 
 }

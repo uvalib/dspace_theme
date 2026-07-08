@@ -16,16 +16,3 @@
   --ds-navbar-item-vertical-padding: 0.3em;
   --ds-navbar-item-horizontal-padding: 0.25rem;
 }
-/* reset nav to proper behavior*/
-
-nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper,
-.ds-menu-toggler-wrapper[aria-expanded="true"] {
-  text-decoration: none !important;
-  outline: 2px dotted lightblue;
-}
-
-nav#desktop-navbar #main-site-navigation .ds-menu-toggler-wrapper:hover,
-.ds-menu-toggler-wrapper:hover[aria-expanded="true"] {
-  text-decoration: underline !important;
-  outline: 2px dotted red;
-}

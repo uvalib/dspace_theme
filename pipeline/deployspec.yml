@@ -8,7 +8,7 @@ version: 0.2
 
 env:
   variables:
-    terraform_version: 1.12.1
+    terraform_version: 1.15.8
     #ansible_debug: -vvvv
 
 phases:
@@ -29,7 +29,7 @@ phases:
   pre_build:
     commands:
       # clone terraform repo
-      - git clone https://${GITLAB_USER}:${GITLAB_TOKEN}@gitlab.com/uvalib/terraform-infrastructure.git
+      - git clone https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/uvalib/terraform-infrastructure.git
       # decrypt the bastion private key
       - BASTION_KEY_NAME=staging/bastion/keys/bastion_staging.pem
       - BASTION_KEY=${CODEBUILD_SRC_DIR}/terraform-infrastructure/${BASTION_KEY_NAME}

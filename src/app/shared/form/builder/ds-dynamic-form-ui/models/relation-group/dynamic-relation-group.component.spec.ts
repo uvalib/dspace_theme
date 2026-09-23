@@ -1,8 +1,3 @@
-// Load the implementations that should be tested
-import {
-  AsyncPipe,
-  NgClass,
-} from '@angular/common';
 import {
   ChangeDetectorRef,
   Component,
@@ -21,17 +16,16 @@ import {
   UntypedFormGroup,
 } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {
-  NgbModule,
-  NgbTooltipModule,
-} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   DYNAMIC_FORM_CONTROL_MAP_FN,
   DynamicFormLayoutService,
   DynamicFormValidationService,
 } from '@ng-dynamic-forms/core';
+import { provideMockActions } from '@ngrx/effects/testing';
 import { provideMockStore } from '@ngrx/store/testing';
 import { TranslateModule } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
 import {
   APP_CONFIG,
   APP_DATA_SERVICES_MAP,
@@ -44,6 +38,8 @@ import { SubmissionObjectDataService } from '../../../../../../core/submission/s
 import { VocabularyService } from '../../../../../../core/submission/vocabularies/vocabulary.service';
 import { XSRFService } from '../../../../../../core/xsrf/xsrf.service';
 import { SubmissionService } from '../../../../../../submission/submission.service';
+import { LiveRegionService } from '../../../../../live-region/live-region.service';
+import { getLiveRegionServiceStub } from '../../../../../live-region/live-region.service.stub';
 import { createTestComponent } from '../../../../../testing/utils.test';
 import { VocabularyServiceStub } from '../../../../../testing/vocabulary-service.stub';
 import { Chips } from '../../../../chips/models/chips.model';
@@ -176,6 +172,7 @@ describe('DsDynamicRelationGroupComponent test suite', () => {
         FormComponent,
         FormService,
         provideMockStore({ initialState }),
+        provideMockActions(() => new Observable<any>()),
         { provide: VocabularyService, useValue: vocabularyServiceStub },
         { provide: DsDynamicTypeBindRelationService, useClass: DsDynamicTypeBindRelationService },
         { provide: SubmissionObjectDataService, useValue: {} },
@@ -184,9 +181,15 @@ describe('DsDynamicRelationGroupComponent test suite', () => {
         { provide: APP_CONFIG, useValue: environment },
         { provide: APP_DATA_SERVICES_MAP, useValue: {} },
         { provide: DYNAMIC_FORM_CONTROL_MAP_FN, useValue: dsDynamicFormControlMapFn },
+        { provide: LiveRegionService, useValue: getLiveRegionServiceStub() },
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
+      .overrideComponent(DsDynamicRelationGroupComponent, {
+        remove: {
+          imports: [FormComponent],
+        },
+      })
       .compileComponents();
 
   }));
@@ -370,12 +373,7 @@ describe('DsDynamicRelationGroupComponent test suite', () => {
 @Component({
   selector: 'ds-test-cmp',
   template: ``,
-  standalone: true,
   imports: [
-    AsyncPipe,
-    DsDynamicRelationGroupComponent,
-    NgbTooltipModule,
-    NgClass,
     TranslateModule,
   ],
 })

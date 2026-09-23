@@ -14,7 +14,7 @@ import {
   UntypedFormControl,
   UntypedFormGroup,
 } from '@angular/forms';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
 import {
   TranslateModule,
   TranslateService,
@@ -66,7 +66,6 @@ import { DsoEditMetadataFieldService } from '../dso-edit-metadata-field.service'
   selector: 'ds-dso-edit-metadata-authority-field',
   templateUrl: './dso-edit-metadata-authority-field.component.html',
   styleUrls: ['./dso-edit-metadata-authority-field.component.scss'],
-  standalone: true,
   imports: [
     AsyncPipe,
     AuthorityConfidenceStateDirective,
@@ -74,7 +73,7 @@ import { DsoEditMetadataFieldService } from '../dso-edit-metadata-field.service'
     DsDynamicOneboxComponent,
     DsDynamicScrollableDropdownComponent,
     FormsModule,
-    NgbTooltipModule,
+    NgbTooltip,
     NgClass,
     TranslateModule,
   ],

@@ -29,7 +29,8 @@
   // "500.link.home-page": "Take me to the home page",
   "500.link.home-page": "Torna alla home page",
 
-  // "404.help": "We can't find the page you're looking for. The page may have been moved or deleted. You can use the button below to get back to the home page. ",
+  // "404.help": "We can't find the page you're looking for. The page may have been moved or deleted. You can use the button below to get back to the home page.",
+  // TODO Source message changed - Revise the translation
   "404.help": "Non riusciamo a trovare la pagina che stai cercando. La pagina potrebbe essere stata spostata o eliminata. Puoi usare il pulsante qui sotto per tornare alla home page.",
 
   // "404.link.home-page": "Take me to the home page",
@@ -1868,6 +1869,14 @@
   // TODO Source message changed - Revise the translation
   "browse.title": "Mostra il contenuto di {{ collection }} per {{ field }}{{ startsWith }} {{ value }}",
 
+  // "browse.taxonomy.show_next_results": "Show next results",
+  // TODO New key - Add a translation
+  "browse.taxonomy.show_next_results": "Show next results",
+
+  // "browse.taxonomy.show_previous_results": "Show previous results",
+  // TODO New key - Add a translation
+  "browse.taxonomy.show_previous_results": "Show previous results",
+
   // "browse.title.page": "Browsing by {{ field }} {{ value }}",
   // TODO Source message changed - Revise the translation
   "browse.title.page": "Mostra il contenuto di {{ collection }} per {{ field }} {{ value }}",
@@ -2897,7 +2906,8 @@
   // "dso-selector.no-results": "No {{ type }} found",
   "dso-selector.no-results": "Nessun {{ type }} trovato",
 
-  // "dso-selector.placeholder": "Search for a {{ type }}",
+  // "dso-selector.placeholder": "Search for {{ type }}",
+  // TODO Source message changed - Revise the translation
   "dso-selector.placeholder": "Cerca un {{ type }}",
 
   // "dso-selector.placeholder.type.community": "community",
@@ -3415,6 +3425,18 @@
   // TODO New key - Add a translation
   "form.number-picker.increment": "Increment {{field}}",
 
+  // "form.number-picker.label.Year": "Year",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Year": "Year",
+
+  // "form.number-picker.label.Month": "Month",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Month": "Month",
+
+  // "form.number-picker.label.Day": "Day",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Day": "Day",
+
   // "form.repeatable.sort.tip": "Drop the item in the new position",
   "form.repeatable.sort.tip": "Rilascia l'item nella nuova posizione",
 
@@ -3613,9 +3635,9 @@
   // TODO New key - Add a translation
   "info.accessibility-settings.disableNotificationTimeOut.label": "Automatically close notifications after time out",
 
-  // "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open untill manually closed.",
+  // "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open until manually closed.",
   // TODO New key - Add a translation
-  "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open untill manually closed.",
+  "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open until manually closed.",
 
   // "info.accessibility-settings.failed-notification": "Failed to save accessibility settings",
   // TODO New key - Add a translation
@@ -3840,9 +3862,9 @@
   // "item.edit.bitstreams.bundle.name": "BUNDLE: {{ name }}",
   "item.edit.bitstreams.bundle.name": "BUNDLE: {{ name }}",
 
-  // "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the  {{ bundle }} Bundle",
+  // "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the {{ bundle }} Bundle",
   // TODO New key - Add a translation
-  "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the  {{ bundle }} Bundle",
+  "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the {{ bundle }} Bundle",
 
   // "item.edit.bitstreams.bundle.tooltip": "You can move a bitstream to a different page by dropping it on the page number.",
   // TODO New key - Add a translation
@@ -4071,6 +4093,14 @@
   // "item.edit.item-mapper.notifications.add.error.content": "Errors occurred for mapping of item to {{amount}} collections.",
   "item.edit.item-mapper.notifications.add.error.content": "Si sono verificati degli errori nella mappatura dell'item in {{amount}} collections.",
 
+  // "item.edit.item-mapper.notifications.add.error.forbidden.head": "Permission denied",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.add.error.forbidden.head": "Permission denied",
+
+  // "item.edit.item-mapper.notifications.add.error.forbidden.content": "You do not have permission to map this item to a collection.",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.add.error.forbidden.content": "You do not have permission to map this item to a collection.",
+
   // "item.edit.item-mapper.notifications.add.error.head": "Mapping errors",
   "item.edit.item-mapper.notifications.add.error.head": "Errori di mappatura",
 
@@ -4082,6 +4112,14 @@
 
   // "item.edit.item-mapper.notifications.remove.error.content": "Errors occurred for the removal of the mapping to {{amount}} collections.",
   "item.edit.item-mapper.notifications.remove.error.content": "Si sono verificati degli errori nella rimozione del mapping da {{amount}} collections.",
+
+  // "item.edit.item-mapper.notifications.remove.error.forbidden.head": "Permission denied",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.remove.error.forbidden.head": "Permission denied",
+
+  // "item.edit.item-mapper.notifications.remove.error.forbidden.content": "You do not have permission to remove this item from a collection.",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.remove.error.forbidden.content": "You do not have permission to remove this item from a collection.",
 
   // "item.edit.item-mapper.notifications.remove.error.head": "Removal of mapping errors",
   "item.edit.item-mapper.notifications.remove.error.head": "Gli errori di mappatura sono stati rimossi",
@@ -4401,7 +4439,8 @@
   // "item.edit.tabs.metadata.head": "Metadata",
   "item.edit.tabs.metadata.head": "Metadati",
 
-  // "item.edit.tabs.metadata.title": "Item Edit -  Metadata",
+  // "item.edit.tabs.metadata.title": "Item Edit - Metadata",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.metadata.title": "Modifica item - Metadati",
 
   // "item.edit.tabs.relationships.head": "Relationships",
@@ -4479,7 +4518,8 @@
   // "item.edit.tabs.status.labels.lastModified": "Last Modified",
   "item.edit.tabs.status.labels.lastModified": "Ultima modifica",
 
-  // "item.edit.tabs.status.title": "Item Edit -  Status",
+  // "item.edit.tabs.status.title": "Item Edit - Status",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.status.title": "Modifica item - Stato",
 
   // "item.edit.tabs.versionhistory.head": "Version History",
@@ -4494,7 +4534,8 @@
   // "item.edit.tabs.view.head": "View Item",
   "item.edit.tabs.view.head": "Visualizza item",
 
-  // "item.edit.tabs.view.title": "Item Edit -  View",
+  // "item.edit.tabs.view.title": "Item Edit - View",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.view.title": "Modifica item - Visualizza",
 
   // "item.edit.withdraw.cancel": "Cancel",
@@ -4602,17 +4643,25 @@
   // "item.truncatable-part.show-less": "Collapse",
   "item.truncatable-part.show-less": "Riduci",
 
-  // "item.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
+  // "item.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
   // TODO New key - Add a translation
-  "item.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
+  "item.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+
+  // "item.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
+  // TODO New key - Add a translation
+  "item.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
 
   // "item.qa-event-notification-info.check.button": "View",
   // TODO New key - Add a translation
   "item.qa-event-notification-info.check.button": "View",
 
-  // "mydspace.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
+  // "mydspace.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
   // TODO New key - Add a translation
-  "mydspace.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
+  "mydspace.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+
+  // "mydspace.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
+  // TODO New key - Add a translation
+  "mydspace.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
 
   // "mydspace.qa-event-notification-info.check.button": "View",
   // TODO New key - Add a translation
@@ -4742,6 +4791,12 @@
 
   // "item.page.orcid.tooltip": "Open ORCID setting page",
   "item.page.orcid.tooltip": "Apri la pagina delle impostazioni ORCID",
+
+  // "item.page.orcid-ico": "ORCID icon",
+  "item.page.orcid-ico": "Icona ORCID",
+
+  // "item.page.orcid-profile": "ORCID Profile",
+  "item.page.orcid-profile": "Profilo ORCID",
 
   // "item.page.person.search.title": "Articles by this author",
   "item.page.person.search.title": "Articoli di questo autore",
@@ -6664,13 +6719,16 @@
   // TODO New key - Add a translation
   "process.overview.unknown.user": "Unknown",
 
-  // "process.bulk.delete.error.head": "Error on deleteing process",
+  // "process.bulk.delete.error.head": "Error on deleting process",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.error.head": "Errore nell'eliminazione dei processi",
 
-  // "process.bulk.delete.error.body": "The process with ID {{processId}} could not be deleted. The remaining processes will continue being deleted. ",
+  // "process.bulk.delete.error.body": "The process with ID {{processId}} could not be deleted. The remaining processes will continue being deleted.",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.error.body": "Il processo con l'ID {{processId}} non può essere eliminato. I restanti processi saranno eliminati.",
 
-  // "process.bulk.delete.success": "{{count}} process(es) have been succesfully deleted",
+  // "process.bulk.delete.success": "{{count}} process(es) have been successfully deleted",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.success": "{{count}} processi sono stati eliminati con successo",
 
   // "profile.breadcrumbs": "Update Profile",
@@ -7300,7 +7358,8 @@
   // "resource-policies.form.eperson-group-list.select.btn": "Select",
   "resource-policies.form.eperson-group-list.select.btn": "Seleziona",
 
-  // "resource-policies.form.eperson-group-list.tab.eperson": "Search for a ePerson",
+  // "resource-policies.form.eperson-group-list.tab.eperson": "Search for an ePerson",
+  // TODO Source message changed - Revise the translation
   "resource-policies.form.eperson-group-list.tab.eperson": "Cerca un ePerson",
 
   // "resource-policies.form.eperson-group-list.tab.group": "Search for a group",
@@ -8267,14 +8326,14 @@
   // "submission.import-external.source.loading": "Loading ...",
   "submission.import-external.source.loading": "Caricamento ...",
 
-  // "submission.import-external.source.sherpaJournal": "SHERPA Journals",
-  "submission.import-external.source.sherpaJournal": "SHERPA Journals",
+  // "submission.import-external.source.opfJournal": "Jisc Open policy finder Journals",
+  "submission.import-external.source.opfJournal": "SHERPA Journals",
 
-  // "submission.import-external.source.sherpaJournalIssn": "SHERPA Journals by ISSN",
-  "submission.import-external.source.sherpaJournalIssn": "SHERPA Journals by ISSN",
+  // "submission.import-external.source.opfJournalIssn": "Jisc Open policy finder Journals by ISSN",
+  "submission.import-external.source.opfJournalIssn": "SHERPA Journals by ISSN",
 
-  // "submission.import-external.source.sherpaPublisher": "SHERPA Publishers",
-  "submission.import-external.source.sherpaPublisher": "SHERPA Publishers",
+  // "submission.import-external.source.opfPublisher": "Jisc Open policy finder Publishers",
+  "submission.import-external.source.opfPublisher": "SHERPA Publishers",
 
   // "submission.import-external.source.openaire": "OpenAIRE Search by Authors",
   // TODO New key - Add a translation
@@ -8471,11 +8530,11 @@
   // TODO New key - Add a translation
   "submission.sections.describe.relationship-lookup.external-source.import-modal.head.openaireFunding": "Importing from OpenAIRE",
 
-  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaJournal": "Importing from Sherpa Journal",
-  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaJournal": "Importazione da Sherpa Journal",
+  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscJournal": "Importing from Jisc Open policy finder Journal",
+  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscJournal": "Importazione da Sherpa Journal",
 
-  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaPublisher": "Importing from Sherpa Publisher",
-  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaPublisher": "Importazione da Sherpa Publisher",
+  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscPublisher": "Importing from Jisc Open policy finder Publisher",
+  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscPublisher": "Importazione da Sherpa Publisher",
 
   // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.pubmed": "Importing from PubMed",
   "submission.sections.describe.relationship-lookup.external-source.import-modal.head.pubmed": "Importazione da PubMed",
@@ -8602,11 +8661,11 @@
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Local Journal Volumes ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Local Journal Volumes ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournal": "Sherpa Journals ({{ count }})",
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournal": "Sherpa Journals ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournal": "Jisc Open policy finder Journals ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournal": "Sherpa Journals ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaPublisher": "Sherpa Publishers ({{ count }})",
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaPublisher": "Sherpa Publishers ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscPublisher": "Jisc Open policy finder Publishers ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscPublisher": "Sherpa Publishers ({{ count }})",
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.orcid": "ORCID ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.orcid": "ORCID ({{ count }})",
@@ -8648,9 +8707,8 @@
   // TODO New key - Add a translation
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.openaireFunding": "OpenAIRE Search by Funder ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournalIssn": "Sherpa Journals by ISSN ({{ count }})",
-  // TODO New key - Add a translation
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournalIssn": "Sherpa Journals by ISSN ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournalIssn": "Jisc Open policy finder Journals by ISSN ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournalIssn": "Sherpa Journals by ISSN ({{ count }})",
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.openalexPerson": "OpenAlex ({{ count }})",
   // TODO New key - Add a translation
@@ -8693,6 +8751,10 @@
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.isOrgUnitOfProject": "OrgUnit of the Project",
   // TODO New key - Add a translation
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.isOrgUnitOfProject": "OrgUnit of the Project",
+
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.opfJournal": "Jisc Open policy finder of Journal",
+  // TODO New key - Add a translation
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.opfJournal": "Jisc Open policy finder of Journal",
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isProjectOfPublication": "Project",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isProjectOfPublication": "Progetti",
@@ -8837,11 +8899,11 @@
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isChildOrgUnitOf": "Selected Organizational Unit",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isChildOrgUnitOf": "Unità organizzativa selezionata",
 
-  // "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaJournal": "Search Results",
-  "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaJournal": "Risultati della ricerca",
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.jiscJournal": "Search Results",
+  "submission.sections.describe.relationship-lookup.selection-tab.title.jiscJournal": "Risultati della ricerca",
 
-  // "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaPublisher": "Search Results",
-  "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaPublisher": "Risultati della ricerca",
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.jiscPublisher": "Search Results",
+  "submission.sections.describe.relationship-lookup.selection-tab.title.jiscPublisher": "Risultati della ricerca",
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.orcid": "Search Results",
   "submission.sections.describe.relationship-lookup.selection-tab.title.orcid": "Risultati della ricerca",
@@ -8908,6 +8970,10 @@
   // "submission.sections.describe.relationship-lookup.selection-tab.title.dataciteProject": "Search Results",
   // TODO New key - Add a translation
   "submission.sections.describe.relationship-lookup.selection-tab.title.dataciteProject": "Search Results",
+
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.opfJournal": "Search Results",
+  // TODO New key - Add a translation
+  "submission.sections.describe.relationship-lookup.selection-tab.title.opfJournal": "Search Results",
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title": "Search Results",
   "submission.sections.describe.relationship-lookup.selection-tab.title": "Risultati della ricerca",
@@ -9039,17 +9105,14 @@
   // "submission.sections.submit.progressbar.license": "Deposit license",
   "submission.sections.submit.progressbar.license": "Licenza di deposito",
 
-  // "submission.sections.submit.progressbar.sherpapolicy": "Sherpa policies",
-  "submission.sections.submit.progressbar.sherpapolicy": "Policy di Sherpa",
+  // "submission.sections.submit.progressbar.opfpolicy": "Publisher open access policy information",
+  "submission.sections.submit.progressbar.opfpolicy": "Informazioni sulla policy di open access dell'editore",
 
   // "submission.sections.submit.progressbar.upload": "Upload files",
   "submission.sections.submit.progressbar.upload": "Carica file",
 
-  // "submission.sections.submit.progressbar.sherpaPolicies": "Publisher open access policy information",
-  "submission.sections.submit.progressbar.sherpaPolicies": "Informazioni sulla policy di open access dell'editore",
-
-  // "submission.sections.sherpa-policy.title-empty": "No publisher policy information available. If your work has an associated ISSN, please enter it above to see any related publisher open access policies.",
-  "submission.sections.sherpa-policy.title-empty": "Non sono disponibili informazioni sulle policy dell'editore. Se il lavoro ha un ISSN associato, si prega di inserirlo qui sopra per vedere le policy di open access dell'editore.",
+  // "submission.sections.jisc-policy.title-empty": "No publisher policy information available. If your work has an associated ISSN, please enter it above to see any related publisher open access policies.",
+  "submission.sections.jisc-policy.title-empty": "Non sono disponibili informazioni sulle policy dell'editore. Se il lavoro ha un ISSN associato, si prega di inserirlo qui sopra per vedere le policy di open access dell'editore.",
 
   // "submission.sections.status.errors.title": "Errors",
   "submission.sections.status.errors.title": "Errori",
@@ -9255,83 +9318,83 @@
   // "submission.sections.license.notgranted": "You must accept the license",
   "submission.sections.license.notgranted": "È necessario accettare la licenza",
 
-  // "submission.sections.sherpa.publication.information": "Publication information",
-  "submission.sections.sherpa.publication.information": "Informazioni sulla pubblicazione",
+  // "submission.sections.jisc.publication.information": "Publication information",
+  "submission.sections.jisc.publication.information": "Informazioni sulla pubblicazione",
 
-  // "submission.sections.sherpa.publication.information.title": "Title",
-  "submission.sections.sherpa.publication.information.title": "Titolo",
+  // "submission.sections.jisc.publication.information.title": "Title",
+  "submission.sections.jisc.publication.information.title": "Titolo",
 
-  // "submission.sections.sherpa.publication.information.issns": "ISSNs",
-  "submission.sections.sherpa.publication.information.issns": "ISSN",
+  // "submission.sections.jisc.publication.information.issns": "ISSNs",
+  "submission.sections.jisc.publication.information.issns": "ISSN",
 
-  // "submission.sections.sherpa.publication.information.url": "URL",
-  "submission.sections.sherpa.publication.information.url": "URL",
+  // "submission.sections.jisc.publication.information.url": "URL",
+  "submission.sections.jisc.publication.information.url": "URL",
 
-  // "submission.sections.sherpa.publication.information.publishers": "Publisher",
-  "submission.sections.sherpa.publication.information.publishers": "Editore",
+  // "submission.sections.jisc.publication.information.publishers": "Publisher",
+  "submission.sections.jisc.publication.information.publishers": "Editore",
 
-  // "submission.sections.sherpa.publication.information.romeoPub": "Romeo Pub",
-  "submission.sections.sherpa.publication.information.romeoPub": "Romeo Pub",
+  // "submission.sections.jisc.publication.information.romeoPub": "Romeo Pub",
+  "submission.sections.jisc.publication.information.romeoPub": "Romeo Pub",
 
-  // "submission.sections.sherpa.publication.information.zetoPub": "Zeto Pub",
-  "submission.sections.sherpa.publication.information.zetoPub": "Zeto Pub",
+  // "submission.sections.jisc.publication.information.zetoPub": "Zeto Pub",
+  "submission.sections.jisc.publication.information.zetoPub": "Zeto Pub",
 
-  // "submission.sections.sherpa.publisher.policy": "Publisher Policy",
-  "submission.sections.sherpa.publisher.policy": "Policy dell'editore",
+  // "submission.sections.jisc.publisher.policy": "Publisher Policy",
+  "submission.sections.jisc.publisher.policy": "Policy dell'editore",
 
-  // "submission.sections.sherpa.publisher.policy.description": "The below information was found via Sherpa Romeo. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact your site administrator via the feedback form in the footer.",
-  "submission.sections.sherpa.publisher.policy.description": "Le informazioni riportate di seguito sono state reperite tramite Sherpa Romeo. In base alle policy del vostro editore, fornisce consigli sull'eventuale necessità di un embargo e/o su quali file è possibile caricare. In caso di domande, contattare l'amministratore del sito tramite il modulo di feedback nel piè di pagina.",
+  // "submission.sections.jisc.publisher.policy.description": "The below information was found via Jisc Open policy finder. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact your site administrator via the feedback form in the footer.",
+  "submission.sections.jisc.publisher.policy.description": "Le informazioni riportate di seguito sono state reperite tramite Open Policy Finder. In base alle policy del vostro editore, fornisce consigli sull'eventuale necessità di un embargo e/o su quali file è possibile caricare. In caso di domande, contattare l'amministratore del sito tramite il modulo di feedback nel piè di pagina.",
 
-  // "submission.sections.sherpa.publisher.policy.openaccess": "Open Access pathways permitted by this journal's policy are listed below by article version. Click on a pathway for a more detailed view",
-  "submission.sections.sherpa.publisher.policy.openaccess": "I percorsi open access consentiti dalle policy di questa rivista sono elencati di seguito per versione dell'articolo. Clicca su un percorso per vederlo nel dettaglio",
+  // "submission.sections.jisc.publisher.policy.openaccess": "Open Access pathways permitted by this journal's policy are listed below by article version. Click on a pathway for a more detailed view",
+  "submission.sections.jisc.publisher.policy.openaccess": "I percorsi open access consentiti dalle policy di questa rivista sono elencati di seguito per versione dell'articolo. Clicca su un percorso per vederlo nel dettaglio",
 
-  // "submission.sections.sherpa.publisher.policy.more.information": "For more information, please see the following links:",
-  "submission.sections.sherpa.publisher.policy.more.information": "Per maggiori informazioni si prega di consultare il seguente link:",
+  // "submission.sections.jisc.publisher.policy.more.information": "For more information, please see the following links:",
+  "submission.sections.jisc.publisher.policy.more.information": "Per maggiori informazioni si prega di consultare il seguente link:",
 
-  // "submission.sections.sherpa.publisher.policy.version": "Version",
-  "submission.sections.sherpa.publisher.policy.version": "Versione",
+  // "submission.sections.jisc.publisher.policy.version": "Version",
+  "submission.sections.jisc.publisher.policy.version": "Versione",
 
-  // "submission.sections.sherpa.publisher.policy.embargo": "Embargo",
-  "submission.sections.sherpa.publisher.policy.embargo": "Embargo",
+  // "submission.sections.jisc.publisher.policy.embargo": "Embargo",
+  "submission.sections.jisc.publisher.policy.embargo": "Embargo",
 
-  // "submission.sections.sherpa.publisher.policy.noembargo": "No Embargo",
-  "submission.sections.sherpa.publisher.policy.noembargo": "Nessun embargo",
+  // "submission.sections.jisc.publisher.policy.noembargo": "No Embargo",
+  "submission.sections.jisc.publisher.policy.noembargo": "Nessun embargo",
 
-  // "submission.sections.sherpa.publisher.policy.nolocation": "None",
-  "submission.sections.sherpa.publisher.policy.nolocation": "Nessuno",
+  // "submission.sections.jisc.publisher.policy.nolocation": "None",
+  "submission.sections.jisc.publisher.policy.nolocation": "Nessuno",
 
-  // "submission.sections.sherpa.publisher.policy.license": "License",
-  "submission.sections.sherpa.publisher.policy.license": "Licenza",
+  // "submission.sections.jisc.publisher.policy.license": "License",
+  "submission.sections.jisc.publisher.policy.license": "Licenza",
 
-  // "submission.sections.sherpa.publisher.policy.prerequisites": "Prerequisites",
-  "submission.sections.sherpa.publisher.policy.prerequisites": "Prerequisiti",
+  // "submission.sections.jisc.publisher.policy.prerequisites": "Prerequisites",
+  "submission.sections.jisc.publisher.policy.prerequisites": "Prerequisiti",
 
-  // "submission.sections.sherpa.publisher.policy.location": "Location",
-  "submission.sections.sherpa.publisher.policy.location": "Località",
+  // "submission.sections.jisc.publisher.policy.location": "Location",
+  "submission.sections.jisc.publisher.policy.location": "Località",
 
-  // "submission.sections.sherpa.publisher.policy.conditions": "Conditions",
-  "submission.sections.sherpa.publisher.policy.conditions": "Condizioni",
+  // "submission.sections.jisc.publisher.policy.conditions": "Conditions",
+  "submission.sections.jisc.publisher.policy.conditions": "Condizioni",
 
-  // "submission.sections.sherpa.publisher.policy.refresh": "Refresh",
-  "submission.sections.sherpa.publisher.policy.refresh": "Ricarica",
+  // "submission.sections.jisc.publisher.policy.refresh": "Refresh",
+  "submission.sections.jisc.publisher.policy.refresh": "Ricarica",
 
-  // "submission.sections.sherpa.record.information": "Record Information",
-  "submission.sections.sherpa.record.information": "Informazioni sulla registrazione",
+  // "submission.sections.jisc.record.information": "Record Information",
+  "submission.sections.jisc.record.information": "Informazioni sulla registrazione",
 
-  // "submission.sections.sherpa.record.information.id": "ID",
-  "submission.sections.sherpa.record.information.id": "ID",
+  // "submission.sections.jisc.record.information.id": "ID",
+  "submission.sections.jisc.record.information.id": "ID",
 
-  // "submission.sections.sherpa.record.information.date.created": "Date Created",
-  "submission.sections.sherpa.record.information.date.created": "Data di creazione",
+  // "submission.sections.jisc.record.information.date.created": "Date Created",
+  "submission.sections.jisc.record.information.date.created": "Data di creazione",
 
-  // "submission.sections.sherpa.record.information.date.modified": "Last Modified",
-  "submission.sections.sherpa.record.information.date.modified": "Ultima modifica",
+  // "submission.sections.jisc.record.information.date.modified": "Last Modified",
+  "submission.sections.jisc.record.information.date.modified": "Ultima modifica",
 
-  // "submission.sections.sherpa.record.information.uri": "URI",
-  "submission.sections.sherpa.record.information.uri": "URI",
+  // "submission.sections.jisc.record.information.uri": "URI",
+  "submission.sections.jisc.record.information.uri": "URI",
 
-  // "submission.sections.sherpa.error.message": "There was an error retrieving sherpa informations",
-  "submission.sections.sherpa.error.message": "Si è verificato un errore nel recuperare le informazioni da Sherpa",
+  // "submission.sections.jisc.error.message": "There was an error retrieving Jisc Open policy finder information",
+  "submission.sections.jisc.error.message": "Si è verificato un errore nel recuperare le informazioni da Sherpa",
 
   // "submission.submit.breadcrumbs": "New submission",
   "submission.submit.breadcrumbs": "Nuova immissione",
@@ -9403,7 +9466,8 @@
   // "submission.workflow.tasks.claimed.reject.submit": "Reject",
   "submission.workflow.tasks.claimed.reject.submit": "Rifiuta",
 
-  // "submission.workflow.tasks.claimed.reject_help": "If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select \"Reject\".  You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.",
+  // "submission.workflow.tasks.claimed.reject_help": "If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select \"Reject\". You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.",
+  // TODO Source message changed - Revise the translation
   "submission.workflow.tasks.claimed.reject_help": "Se l'item esaminato <strong>non</strong> è adatto per essere inserito nella collezione, seleziona \"Rifiuta\".  Ti verrà quindi chiesto di inserire un messaggio che indichi perché l'item non è adatto e se chi ha inviato l'item deve cambiare qualcosa e inviarlo di nuovo.",
 
   // "submission.workflow.tasks.claimed.return": "Return to pool",
@@ -10195,7 +10259,7 @@
   "listable-notification-object.default-message": "Questo oggetto non può essere recuperato",
 
   // "system-wide-alert-banner.retrieval.error": "Something went wrong retrieving the system-wide alert banner",
-  "system-wide-alert-banner.retrieval.error": "Qualcosa è andato storto nel recupero del banner di allarme di sistema",
+  "system-wide-alert-banner.retrieval.error": "Qualcosa è andato storto nel recupero del banner del messaggio di servizio",
 
   // "system-wide-alert-banner.countdown.prefix": "In",
   "system-wide-alert-banner.countdown.prefix": "Tra",
@@ -10210,13 +10274,13 @@
   "system-wide-alert-banner.countdown.minutes": "{{minutes}} minuti:",
 
   // "menu.section.system-wide-alert": "System-wide Alert",
-  "menu.section.system-wide-alert": "Allarme di sistema",
+  "menu.section.system-wide-alert": "Messaggio di servizio",
 
   // "system-wide-alert.form.header": "System-wide Alert",
-  "system-wide-alert.form.header": "Allarme di sistema",
+  "system-wide-alert.form.header": "Messaggio di servizio",
 
   // "system-wide-alert-form.retrieval.error": "Something went wrong retrieving the system-wide alert",
-  "system-wide-alert-form.retrieval.error": "Qualcosa è andato storto nel recupero dell'allarme di sistema",
+  "system-wide-alert-form.retrieval.error": "Qualcosa è andato storto nel recupero del messaggio di servizio",
 
   // "system-wide-alert.form.cancel": "Cancel",
   "system-wide-alert.form.cancel": "Annulla",
@@ -10231,41 +10295,41 @@
   "system-wide-alert.form.label.inactive": "DISATTIVO",
 
   // "system-wide-alert.form.error.message": "The system wide alert must have a message",
-  "system-wide-alert.form.error.message": "L'allarme di sistema deve avere un messaggio",
+  "system-wide-alert.form.error.message": "Il messaggio di servizio deve avere del contenuto",
 
   // "system-wide-alert.form.label.message": "Alert message",
-  "system-wide-alert.form.label.message": "Messaggio di allarme",
+  "system-wide-alert.form.label.message": "Messaggio di servizio",
 
   // "system-wide-alert.form.label.countdownTo.enable": "Enable a countdown timer",
   "system-wide-alert.form.label.countdownTo.enable": "Attiva un conto alla rovescia",
 
   // "system-wide-alert.form.label.countdownTo.hint": "Hint: Set a countdown timer. When enabled, a date can be set in the future and the system-wide alert banner will perform a countdown to the set date. When this timer ends, it will disappear from the alert. The server will NOT be automatically stopped.",
-  "system-wide-alert.form.label.countdownTo.hint": "Suggerimento: Imposta un conto alla rovescia. Se abilitato, è possibile impostare una data futura e il banner di allarme di sistema eseguirà un conto alla rovescia fino alla data impostata. Quando il timer terminerà, l'avviso scomparirà. Il server NON verrà arrestato automaticamente.",
+  "system-wide-alert.form.label.countdownTo.hint": "Suggerimento: Imposta un conto alla rovescia. Se abilitato, è possibile impostare una data futura e il banner di messaggio di servizio eseguirà un conto alla rovescia fino alla data impostata. Quando il timer terminerà, l'avviso scomparirà. Il server NON verrà arrestato automaticamente.",
 
   // "system-wide-alert-form.select-date-by-calendar": "Select date using calendar",
   // TODO New key - Add a translation
   "system-wide-alert-form.select-date-by-calendar": "Select date using calendar",
 
   // "system-wide-alert.form.label.preview": "System-wide alert preview",
-  "system-wide-alert.form.label.preview": "Anteprima dell'allarme di sistema",
+  "system-wide-alert.form.label.preview": "Anteprima del messaggio di servizio",
 
   // "system-wide-alert.form.update.success": "The system-wide alert was successfully updated",
-  "system-wide-alert.form.update.success": "L'allarme di sistema è stato aggiornato con successo",
+  "system-wide-alert.form.update.success": "Il messaggio di servizio è stato aggiornato con successo",
 
   // "system-wide-alert.form.update.error": "Something went wrong when updating the system-wide alert",
-  "system-wide-alert.form.update.error": "Qualcosa è andato storto durante l'aggiornamento dell'allarme di sistema",
+  "system-wide-alert.form.update.error": "Qualcosa è andato storto durante l'aggiornamento del messaggio di servizio",
 
   // "system-wide-alert.form.create.success": "The system-wide alert was successfully created",
-  "system-wide-alert.form.create.success": "L'allarme di sistema è stato creato con successo",
+  "system-wide-alert.form.create.success": "Il messaggio di servizio è stato creato con successo",
 
   // "system-wide-alert.form.create.error": "Something went wrong when creating the system-wide alert",
-  "system-wide-alert.form.create.error": "Qualcosa è andato storto nella creazione dell'allarme di sistema",
+  "system-wide-alert.form.create.error": "Qualcosa è andato storto nella creazione del messaggio di servizio",
 
   // "admin.system-wide-alert.breadcrumbs": "System-wide Alerts",
-  "admin.system-wide-alert.breadcrumbs": "Allarmi di sistema",
+  "admin.system-wide-alert.breadcrumbs": "Messaggi di servizio",
 
   // "admin.system-wide-alert.title": "System-wide Alerts",
-  "admin.system-wide-alert.title": "Allarmi di sistema",
+  "admin.system-wide-alert.title": "Messaggi di servizio",
 
   // "discover.filters.head": "Discover",
   // TODO New key - Add a translation
@@ -11015,21 +11079,21 @@
   // TODO New key - Add a translation
   "error.validation.coarnotify.invalidfilter": "Invalid filter, try to select another service or none.",
 
-  // "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been taken in charge.",
+  // "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been taken in charge.",
   // TODO New key - Add a translation
-  "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been taken in charge.",
+  "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been taken in charge.",
 
-  // "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been rejected.",
+  // "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been rejected.",
   // TODO New key - Add a translation
-  "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been rejected.",
+  "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been rejected.",
 
-  // "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been tentatively rejected. Revisions are required",
+  // "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been tentatively rejected. Revisions are required",
   // TODO New key - Add a translation
-  "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been tentatively rejected. Revisions are required",
+  "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been tentatively rejected. Revisions are required",
 
-  // "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> is pending.",
+  // "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> is pending.",
   // TODO New key - Add a translation
-  "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> is pending.",
+  "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> is pending.",
 
   // "ldn-service-button-mark-inbound-deletion": "Mark supported pattern for deletion",
   // TODO New key - Add a translation
@@ -11819,9 +11883,9 @@
   // TODO New key - Add a translation
   "item.page.cc.license.title": "Creative Commons license",
 
-  // "item.page.cc.license.disclaimer": "Except where otherwised noted, this item's license is described as",
+  // "item.page.cc.license.disclaimer": "Except where otherwise noted, this item's license is described as",
   // TODO New key - Add a translation
-  "item.page.cc.license.disclaimer": "Except where otherwised noted, this item's license is described as",
+  "item.page.cc.license.disclaimer": "Except where otherwise noted, this item's license is described as",
 
   // "browse.search-form.placeholder": "Search the repository",
   // TODO New key - Add a translation
@@ -11847,9 +11911,9 @@
   // TODO New key - Add a translation
   "live-region.ordering.instructions": "Press spacebar to reorder {{ itemName }}.",
 
-  // "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
+  // "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
   // TODO New key - Add a translation
-  "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
+  "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
 
   // "live-region.ordering.moved": "{{ itemName }}, moved to position {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
   // TODO New key - Add a translation
@@ -12070,6 +12134,18 @@
   // "file-download-link.request-copy": "Request a copy of ",
   // TODO New key - Add a translation
   "file-download-link.request-copy": "Request a copy of ",
+
+  // "item.preview.organization.url": "URL",
+  // TODO New key - Add a translation
+  "item.preview.organization.url": "URL",
+
+  // "item.preview.organization.address.addressLocality": "City",
+  // TODO New key - Add a translation
+  "item.preview.organization.address.addressLocality": "City",
+
+  // "item.preview.organization.alternateName": "Alternative name",
+  // TODO New key - Add a translation
+  "item.preview.organization.alternateName": "Alternative name",
 
 
 }

@@ -15,7 +15,7 @@ import {
 import { RouterLink } from '@angular/router';
 import {
   NgbDropdownModule,
-  NgbTooltipModule,
+  NgbTooltip,
 } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import {
@@ -81,12 +81,11 @@ import {
     CdkDropList,
     CommonModule,
     NgbDropdownModule,
-    NgbTooltipModule,
+    NgbTooltip,
     PaginationComponent,
     RouterLink,
     TranslateModule,
   ],
-  standalone: true,
 })
 /**
  * Component that displays a single bundle of an item on the item bitstreams edit page

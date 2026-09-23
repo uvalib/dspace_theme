@@ -3,7 +3,13 @@ import {
   Component,
   OnInit,
 } from '@angular/core';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbNav,
+  NgbNavContent,
+  NgbNavItem,
+  NgbNavLink,
+  NgbNavOutlet,
+} from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
 import { take } from 'rxjs/operators';
@@ -22,13 +28,16 @@ import {
   selector: 'ds-health-page',
   templateUrl: './health-page.component.html',
   styleUrls: ['./health-page.component.scss'],
-  standalone: true,
   imports: [
     AlertComponent,
     AsyncPipe,
     HealthInfoComponent,
     HealthPanelComponent,
-    NgbNavModule,
+    NgbNav,
+    NgbNavContent,
+    NgbNavItem,
+    NgbNavLink,
+    NgbNavOutlet,
     TranslateModule,
   ],
 })

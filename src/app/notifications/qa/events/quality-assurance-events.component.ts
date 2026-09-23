@@ -10,7 +10,7 @@ import {
 } from '@angular/router';
 import {
   NgbModal,
-  NgbTooltipModule,
+  NgbTooltip,
 } from '@ng-bootstrap/ng-bootstrap';
 import {
   TranslateModule,
@@ -82,13 +82,12 @@ import { EPersonDataComponent } from './ePerson-data/ePerson-data.component';
   selector: 'ds-quality-assurance-events',
   templateUrl: './quality-assurance-events.component.html',
   styleUrls: ['./quality-assurance-events.component.scss'],
-  standalone: true,
   imports: [
     AlertComponent,
     AsyncPipe,
     BtnDisabledDirective,
     EPersonDataComponent,
-    NgbTooltipModule,
+    NgbTooltip,
     PaginationComponent,
     RouterLink,
     ThemedLoadingComponent,

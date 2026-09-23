@@ -27,6 +27,7 @@ import {
 import { environment } from '../../../environments/environment';
 import { BitstreamDataService } from '../../core/data/bitstream-data.service';
 import { BundleDataService } from '../../core/data/bundle-data.service';
+import { ConfigurationDataService } from '../../core/data/configuration-data.service';
 import { Item } from '../../core/shared/item.model';
 import {
   HostWindowService,
@@ -43,7 +44,6 @@ import { MiradorViewerService } from './mirador-viewer.service';
     AsyncPipe,
     TranslateModule,
   ],
-  standalone: true,
 })
 export class MiradorViewerComponent implements OnInit {
 
@@ -63,6 +63,11 @@ export class MiradorViewerComponent implements OnInit {
    * Hides embedded viewer in dev mode.
    */
   isViewerAvailable = true;
+
+  /**
+   * Check if IIIF is enabled in the repository.
+   */
+  isIiifEnabled$: Observable<boolean>;
 
   /**
    * The url for the iframe.
@@ -86,6 +91,7 @@ export class MiradorViewerComponent implements OnInit {
               private bitstreamDataService: BitstreamDataService,
               private bundleDataService: BundleDataService,
               private hostWindowService: HostWindowService,
+              private configurationDataService: ConfigurationDataService,
               @Inject(PLATFORM_ID) private platformId: any) {
   }
 
@@ -166,5 +172,7 @@ export class MiradorViewerComponent implements OnInit {
         );
       }
     }
+    // Set the property whether IIIF is enabled in the repository
+    this.isIiifEnabled$ =  this.viewerService.isIiifEnabled(this.configurationDataService);
   }
 }

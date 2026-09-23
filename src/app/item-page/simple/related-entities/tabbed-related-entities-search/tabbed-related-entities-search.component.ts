@@ -8,7 +8,13 @@ import {
   ActivatedRoute,
   Router,
 } from '@angular/router';
-import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbNav,
+  NgbNavContent,
+  NgbNavItem,
+  NgbNavLink,
+  NgbNavOutlet,
+} from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -20,10 +26,13 @@ import { RelatedEntitiesSearchComponent } from '../related-entities-search/relat
 @Component({
   selector: 'ds-tabbed-related-entities-search',
   templateUrl: './tabbed-related-entities-search.component.html',
-  standalone: true,
   imports: [
     AsyncPipe,
-    NgbNavModule,
+    NgbNav,
+    NgbNavContent,
+    NgbNavItem,
+    NgbNavLink,
+    NgbNavOutlet,
     RelatedEntitiesSearchComponent,
     TranslateModule,
     VarDirective,

@@ -11,6 +11,7 @@ import {
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
+import { ActionType } from 'src/app/core/resource-policy/models/action-type.model';
 
 import { environment } from '../../../../../environments/environment';
 import {
@@ -43,7 +44,6 @@ import {
   selector: 'ds-base-create-community-parent-selector',
   styleUrls: ['./create-community-parent-selector.component.scss'],
   templateUrl: './create-community-parent-selector.component.html',
-  standalone: true,
   imports: [
     AsyncPipe,
     AuthorizedCommunitySelectorComponent,
@@ -54,6 +54,7 @@ export class CreateCommunityParentSelectorComponent extends DSOSelectorModalWrap
   objectType = DSpaceObjectType.COMMUNITY;
   selectorTypes = [DSpaceObjectType.COMMUNITY];
   action = SelectorActionType.CREATE;
+  rpActionType = ActionType.ADD;
   defaultSort = new SortOptions(environment.comcolSelectionSort.sortField, environment.comcolSelectionSort.sortDirection as SortDirection);
   isAdmin$: Observable<boolean>;
 
@@ -62,6 +63,7 @@ export class CreateCommunityParentSelectorComponent extends DSOSelectorModalWrap
   }
 
   ngOnInit() {
+    super.ngOnInit();
     this.isAdmin$ = this.authorizationService.isAuthorized(FeatureID.AdministratorOf);
   }
 

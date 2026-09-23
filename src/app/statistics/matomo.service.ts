@@ -68,10 +68,16 @@ export class MatomoService {
     this.statusSubject.next('loading');
   }
 
+  /**
+   * This method indicates that the Matomo script loaded successfully thus we set state to loaded
+   */
   markAsLoaded() {
     this.statusSubject.next('loaded');
   }
 
+  /**
+   * This method indicates that the Matomo script failed to download or execute and sets state to error
+   */
   markAsError() {
     this.statusSubject.next('error');
   }
@@ -176,6 +182,10 @@ export class MatomoService {
       );
   }
 
+  /**
+   * Checks if Matomo script loaded correctly
+   * @returns An Observable that emits a boolean indicating whether Matomo script loaded correctly.
+   */
   isMatomoScriptLoaded$(): Observable<boolean> {
     return this.status$.pipe(
       map(status => status === 'loaded'),

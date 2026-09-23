@@ -26,7 +26,8 @@
   // "500.link.home-page": "Take me to the home page",
   "500.link.home-page": "मुझे होम पेज पर ले चलें",
 
-  // "404.help": "We can't find the page you're looking for. The page may have been moved or deleted. You can use the button below to get back to the home page. ",
+  // "404.help": "We can't find the page you're looking for. The page may have been moved or deleted. You can use the button below to get back to the home page.",
+  // TODO Source message changed - Revise the translation
   "404.help": "हम उस पृष्ठ को नहीं ढूंढ सकते जिसे आप ढूंढ रहे हैं। पृष्ठ को स्थानांतरित या हटा दिया गया हो सकता है। आप नीचे दिए गए बटन का उपयोग करके होम पेज पर वापस जा सकते हैं।",
 
   // "404.link.home-page": "Take me to the home page",
@@ -1726,6 +1727,14 @@
   // "browse.title": "Browsing by {{ field }}{{ startsWith }} {{ value }}",
   "browse.title": "{{ field }}{{ startsWith }} {{ value }} द्वारा ब्राउज़ कर रहे हैं",
 
+  // "browse.taxonomy.show_next_results": "Show next results",
+  // TODO New key - Add a translation
+  "browse.taxonomy.show_next_results": "Show next results",
+
+  // "browse.taxonomy.show_previous_results": "Show previous results",
+  // TODO New key - Add a translation
+  "browse.taxonomy.show_previous_results": "Show previous results",
+
   // "browse.title.page": "Browsing by {{ field }} {{ value }}",
   "browse.title.page": "{{ field }} {{ value }} द्वारा ब्राउज़ कर रहे हैं",
 
@@ -2727,7 +2736,8 @@
   // "dso-selector.no-results": "No {{ type }} found",
   "dso-selector.no-results": "कोई {{ type }} नहीं मिला",
 
-  // "dso-selector.placeholder": "Search for a {{ type }}",
+  // "dso-selector.placeholder": "Search for {{ type }}",
+  // TODO Source message changed - Revise the translation
   "dso-selector.placeholder": "{{ type }} के लिए खोजें",
 
   // "dso-selector.placeholder.type.community": "community",
@@ -3210,6 +3220,18 @@
   // "form.number-picker.increment": "Increment {{field}}",
   "form.number-picker.increment": "{{field}} बढ़ाएं",
 
+  // "form.number-picker.label.Year": "Year",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Year": "Year",
+
+  // "form.number-picker.label.Month": "Month",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Month": "Month",
+
+  // "form.number-picker.label.Day": "Day",
+  // TODO New key - Add a translation
+  "form.number-picker.label.Day": "Day",
+
   // "form.repeatable.sort.tip": "Drop the item in the new position",
   "form.repeatable.sort.tip": "आइटम को नई स्थिति में छोड़ें",
 
@@ -3394,9 +3416,9 @@
   // TODO New key - Add a translation
   "info.accessibility-settings.disableNotificationTimeOut.label": "Automatically close notifications after time out",
 
-  // "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open untill manually closed.",
+  // "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open until manually closed.",
   // TODO New key - Add a translation
-  "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open untill manually closed.",
+  "info.accessibility-settings.disableNotificationTimeOut.hint": "When this toggle is activated, notifications will close automatically after the time out passes. When deactivated, notifications will remain open until manually closed.",
 
   // "info.accessibility-settings.failed-notification": "Failed to save accessibility settings",
   // TODO New key - Add a translation
@@ -3618,7 +3640,8 @@
   // TODO New key - Add a translation
   "item.edit.bitstreams.bundle.name": "BUNDLE: {{ name }}",
 
-  // "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the  {{ bundle }} Bundle",
+  // "item.edit.bitstreams.bundle.table.aria-label": "Bitstreams in the {{ bundle }} Bundle",
+  // TODO Source message changed - Revise the translation
   "item.edit.bitstreams.bundle.table.aria-label": "{{ bundle }} बंडल में बिटस्ट्रीम",
 
   // "item.edit.bitstreams.bundle.tooltip": "You can move a bitstream to a different page by dropping it on the page number.",
@@ -3844,6 +3867,14 @@
   // "item.edit.item-mapper.notifications.add.error.content": "Errors occurred for mapping of item to {{amount}} collections.",
   "item.edit.item-mapper.notifications.add.error.content": "{{amount}} संग्रहों में आइटम को मैप करने में त्रुटियां हुईं।",
 
+  // "item.edit.item-mapper.notifications.add.error.forbidden.head": "Permission denied",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.add.error.forbidden.head": "Permission denied",
+
+  // "item.edit.item-mapper.notifications.add.error.forbidden.content": "You do not have permission to map this item to a collection.",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.add.error.forbidden.content": "You do not have permission to map this item to a collection.",
+
   // "item.edit.item-mapper.notifications.add.error.head": "Mapping errors",
   "item.edit.item-mapper.notifications.add.error.head": "मैपिंग त्रुटियां",
 
@@ -3855,6 +3886,14 @@
 
   // "item.edit.item-mapper.notifications.remove.error.content": "Errors occurred for the removal of the mapping to {{amount}} collections.",
   "item.edit.item-mapper.notifications.remove.error.content": "{{amount}} संग्रहों के लिए मैपिंग हटाने में त्रुटियां हुईं।",
+
+  // "item.edit.item-mapper.notifications.remove.error.forbidden.head": "Permission denied",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.remove.error.forbidden.head": "Permission denied",
+
+  // "item.edit.item-mapper.notifications.remove.error.forbidden.content": "You do not have permission to remove this item from a collection.",
+  // TODO New key - Add a translation
+  "item.edit.item-mapper.notifications.remove.error.forbidden.content": "You do not have permission to remove this item from a collection.",
 
   // "item.edit.item-mapper.notifications.remove.error.head": "Removal of mapping errors",
   "item.edit.item-mapper.notifications.remove.error.head": "मैपिंग हटाने की त्रुटियां",
@@ -4169,7 +4208,8 @@
   // "item.edit.tabs.metadata.head": "Metadata",
   "item.edit.tabs.metadata.head": "मेटाडेटा",
 
-  // "item.edit.tabs.metadata.title": "Item Edit -  Metadata",
+  // "item.edit.tabs.metadata.title": "Item Edit - Metadata",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.metadata.title": "आइटम संपादन - मेटाडेटा",
 
   // "item.edit.tabs.relationships.head": "Relationships",
@@ -4247,7 +4287,8 @@
   // "item.edit.tabs.status.labels.lastModified": "Last Modified",
   "item.edit.tabs.status.labels.lastModified": "अंतिम संशोधित",
 
-  // "item.edit.tabs.status.title": "Item Edit -  Status",
+  // "item.edit.tabs.status.title": "Item Edit - Status",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.status.title": "आइटम संपादन - स्थिति",
 
   // "item.edit.tabs.versionhistory.head": "Version History",
@@ -4262,7 +4303,8 @@
   // "item.edit.tabs.view.head": "View Item",
   "item.edit.tabs.view.head": "आइटम देखें",
 
-  // "item.edit.tabs.view.title": "Item Edit -  View",
+  // "item.edit.tabs.view.title": "Item Edit - View",
+  // TODO Source message changed - Revise the translation
   "item.edit.tabs.view.title": "आइटम संपादन - देखें",
 
   // "item.edit.withdraw.cancel": "Cancel",
@@ -4380,14 +4422,24 @@
   // "item.truncatable-part.show-less": "Collapse",
   "item.truncatable-part.show-less": "संक्षेप करें",
 
-  // "item.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
-  "item.qa-event-notification.check.notification-info": "आपके खाते से संबंधित {{num}} लंबित सुझाव हैं",
+  // "item.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+  // TODO New key - Add a translation
+  "item.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+
+  // "item.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
+  // TODO New key - Add a translation
+  "item.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
 
   // "item.qa-event-notification-info.check.button": "View",
   "item.qa-event-notification-info.check.button": "देखें",
 
-  // "mydspace.qa-event-notification.check.notification-info": "There are {{num}} pending suggestions related to your account",
-  "mydspace.qa-event-notification.check.notification-info": "आपके खाते से संबंधित {{num}} लंबित सुझाव हैं",
+  // "mydspace.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+  // TODO New key - Add a translation
+  "mydspace.qa-event-notification.check.notification-info.singular": "There is {{num}} pending suggestion related to your account",
+
+  // "mydspace.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
+  // TODO New key - Add a translation
+  "mydspace.qa-event-notification.check.notification-info.plural": "There are {{num}} pending suggestions related to your account",
 
   // "mydspace.qa-event-notification-info.check.button": "View",
   "mydspace.qa-event-notification-info.check.button": "देखें",
@@ -4511,6 +4563,14 @@
 
   // "item.page.orcid.tooltip": "Open ORCID setting page",
   "item.page.orcid.tooltip": "ORCID सेटिंग पृष्ठ खोलें",
+
+  // "item.page.orcid-ico": "ORCID icon",
+  // TODO New key - Add a translation
+  "item.page.orcid-ico": "ORCID icon",
+
+  // "item.page.orcid-profile": "ORCID Profile",
+  // TODO New key - Add a translation
+  "item.page.orcid-profile": "ORCID Profile",
 
   // "item.page.person.search.title": "Articles by this author",
   "item.page.person.search.title": "इस लेखक द्वारा लेख",
@@ -6309,13 +6369,16 @@
   // "process.overview.unknown.user": "Unknown",
   "process.overview.unknown.user": "अज्ञात",
 
-  // "process.bulk.delete.error.head": "Error on deleteing process",
+  // "process.bulk.delete.error.head": "Error on deleting process",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.error.head": "प्रक्रिया हटाने में त्रुटि",
 
-  // "process.bulk.delete.error.body": "The process with ID {{processId}} could not be deleted. The remaining processes will continue being deleted. ",
+  // "process.bulk.delete.error.body": "The process with ID {{processId}} could not be deleted. The remaining processes will continue being deleted.",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.error.body": "आईडी {{processId}} वाली प्रक्रिया को हटाया नहीं जा सका। शेष प्रक्रियाएँ हटाई जाती रहेंगी।",
 
-  // "process.bulk.delete.success": "{{count}} process(es) have been succesfully deleted",
+  // "process.bulk.delete.success": "{{count}} process(es) have been successfully deleted",
+  // TODO Source message changed - Revise the translation
   "process.bulk.delete.success": "{{count}} प्रक्रिया(एँ) सफलतापूर्वक हटा दी गई हैं",
 
   // "profile.breadcrumbs": "Update Profile",
@@ -6931,7 +6994,8 @@
   // "resource-policies.form.eperson-group-list.select.btn": "Select",
   "resource-policies.form.eperson-group-list.select.btn": "चुनें",
 
-  // "resource-policies.form.eperson-group-list.tab.eperson": "Search for a ePerson",
+  // "resource-policies.form.eperson-group-list.tab.eperson": "Search for an ePerson",
+  // TODO Source message changed - Revise the translation
   "resource-policies.form.eperson-group-list.tab.eperson": "ePerson खोजें",
 
   // "resource-policies.form.eperson-group-list.tab.group": "Search for a group",
@@ -7826,14 +7890,14 @@
   // "submission.import-external.source.loading": "Loading ...",
   "submission.import-external.source.loading": "लोड हो रहा है ...",
 
-  // "submission.import-external.source.sherpaJournal": "SHERPA Journals",
-  "submission.import-external.source.sherpaJournal": "SHERPA Journals",
+  // "submission.import-external.source.opfJournal": "Jisc Open policy finder Journals",
+  "submission.import-external.source.opfJournal": "SHERPA Journals",
 
-  // "submission.import-external.source.sherpaJournalIssn": "SHERPA Journals by ISSN",
-  "submission.import-external.source.sherpaJournalIssn": "ISSN द्वारा SHERPA Journals",
+  // "submission.import-external.source.opfJournalIssn": "Jisc Open policy finder Journals by ISSN",
+  "submission.import-external.source.opfJournalIssn": "ISSN द्वारा SHERPA Journals",
 
-  // "submission.import-external.source.sherpaPublisher": "SHERPA Publishers",
-  "submission.import-external.source.sherpaPublisher": "SHERPA Publishers",
+  // "submission.import-external.source.opfPublisher": "Jisc Open policy finder Publishers",
+  "submission.import-external.source.opfPublisher": "SHERPA Publishers",
 
   // "submission.import-external.source.openaire": "OpenAIRE Search by Authors",
   "submission.import-external.source.openaire": "लेखकों द्वारा OpenAIRE खोज",
@@ -8015,11 +8079,11 @@
   // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.openaireFunding": "Importing from OpenAIRE",
   "submission.sections.describe.relationship-lookup.external-source.import-modal.head.openaireFunding": "OpenAIRE से आयात कर रहे हैं",
 
-  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaJournal": "Importing from Sherpa Journal",
-  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaJournal": "Sherpa जर्नल से आयात कर रहे हैं",
+  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscJournal": "Importing from Jisc Open policy finder Journal",
+  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscJournal": "Sherpa जर्नल से आयात कर रहे हैं",
 
-  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaPublisher": "Importing from Sherpa Publisher",
-  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.sherpaPublisher": "Sherpa प्रकाशक से आयात कर रहे हैं",
+  // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscPublisher": "Importing from Jisc Open policy finder Publisher",
+  "submission.sections.describe.relationship-lookup.external-source.import-modal.head.jiscPublisher": "Sherpa प्रकाशक से आयात कर रहे हैं",
 
   // "submission.sections.describe.relationship-lookup.external-source.import-modal.head.pubmed": "Importing from PubMed",
   "submission.sections.describe.relationship-lookup.external-source.import-modal.head.pubmed": "PubMed से आयात कर रहे हैं",
@@ -8142,11 +8206,11 @@
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "Local Journal Volumes ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.JournalVolume": "स्थानीय जर्नल वॉल्यूम ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournal": "Sherpa Journals ({{ count }})",
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournal": "शेरपा जर्नल्स ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournal": "Jisc Open policy finder Journals ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournal": "शेरपा जर्नल्स ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaPublisher": "Sherpa Publishers ({{ count }})",
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaPublisher": "शेरपा पब्लिशर्स ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscPublisher": "Jisc Open policy finder Publishers ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscPublisher": "शेरपा पब्लिशर्स ({{ count }})",
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.orcid": "ORCID ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.orcid": "ORCID ({{ count }})",
@@ -8181,8 +8245,8 @@
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.openaireFunding": "OpenAIRE Search by Funder ({{ count }})",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.openaireFunding": "OpenAIRE फंडर द्वारा खोजें ({{ count }})",
 
-  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournalIssn": "Sherpa Journals by ISSN ({{ count }})",
-  "submission.sections.describe.relationship-lookup.search-tab.tab-title.sherpaJournalIssn": "ISSN द्वारा शेरपा जर्नल्स ({{ count }})",
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournalIssn": "Jisc Open policy finder Journals by ISSN ({{ count }})",
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.jiscJournalIssn": "ISSN द्वारा शेरपा जर्नल्स ({{ count }})",
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.openalexPerson": "OpenAlex ({{ count }})",
   // TODO New key - Add a translation
@@ -8224,6 +8288,10 @@
 
   // "submission.sections.describe.relationship-lookup.search-tab.tab-title.isOrgUnitOfProject": "OrgUnit of the Project",
   "submission.sections.describe.relationship-lookup.search-tab.tab-title.isOrgUnitOfProject": "प्रोजेक्ट का संगठनात्मक इकाई",
+
+  // "submission.sections.describe.relationship-lookup.search-tab.tab-title.opfJournal": "Jisc Open policy finder of Journal",
+  // TODO New key - Add a translation
+  "submission.sections.describe.relationship-lookup.search-tab.tab-title.opfJournal": "Jisc Open policy finder of Journal",
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isProjectOfPublication": "Project",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isProjectOfPublication": "प्रोजेक्ट",
@@ -8364,11 +8432,11 @@
   // "submission.sections.describe.relationship-lookup.selection-tab.title.isChildOrgUnitOf": "Selected Organizational Unit",
   "submission.sections.describe.relationship-lookup.selection-tab.title.isChildOrgUnitOf": "चयनित संगठनात्मक इकाई",
 
-  // "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaJournal": "Search Results",
-  "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaJournal": "खोज परिणाम",
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.jiscJournal": "Search Results",
+  "submission.sections.describe.relationship-lookup.selection-tab.title.jiscJournal": "खोज परिणाम",
 
-  // "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaPublisher": "Search Results",
-  "submission.sections.describe.relationship-lookup.selection-tab.title.sherpaPublisher": "खोज परिणाम",
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.jiscPublisher": "Search Results",
+  "submission.sections.describe.relationship-lookup.selection-tab.title.jiscPublisher": "खोज परिणाम",
 
   // "submission.sections.describe.relationship-lookup.selection-tab.title.orcid": "Search Results",
   "submission.sections.describe.relationship-lookup.selection-tab.title.orcid": "खोज परिणाम",
@@ -8432,10 +8500,15 @@
   // TODO New key - Add a translation
   "submission.sections.describe.relationship-lookup.selection-tab.title.dataciteProject": "Search Results",
 
+  // "submission.sections.describe.relationship-lookup.selection-tab.title.opfJournal": "Search Results",
+  // TODO New key - Add a translation
+  "submission.sections.describe.relationship-lookup.selection-tab.title.opfJournal": "Search Results",
+
   // "submission.sections.describe.relationship-lookup.selection-tab.title": "Search Results",
   "submission.sections.describe.relationship-lookup.selection-tab.title": "खोज परिणाम",
 
   // "submission.sections.describe.relationship-lookup.name-variant.notification.content": "Would you like to save \"{{ value }}\" as a name variant for this person so you and others can reuse it for future submissions? If you don't you can still use it for this submission.",
+  // TODO Source message changed - Revise the translation
   "submission.sections.describe.relationship-lookup.name-variant.notification.content": "क्या आप \"{{ value }}\" को इस व्यक्ति के लिए एक नाम संस्करण के रूप में सहेजना चाहेंगे ताकि आप और अन्य इसे भविष्य की प्रस्तुतियों के लिए पुन: उपयोग कर सकें? यदि आप नहीं करते हैं तो आप इसे इस प्रस्तुति के लिए अभी भी उपयोग कर सकते हैं।",
 
   // "submission.sections.describe.relationship-lookup.name-variant.notification.confirm": "Save a new name variant",
@@ -8562,17 +8635,14 @@
   // "submission.sections.submit.progressbar.license": "Deposit license",
   "submission.sections.submit.progressbar.license": "जमा लाइसेंस",
 
-  // "submission.sections.submit.progressbar.sherpapolicy": "Sherpa policies",
-  "submission.sections.submit.progressbar.sherpapolicy": "शेरपा नीतियाँ",
+  // "submission.sections.submit.progressbar.opfpolicy": "Publisher open access policy information",
+  "submission.sections.submit.progressbar.opfpolicy": "प्रकाशक ओपन एक्सेस नीति जानकारी",
 
   // "submission.sections.submit.progressbar.upload": "Upload files",
   "submission.sections.submit.progressbar.upload": "फाइलें अपलोड करें",
 
-  // "submission.sections.submit.progressbar.sherpaPolicies": "Publisher open access policy information",
-  "submission.sections.submit.progressbar.sherpaPolicies": "प्रकाशक ओपन एक्सेस नीति जानकारी",
-
-  // "submission.sections.sherpa-policy.title-empty": "No publisher policy information available. If your work has an associated ISSN, please enter it above to see any related publisher open access policies.",
-  "submission.sections.sherpa-policy.title-empty": "कोई प्रकाशक नीति जानकारी उपलब्ध नहीं है। यदि आपके कार्य से संबंधित कोई ISSN है, तो कृपया इसे ऊपर दर्ज करें ताकि संबंधित प्रकाशक ओपन एक्सेस नीतियों को देखा जा सके।",
+  // "submission.sections.jisc-policy.title-empty": "No publisher policy information available. If your work has an associated ISSN, please enter it above to see any related publisher open access policies.",
+  "submission.sections.jisc-policy.title-empty": "कोई प्रकाशक नीति जानकारी उपलब्ध नहीं है। यदि आपके कार्य से संबंधित कोई ISSN है, तो कृपया इसे ऊपर दर्ज करें ताकि संबंधित प्रकाशक ओपन एक्सेस नीतियों को देखा जा सके।",
 
   // "submission.sections.status.errors.title": "Errors",
   "submission.sections.status.errors.title": "त्रुटियाँ",
@@ -8774,84 +8844,83 @@
   // "submission.sections.license.notgranted": "You must accept the license",
   "submission.sections.license.notgranted": "आपको लाइसेंस स्वीकार करना होगा",
 
-  // "submission.sections.sherpa.publication.information": "Publication information",
-  "submission.sections.sherpa.publication.information": "प्रकाशन जानकारी",
+  // "submission.sections.jisc.publication.information": "Publication information",
+  "submission.sections.jisc.publication.information": "प्रकाशन जानकारी",
 
-  // "submission.sections.sherpa.publication.information.title": "Title",
-  "submission.sections.sherpa.publication.information.title": "शीर्षक",
+  // "submission.sections.jisc.publication.information.title": "Title",
+  "submission.sections.jisc.publication.information.title": "शीर्षक",
 
-  // "submission.sections.sherpa.publication.information.issns": "ISSNs",
-  "submission.sections.sherpa.publication.information.issns": "ISSNs",
+  // "submission.sections.jisc.publication.information.issns": "ISSNs",
+  "submission.sections.jisc.publication.information.issns": "ISSNs",
 
-  // "submission.sections.sherpa.publication.information.url": "URL",
-  "submission.sections.sherpa.publication.information.url": "URL",
+  // "submission.sections.jisc.publication.information.url": "URL",
+  "submission.sections.jisc.publication.information.url": "URL",
 
-  // "submission.sections.sherpa.publication.information.publishers": "Publisher",
-  "submission.sections.sherpa.publication.information.publishers": "प्रकाशक",
+  // "submission.sections.jisc.publication.information.publishers": "Publisher",
+  "submission.sections.jisc.publication.information.publishers": "प्रकाशक",
 
-  // "submission.sections.sherpa.publication.information.romeoPub": "Romeo Pub",
-  "submission.sections.sherpa.publication.information.romeoPub": "रोमियो पब",
+  // "submission.sections.jisc.publication.information.romeoPub": "Romeo Pub",
+  "submission.sections.jisc.publication.information.romeoPub": "रोमियो पब",
 
-  // "submission.sections.sherpa.publication.information.zetoPub": "Zeto Pub",
-  "submission.sections.sherpa.publication.information.zetoPub": "ज़ेटो पब",
+  // "submission.sections.jisc.publication.information.zetoPub": "Zeto Pub",
+  "submission.sections.jisc.publication.information.zetoPub": "ज़ेटो पब",
 
-  // "submission.sections.sherpa.publisher.policy": "Publisher Policy",
-  "submission.sections.sherpa.publisher.policy": "प्रकाशक नीति",
+  // "submission.sections.jisc.publisher.policy": "Publisher Policy",
+  "submission.sections.jisc.publisher.policy": "प्रकाशक नीति",
 
-  // "submission.sections.sherpa.publisher.policy.description": "The below information was found via Sherpa Romeo. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact your site administrator via the feedback form in the footer.",
-  "submission.sections.sherpa.publisher.policy.description": "नीचे दी गई जानकारी शेरपा रोमियो के माध्यम से पाई गई थी। आपके प्रकाशक की नीतियों के आधार पर, यह सलाह प्रदान करती है कि क्या एक प्रतिबंध आवश्यक हो सकता है और/या आप किन फाइलों को अपलोड कर सकते हैं। यदि आपके पास प्रश्न हैं, तो कृपया फूटर में फीडबैक फॉर्म के माध्यम से अपने साइट व्यवस्थापक से संपर्क करें।",
+  // "submission.sections.jisc.publisher.policy.description": "The below information was found via Jisc Open policy finder. Based on the policies of your publisher, it provides advice regarding whether an embargo may be necessary and/or which files you are allowed to upload. If you have questions, please contact your site administrator via the feedback form in the footer.",
+  "submission.sections.jisc.publisher.policy.description": "नीचे दी गई जानकारी शेरपा रोमियो के माध्यम से पाई गई थी। आपके प्रकाशक की नीतियों के आधार पर, यह सलाह प्रदान करती है कि क्या एक प्रतिबंध आवश्यक हो सकता है और/या आप किन फाइलों को अपलोड कर सकते हैं। यदि आपके पास प्रश्न हैं, तो कृपया फूटर में फीडबैक फॉर्म के माध्यम से अपने साइट व्यवस्थापक से संपर्क करें।",
 
-  // "submission.sections.sherpa.publisher.policy.openaccess": "Open Access pathways permitted by this journal's policy are listed below by article version. Click on a pathway for a more detailed view",
-  "submission.sections.sherpa.publisher.policy.openaccess": "इस जर्नल की नीति द्वारा अनुमत ओपन एक्सेस मार्ग नीचे लेख संस्करण द्वारा सूचीबद्ध हैं। अधिक विस्तृत दृश्य के लिए एक मार्ग पर क्लिक करें",
+  // "submission.sections.jisc.publisher.policy.openaccess": "Open Access pathways permitted by this journal's policy are listed below by article version. Click on a pathway for a more detailed view",
+  "submission.sections.jisc.publisher.policy.openaccess": "इस जर्नल की नीति द्वारा अनुमत ओपन एक्सेस मार्ग नीचे लेख संस्करण द्वारा सूचीबद्ध हैं। अधिक विस्तृत दृश्य के लिए एक मार्ग पर क्लिक करें",
 
-  // "submission.sections.sherpa.publisher.policy.more.information": "For more information, please see the following links:",
-  // TODO New key - Add a translation
-  "submission.sections.sherpa.publisher.policy.more.information": "For more information, please see the following links:",
+  // "submission.sections.jisc.publisher.policy.more.information": "For more information, please see the following links:",
+  "submission.sections.jisc.publisher.policy.more.information": "For more information, please see the following links:",
 
-  // "submission.sections.sherpa.publisher.policy.version": "Version",
-  "submission.sections.sherpa.publisher.policy.version": "संस्करण",
+  // "submission.sections.jisc.publisher.policy.version": "Version",
+  "submission.sections.jisc.publisher.policy.version": "संस्करण",
 
-  // "submission.sections.sherpa.publisher.policy.embargo": "Embargo",
-  "submission.sections.sherpa.publisher.policy.embargo": "प्रतिबंध",
+  // "submission.sections.jisc.publisher.policy.embargo": "Embargo",
+  "submission.sections.jisc.publisher.policy.embargo": "प्रतिबंध",
 
-  // "submission.sections.sherpa.publisher.policy.noembargo": "No Embargo",
-  "submission.sections.sherpa.publisher.policy.noembargo": "कोई प्रतिबंध नहीं",
+  // "submission.sections.jisc.publisher.policy.noembargo": "No Embargo",
+  "submission.sections.jisc.publisher.policy.noembargo": "कोई प्रतिबंध नहीं",
 
-  // "submission.sections.sherpa.publisher.policy.nolocation": "None",
-  "submission.sections.sherpa.publisher.policy.nolocation": "कोई नहीं",
+  // "submission.sections.jisc.publisher.policy.nolocation": "None",
+  "submission.sections.jisc.publisher.policy.nolocation": "कोई नहीं",
 
-  // "submission.sections.sherpa.publisher.policy.license": "License",
-  "submission.sections.sherpa.publisher.policy.license": "लाइसेंस",
+  // "submission.sections.jisc.publisher.policy.license": "License",
+  "submission.sections.jisc.publisher.policy.license": "लाइसेंस",
 
-  // "submission.sections.sherpa.publisher.policy.prerequisites": "Prerequisites",
-  "submission.sections.sherpa.publisher.policy.prerequisites": "पूर्वापेक्षाएँ",
+  // "submission.sections.jisc.publisher.policy.prerequisites": "Prerequisites",
+  "submission.sections.jisc.publisher.policy.prerequisites": "पूर्वापेक्षाएँ",
 
-  // "submission.sections.sherpa.publisher.policy.location": "Location",
-  "submission.sections.sherpa.publisher.policy.location": "स्थान",
+  // "submission.sections.jisc.publisher.policy.location": "Location",
+  "submission.sections.jisc.publisher.policy.location": "स्थान",
 
-  // "submission.sections.sherpa.publisher.policy.conditions": "Conditions",
-  "submission.sections.sherpa.publisher.policy.conditions": "शर्तें",
+  // "submission.sections.jisc.publisher.policy.conditions": "Conditions",
+  "submission.sections.jisc.publisher.policy.conditions": "शर्तें",
 
-  // "submission.sections.sherpa.publisher.policy.refresh": "Refresh",
-  "submission.sections.sherpa.publisher.policy.refresh": "ताज़ा करें",
+  // "submission.sections.jisc.publisher.policy.refresh": "Refresh",
+  "submission.sections.jisc.publisher.policy.refresh": "ताज़ा करें",
 
-  // "submission.sections.sherpa.record.information": "Record Information",
-  "submission.sections.sherpa.record.information": "रिकॉर्ड जानकारी",
+  // "submission.sections.jisc.record.information": "Record Information",
+  "submission.sections.jisc.record.information": "रिकॉर्ड जानकारी",
 
-  // "submission.sections.sherpa.record.information.id": "ID",
-  "submission.sections.sherpa.record.information.id": "ID",
+  // "submission.sections.jisc.record.information.id": "ID",
+  "submission.sections.jisc.record.information.id": "ID",
 
-  // "submission.sections.sherpa.record.information.date.created": "Date Created",
-  "submission.sections.sherpa.record.information.date.created": "निर्माण की तारीख",
+  // "submission.sections.jisc.record.information.date.created": "Date Created",
+  "submission.sections.jisc.record.information.date.created": "निर्माण की तारीख",
 
-  // "submission.sections.sherpa.record.information.date.modified": "Last Modified",
-  "submission.sections.sherpa.record.information.date.modified": "अंतिम संशोधित",
+  // "submission.sections.jisc.record.information.date.modified": "Last Modified",
+  "submission.sections.jisc.record.information.date.modified": "अंतिम संशोधित",
 
-  // "submission.sections.sherpa.record.information.uri": "URI",
-  "submission.sections.sherpa.record.information.uri": "URI",
+  // "submission.sections.jisc.record.information.uri": "URI",
+  "submission.sections.jisc.record.information.uri": "URI",
 
-  // "submission.sections.sherpa.error.message": "There was an error retrieving sherpa informations",
-  "submission.sections.sherpa.error.message": "शेरपा जानकारी प्राप्त करने में त्रुटि हुई",
+  // "submission.sections.jisc.error.message": "There was an error retrieving Jisc Open policy finder information",
+  "submission.sections.jisc.error.message": "शेरपा जानकारी प्राप्त करने में त्रुटि हुई",
 
   // "submission.submit.breadcrumbs": "New submission",
   "submission.submit.breadcrumbs": "नई प्रस्तुति",
@@ -8922,7 +8991,8 @@
   // "submission.workflow.tasks.claimed.reject.submit": "Reject",
   "submission.workflow.tasks.claimed.reject.submit": "अस्वीकृत करें",
 
-  // "submission.workflow.tasks.claimed.reject_help": "If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select \"Reject\".  You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.",
+  // "submission.workflow.tasks.claimed.reject_help": "If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select \"Reject\". You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.",
+  // TODO Source message changed - Revise the translation
   "submission.workflow.tasks.claimed.reject_help": "यदि आपने आइटम की समीक्षा की है और पाया है कि यह संग्रह में शामिल करने के लिए उपयुक्त <strong>नहीं</strong> है, तो \"अस्वीकृत करें\" चुनें। आपको यह बताने के लिए एक संदेश दर्ज करने के लिए कहा जाएगा कि आइटम क्यों अनुपयुक्त है, और क्या सबमिटर को कुछ बदलना चाहिए और पुनः सबमिट करना चाहिए।",
 
   // "submission.workflow.tasks.claimed.return": "Return to pool",
@@ -10314,16 +10384,20 @@
   // "error.validation.coarnotify.invalidfilter": "Invalid filter, try to select another service or none.",
   "error.validation.coarnotify.invalidfilter": "अमान्य फ़िल्टर, कृपया दूसरी सेवा या कोई नहीं चुनें।",
 
-  // "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been taken in charge.",
+  // "request-status-alert-box.accepted": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been taken in charge.",
+  // TODO Source message changed - Revise the translation
   "request-status-alert-box.accepted": "अनुरोधित {{ offerType }} के लिए <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> को चार्ज में लिया गया है।",
 
-  // "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been rejected.",
+  // "request-status-alert-box.rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been rejected.",
+  // TODO Source message changed - Revise the translation
   "request-status-alert-box.rejected": "अनुरोधित {{ offerType }} के लिए <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> को अस्वीकार कर दिया गया है।",
 
-  // "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> has been tentatively rejected. Revisions are required",
+  // "request-status-alert-box.tentative_rejected": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> has been tentatively rejected. Revisions are required",
+  // TODO Source message changed - Revise the translation
   "request-status-alert-box.tentative_rejected": "अनुरोधित {{ offerType }} के लिए <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> को अस्थायी रूप से अस्वीकार कर दिया गया है। संशोधन आवश्यक हैं",
 
-  // "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> is pending.",
+  // "request-status-alert-box.requested": "The requested {{ offerType }} for <a href='{{serviceUrl}}' target='_blank'>{{ serviceName }}</a> is pending.",
+  // TODO Source message changed - Revise the translation
   "request-status-alert-box.requested": "अनुरोधित {{ offerType }} के लिए <a href='{{serviceUrl}}' target='_blank'> {{ serviceName }}  </a> लंबित है।",
 
   // "ldn-service-button-mark-inbound-deletion": "Mark supported pattern for deletion",
@@ -10927,7 +11001,8 @@
   // "item.page.cc.license.title": "Creative Commons license",
   "item.page.cc.license.title": "क्रिएटिव कॉमन्स लाइसेंस",
 
-  // "item.page.cc.license.disclaimer": "Except where otherwised noted, this item's license is described as",
+  // "item.page.cc.license.disclaimer": "Except where otherwise noted, this item's license is described as",
+  // TODO Source message changed - Revise the translation
   "item.page.cc.license.disclaimer": "जहाँ अन्यथा उल्लेख नहीं किया गया है, इस आइटम का लाइसेंस इस प्रकार वर्णित है",
 
   // "browse.search-form.placeholder": "Search the repository",
@@ -10948,9 +11023,9 @@
   // "live-region.ordering.instructions": "Press spacebar to reorder {{ itemName }}.",
   "live-region.ordering.instructions": "{{ itemName }} को पुनः क्रमबद्ध करने के लिए स्पेसबार दबाएं।",
 
-  // "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
+  // "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
   // TODO New key - Add a translation
-  "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of  {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
+  "live-region.ordering.status": "{{ itemName }}, grabbed. Current position in list: {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
 
   // "live-region.ordering.moved": "{{ itemName }}, moved to position {{ index }} of {{ length }}. Press up and down arrow keys to change position, SpaceBar to drop, Escape to cancel.",
   "live-region.ordering.moved": "{{ itemName }}, स्थिति {{ index }} का {{ length }} पर स्थानांतरित। स्थिति बदलने के लिए ऊपर और नीचे तीर कुंजियों को दबाएं, छोड़ने के लिए स्पेसबार, रद्द करने के लिए एस्केप।",
@@ -11117,6 +11192,18 @@
   // "file-download-link.request-copy": "Request a copy of ",
   // TODO New key - Add a translation
   "file-download-link.request-copy": "Request a copy of ",
+
+  // "item.preview.organization.url": "URL",
+  // TODO New key - Add a translation
+  "item.preview.organization.url": "URL",
+
+  // "item.preview.organization.address.addressLocality": "City",
+  // TODO New key - Add a translation
+  "item.preview.organization.address.addressLocality": "City",
+
+  // "item.preview.organization.alternateName": "Alternative name",
+  // TODO New key - Add a translation
+  "item.preview.organization.alternateName": "Alternative name",
 
 
 }

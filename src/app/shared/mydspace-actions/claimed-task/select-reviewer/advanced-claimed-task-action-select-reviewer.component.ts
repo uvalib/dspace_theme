@@ -6,7 +6,7 @@ import {
   ActivatedRoute,
   Router,
 } from '@angular/router';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltip } from '@ng-bootstrap/ng-bootstrap';
 import {
   TranslateModule,
   TranslateService,
@@ -25,9 +25,8 @@ import { AdvancedClaimedTaskActionsAbstractComponent } from '../abstract/advance
   selector: 'ds-advanced-claimed-task-action-select-reviewer',
   templateUrl: './advanced-claimed-task-action-select-reviewer.component.html',
   styleUrls: ['./advanced-claimed-task-action-select-reviewer.component.scss'],
-  standalone: true,
   imports: [
-    NgbTooltipModule,
+    NgbTooltip,
     TranslateModule,
   ],
 })
